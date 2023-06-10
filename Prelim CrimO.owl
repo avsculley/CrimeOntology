@@ -1,0 +1,1328 @@
+@prefix : <http://www.semanticweb.org/alecsculley/ontologies/2023/4/untitled-ontology-242#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix lmss: <http://lmss.sali.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/alecsculley/ontologies/2023/4/CrimO> .
+
+<http://www.semanticweb.org/alecsculley/ontologies/2023/4/CrimO> rdf:type owl:Ontology ;
+                                                                  <http://purl.org/dc/elements/1.1/creator> "Alec Sculley" ;
+                                                                  rdfs:comment "A BFO and CCO conformant ontology of crime using LMSS" ;
+                                                                  rdfs:label "CrimO" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://lmss.sali.org/R1PY9E13YhPhV7QvMke50C
+lmss:R1PY9E13YhPhV7QvMke50C rdf:type owl:Class ;
+                            rdfs:subClassOf lmss:RCqBiJAwLT5iG2nvk12tNKW ;
+                            rdfs:label "Exhibition of Speed"@en .
+
+
+###  http://lmss.sali.org/R24YN1aRTJ9uZ8QVvLjK21
+lmss:R24YN1aRTJ9uZ8QVvLjK21 rdf:type owl:Class ;
+                            rdfs:subClassOf lmss:R7MbuFEaL6NyU9tM2AXk7lk ;
+                            rdfs:label "Unlawful Visitation"@en .
+
+
+###  http://lmss.sali.org/R4tTlnh0xdCEoQbj8CkWoB
+lmss:R4tTlnh0xdCEoQbj8CkWoB rdf:type owl:Class ;
+                            rdfs:subClassOf lmss:RLvhxz3b1k2IU3MaAgeRtF ;
+                            rdfs:label "Prostitution Crimes"@en .
+
+
+###  http://lmss.sali.org/R521qAP3nT6dy1GiNVvs1v
+lmss:R521qAP3nT6dy1GiNVvs1v rdf:type owl:Class ;
+                            rdfs:subClassOf lmss:R7Xjkk7EkIgiSA3LmsPofVx ;
+                            rdfs:label "Gambling Equipment Violations"@en .
+
+
+###  http://lmss.sali.org/R71pRv6BCoGqZQLMrFskDOX
+lmss:R71pRv6BCoGqZQLMrFskDOX rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RCqBiJAwLT5iG2nvk12tNKW ;
+                             rdfs:label "Misdemeanor Assault"@en .
+
+
+###  http://lmss.sali.org/R7MbuFEaL6NyU9tM2AXk7lk
+lmss:R7MbuFEaL6NyU9tM2AXk7lk rdf:type owl:Class ;
+                             rdfs:subClassOf cco:CriminalAct ;
+                             rdfs:label "Crimes Against People"@en .
+
+
+###  http://lmss.sali.org/R7Ttdyo4FsvaupPKT35Qry0
+lmss:R7Ttdyo4FsvaupPKT35Qry0 rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RBzrK4RsgfLScZvC4Z4lCCX ;
+                             rdfs:label "Murder"@en .
+
+
+###  http://lmss.sali.org/R7V9R3w28BDjOd4lLUUrvQ5
+lmss:R7V9R3w28BDjOd4lLUUrvQ5 rdf:type owl:Class ;
+                             rdfs:subClassOf cco:CriminalAct ;
+                             rdfs:label "Crimes Against the Government"@en .
+
+
+###  http://lmss.sali.org/R7Xjkk7EkIgiSA3LmsPofVx
+lmss:R7Xjkk7EkIgiSA3LmsPofVx rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RCqBiJAwLT5iG2nvk12tNKW ;
+                             rdfs:label "Illegal Gambling"@en .
+
+
+###  http://lmss.sali.org/R7YToQxzuXojCNWk2g0gIk8
+lmss:R7YToQxzuXojCNWk2g0gIk8 rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R7Ttdyo4FsvaupPKT35Qry0 ;
+                             rdfs:label "Second-Degree Murder"@en .
+
+
+###  http://lmss.sali.org/R7e6JFsdgxEOnQLXBpY1lD3
+lmss:R7e6JFsdgxEOnQLXBpY1lD3 rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RCqBiJAwLT5iG2nvk12tNKW ;
+                             rdfs:label "Public Intoxication"@en .
+
+
+###  http://lmss.sali.org/R7etM048pOaM3neM2QLQVU1
+lmss:R7etM048pOaM3neM2QLQVU1 rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R9gcJW5zpEIb8x5yJrfxBMg ;
+                             owl:disjointWith lmss:R88qzlkGwBdq4BRktxQ0noK ;
+                             rdfs:label "Assisted Suicide"@en .
+
+
+###  http://lmss.sali.org/R7kmGY1Jxz3BC2ub5y1F9e
+lmss:R7kmGY1Jxz3BC2ub5y1F9e rdf:type owl:Class ;
+                            rdfs:subClassOf lmss:R7MbuFEaL6NyU9tM2AXk7lk ;
+                            rdfs:label "Criminal Battery"@en .
+
+
+###  http://lmss.sali.org/R7ma9Q5FiHDcIYgKoxKNUk9
+lmss:R7ma9Q5FiHDcIYgKoxKNUk9 rdf:type owl:Class ;
+                             rdfs:subClassOf cco:CriminalAct ;
+                             rdfs:label "Inchoate Criminal Offenses"@en .
+
+
+###  http://lmss.sali.org/R7nYjWxGQdHVUZcYq7nUpSZ
+lmss:R7nYjWxGQdHVUZcYq7nUpSZ rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RCqBiJAwLT5iG2nvk12tNKW ;
+                             rdfs:label "Hit and Run"@en .
+
+
+###  http://lmss.sali.org/R7wJH5ybR7TZzVpLpsdEgof
+lmss:R7wJH5ybR7TZzVpLpsdEgof rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R7Ttdyo4FsvaupPKT35Qry0 ;
+                             rdfs:label "First-Degree Murder"@en .
+
+
+###  http://lmss.sali.org/R81ea6Rg9Cd8vEEma9Eqp9t
+lmss:R81ea6Rg9Cd8vEEma9Eqp9t rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R7V9R3w28BDjOd4lLUUrvQ5 ;
+                             rdfs:label "Terrorism"@en .
+
+
+###  http://lmss.sali.org/R88qzlkGwBdq4BRktxQ0noK
+lmss:R88qzlkGwBdq4BRktxQ0noK rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R9gcJW5zpEIb8x5yJrfxBMg ;
+                             rdfs:label "Prisoner Suicide"@en .
+
+
+###  http://lmss.sali.org/R8AhhP8gb3fCPRIOJmR3oyD
+lmss:R8AhhP8gb3fCPRIOJmR3oyD rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R7ma9Q5FiHDcIYgKoxKNUk9 ,
+                                             lmss:R8iqvgE2NjybgksTeqsGhr3 ;
+                             owl:disjointWith lmss:RDGL2gCEacTZDXEK0m1dhp2 ;
+                             rdfs:label "Criminal Conspiracy"@en .
+
+
+###  http://lmss.sali.org/R8BLgPtZOuKFI8MtZNTaT0u
+lmss:R8BLgPtZOuKFI8MtZNTaT0u rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R7MbuFEaL6NyU9tM2AXk7lk ;
+                             rdfs:label "Criminal Assault"@en .
+
+
+###  http://lmss.sali.org/R8GWqW81e0FjChbniaaemlb
+lmss:R8GWqW81e0FjChbniaaemlb rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R8BLgPtZOuKFI8MtZNTaT0u ;
+                             rdfs:label "Attempted Battery"@en .
+
+
+###  http://lmss.sali.org/R8GyzIcRehN0R4uVAjMJgp7
+lmss:R8GyzIcRehN0R4uVAjMJgp7 rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RBQZfWGxOZnZAvQ3ghLRvae ;
+                             rdfs:label "Shoplifting Theft"@en .
+
+
+###  http://lmss.sali.org/R8P8o9JZGG11Tcu8bJ1BTzi
+lmss:R8P8o9JZGG11Tcu8bJ1BTzi rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RCqBiJAwLT5iG2nvk12tNKW ,
+                                             lmss:Ra8NCYdJb9YwmAxaOmLDbI ;
+                             rdfs:label "Possession of a Controlled Substance"@en .
+
+
+###  http://lmss.sali.org/R8TvbewYypS9Uy4y5JGIwEH
+lmss:R8TvbewYypS9Uy4y5JGIwEH rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R8BLgPtZOuKFI8MtZNTaT0u ;
+                             rdfs:label "Sex Offenses"@en .
+
+
+###  http://lmss.sali.org/R8U7OnAYHvuh8BdypxQfRgX
+lmss:R8U7OnAYHvuh8BdypxQfRgX rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RBQZfWGxOZnZAvQ3ghLRvae ;
+                             rdfs:label "Purse Snatching Theft"@en .
+
+
+###  http://lmss.sali.org/R8UT0E6e2nZwTF2iqF4ftc
+lmss:R8UT0E6e2nZwTF2iqF4ftc rdf:type owl:Class ;
+                            rdfs:subClassOf lmss:R9KC6PngzJi80MRTJgJyVad ;
+                            rdfs:label "Carrying a Concealed Weapon"@en .
+
+
+###  http://lmss.sali.org/R8V50oNSRyZdNrkoQqe9nq
+lmss:R8V50oNSRyZdNrkoQqe9nq rdf:type owl:Class ;
+                            rdfs:subClassOf lmss:R9AAcAvFK3IQBy7L6qWyuDb ;
+                            rdfs:label "Clergy Sex Abuse"@en .
+
+
+###  http://lmss.sali.org/R8VNf1SBFc3ThnKIJ5qsLYR
+lmss:R8VNf1SBFc3ThnKIJ5qsLYR rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R8TvbewYypS9Uy4y5JGIwEH ;
+                             rdfs:label "Sexual Assault with an Object"@en .
+
+
+###  http://lmss.sali.org/R8ZZ3NsCK0vyOmGji7SpKkW
+lmss:R8ZZ3NsCK0vyOmGji7SpKkW rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RCqBiJAwLT5iG2nvk12tNKW ;
+                             rdfs:label "Illegal Dumping"@en .
+
+
+###  http://lmss.sali.org/R8fcGNgScyMlOAFxW5Omw5Y
+lmss:R8fcGNgScyMlOAFxW5Omw5Y rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R8TvbewYypS9Uy4y5JGIwEH ;
+                             rdfs:label "Rape"@en .
+
+
+###  http://lmss.sali.org/R8iqvgE2NjybgksTeqsGhr3
+lmss:R8iqvgE2NjybgksTeqsGhr3 rdf:type owl:Class ;
+                             rdfs:subClassOf cco:CriminalAct ;
+                             rdfs:label "Concert of Action Crimes"@en .
+
+
+###  http://lmss.sali.org/R8ldDGTh6RHzt0IDL7p597U
+lmss:R8ldDGTh6RHzt0IDL7p597U rdf:type owl:Class ;
+                             rdfs:subClassOf cco:CriminalAct ;
+                             rdfs:label "Crimes Against Property"@en .
+
+
+###  http://lmss.sali.org/R8xIIJGedrUnNDQeOch1W6v
+lmss:R8xIIJGedrUnNDQeOch1W6v rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R8fcGNgScyMlOAFxW5Omw5Y ;
+                             rdfs:label "Modern Rape"@en .
+
+
+###  http://lmss.sali.org/R8xhTgEOLxauZ6mN68JsaoD
+lmss:R8xhTgEOLxauZ6mN68JsaoD rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R7V9R3w28BDjOd4lLUUrvQ5 ;
+                             rdfs:label "Perjury"@en .
+
+
+###  http://lmss.sali.org/R94gDxMezQBU6wop953l6By
+lmss:R94gDxMezQBU6wop953l6By rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R8ldDGTh6RHzt0IDL7p597U ,
+                                             lmss:RCqBiJAwLT5iG2nvk12tNKW ;
+                             rdfs:label "Criminal Mischief"@en .
+
+
+###  http://lmss.sali.org/R98NBwfojmCq1Cx8A2uiP4C
+lmss:R98NBwfojmCq1Cx8A2uiP4C rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R4tTlnh0xdCEoQbj8CkWoB ,
+                                             lmss:RCqBiJAwLT5iG2nvk12tNKW ;
+                             owl:disjointWith lmss:R9AhUjR6gNCb1ExMXhUpR1F ;
+                             rdfs:label "Prostitution"@en .
+
+
+###  http://lmss.sali.org/R98k0yAEKsTntybplyKMtUn
+lmss:R98k0yAEKsTntybplyKMtUn rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RCqBiJAwLT5iG2nvk12tNKW ;
+                             rdfs:label "Public Lewdness"@en .
+
+
+###  http://lmss.sali.org/R99AHv1FlKRYKZE5bhs8jf9
+lmss:R99AHv1FlKRYKZE5bhs8jf9 rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RLvhxz3b1k2IU3MaAgeRtF ;
+                             rdfs:label "Riot"@en .
+
+
+###  http://lmss.sali.org/R9AAcAvFK3IQBy7L6qWyuDb
+lmss:R9AAcAvFK3IQBy7L6qWyuDb rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R8TvbewYypS9Uy4y5JGIwEH ;
+                             rdfs:label "Sex Abuse"@en .
+
+
+###  http://lmss.sali.org/R9AhUjR6gNCb1ExMXhUpR1F
+lmss:R9AhUjR6gNCb1ExMXhUpR1F rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R4tTlnh0xdCEoQbj8CkWoB ,
+                                             lmss:RCqBiJAwLT5iG2nvk12tNKW ;
+                             rdfs:label "Solicitation of Prostitution"@en .
+
+
+###  http://lmss.sali.org/R9BXCMDokckNeStJ1otnRDJ
+lmss:R9BXCMDokckNeStJ1otnRDJ rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R7Xjkk7EkIgiSA3LmsPofVx ;
+                             rdfs:label "Sports Tampering"@en .
+
+
+###  http://lmss.sali.org/R9JP1ZcUhPxVoXQqmTruykZ
+lmss:R9JP1ZcUhPxVoXQqmTruykZ rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R9uiDByr48mJfLgUdiIZrSi ;
+                             owl:disjointWith lmss:RCqPLSe1mf54V2jUhySvbzh ;
+                             rdfs:label "Common-Law Sodomy"@en .
+
+
+###  http://lmss.sali.org/R9KC6PngzJi80MRTJgJyVad
+lmss:R9KC6PngzJi80MRTJgJyVad rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RLvhxz3b1k2IU3MaAgeRtF ;
+                             rdfs:label "Weapon, Gun, and Firearms Crimes"@en .
+
+
+###  http://lmss.sali.org/R9KRos9FExHDk32mNl2DxFe
+lmss:R9KRos9FExHDk32mNl2DxFe rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R8fcGNgScyMlOAFxW5Omw5Y ;
+                             rdfs:label "Common-Law Rape"@en .
+
+
+###  http://lmss.sali.org/R9KcDahapJG8vbCxXh6JDwm
+lmss:R9KcDahapJG8vbCxXh6JDwm rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R7MbuFEaL6NyU9tM2AXk7lk ,
+                                             lmss:RCqBiJAwLT5iG2nvk12tNKW ;
+                             rdfs:label "Criminal Harassment"@en .
+
+
+###  http://lmss.sali.org/R9Kny3xe2sxcb4gxu16vEkk
+lmss:R9Kny3xe2sxcb4gxu16vEkk rdf:type owl:Class ;
+                             rdfs:subClassOf cco:CriminalAct ;
+                             rdfs:label "Criminal Contempt"@en .
+
+
+###  http://lmss.sali.org/R9PvfnPfjiIwXwWoldE1svT
+lmss:R9PvfnPfjiIwXwWoldE1svT rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R7Ttdyo4FsvaupPKT35Qry0 ;
+                             rdfs:label "Felony Murder"@en .
+
+
+###  http://lmss.sali.org/R9T8KGJd3wcbSBjdX3K2mGy
+lmss:R9T8KGJd3wcbSBjdX3K2mGy rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RLvhxz3b1k2IU3MaAgeRtF ;
+                             rdfs:label "Unlawful Assembly"@en .
+
+
+###  http://lmss.sali.org/R9XKn4ikKfuZ410TDVvNmyq
+lmss:R9XKn4ikKfuZ410TDVvNmyq rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R8TvbewYypS9Uy4y5JGIwEH ;
+                             rdfs:label "Incest"@en .
+
+
+###  http://lmss.sali.org/R9Y09dMEpmgMiRHyRz2U1aC
+lmss:R9Y09dMEpmgMiRHyRz2U1aC rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RBt6PLnwAaeJLOUww0swcdQ ;
+                             owl:disjointWith lmss:R9pC5rYhFMiLaQiSZETyftd ;
+                             rdfs:label "Voluntary Manslaughter"@en .
+
+
+###  http://lmss.sali.org/R9YJidoNtjYJ9ullx9SRy6k
+lmss:R9YJidoNtjYJ9ullx9SRy6k rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R9KcDahapJG8vbCxXh6JDwm ,
+                                             lmss:RCqBiJAwLT5iG2nvk12tNKW ;
+                             rdfs:label "Violation of Restraining Order"@en ,
+                                        "Violation of a Restraining Order"@en .
+
+
+###  http://lmss.sali.org/R9Zpw6W6vllQC97Xj87kMAX
+lmss:R9Zpw6W6vllQC97Xj87kMAX rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R7V9R3w28BDjOd4lLUUrvQ5 ;
+                             rdfs:label "Counterfeiting"@en .
+
+
+###  http://lmss.sali.org/R9dnzX0qUAhZLPdLq97fapE
+lmss:R9dnzX0qUAhZLPdLq97fapE rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RLvhxz3b1k2IU3MaAgeRtF ;
+                             rdfs:label "Criminal Gang Participation"@en .
+
+
+###  http://lmss.sali.org/R9fzqoKTpwXpqadubImm69L
+lmss:R9fzqoKTpwXpqadubImm69L rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RCqBiJAwLT5iG2nvk12tNKW ;
+                             rdfs:label "Failure to Identify to a Police Officer"@en .
+
+
+###  http://lmss.sali.org/R9gcJW5zpEIb8x5yJrfxBMg
+lmss:R9gcJW5zpEIb8x5yJrfxBMg rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RBzrK4RsgfLScZvC4Z4lCCX ;
+                             rdfs:label "Suicide and \"Right to Die\" Claims"@en .
+
+
+###  http://lmss.sali.org/R9jLBBEicl6JwMj2Jf8GHWN
+lmss:R9jLBBEicl6JwMj2Jf8GHWN rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R9KcDahapJG8vbCxXh6JDwm ,
+                                             lmss:RCqBiJAwLT5iG2nvk12tNKW ;
+                             rdfs:label "Terroristic Threats"@en .
+
+
+###  http://lmss.sali.org/R9mSfKgf9j4vIGxmQrnBd1I
+lmss:R9mSfKgf9j4vIGxmQrnBd1I rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RCqBiJAwLT5iG2nvk12tNKW ;
+                             rdfs:label "Pornography and Obscene Material"@en .
+
+
+###  http://lmss.sali.org/R9pC5rYhFMiLaQiSZETyftd
+lmss:R9pC5rYhFMiLaQiSZETyftd rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RBt6PLnwAaeJLOUww0swcdQ ;
+                             rdfs:label "Negligent Manslaughter"@en .
+
+
+###  http://lmss.sali.org/R9uiDByr48mJfLgUdiIZrSi
+lmss:R9uiDByr48mJfLgUdiIZrSi rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R8TvbewYypS9Uy4y5JGIwEH ;
+                             rdfs:label "Sodomy"@en .
+
+
+###  http://lmss.sali.org/RB45dXxacmQbbLYaT8gCptW
+lmss:RB45dXxacmQbbLYaT8gCptW rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R7Xjkk7EkIgiSA3LmsPofVx ;
+                             rdfs:label "Betting / Wagering"@en .
+
+
+###  http://lmss.sali.org/RBDjAM773PfjvwDFIBwA6hZ
+lmss:RBDjAM773PfjvwDFIBwA6hZ rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RCqBiJAwLT5iG2nvk12tNKW ;
+                             rdfs:label "Driving on a Suspended or Revoked License"@en .
+
+
+###  http://lmss.sali.org/RBE78Mm4K5ZmjzUOnFO2eg4
+lmss:RBE78Mm4K5ZmjzUOnFO2eg4 rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R8BLgPtZOuKFI8MtZNTaT0u ;
+                             rdfs:label "Intimidation"@en .
+
+
+###  http://lmss.sali.org/RBI1GgQFGHi8jZxymdj6eTL
+lmss:RBI1GgQFGHi8jZxymdj6eTL rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R8fcGNgScyMlOAFxW5Omw5Y ;
+                             rdfs:label "Statutory Rape"@en .
+
+
+###  http://lmss.sali.org/RBL4zPemNCEq2piqyBMgxJx
+lmss:RBL4zPemNCEq2piqyBMgxJx rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R7MbuFEaL6NyU9tM2AXk7lk ;
+                             rdfs:label "Interference with the Custody of Children"@en .
+
+
+###  http://lmss.sali.org/RBNz30rxM6l0GnL6R9XDyU2
+lmss:RBNz30rxM6l0GnL6R9XDyU2 rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R8ldDGTh6RHzt0IDL7p597U ,
+                                             lmss:RCqBiJAwLT5iG2nvk12tNKW ;
+                             rdfs:label "Vandalism"@en .
+
+
+###  http://lmss.sali.org/RBQZfWGxOZnZAvQ3ghLRvae
+lmss:RBQZfWGxOZnZAvQ3ghLRvae rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RBQZfWGxOZnZAvQ3ghLRvae ,
+                                             lmss:RCqBiJAwLT5iG2nvk12tNKW ;
+                             rdfs:label "Theft of Motor Vehicle Parts/Accessories"@en .
+
+
+###  http://lmss.sali.org/RBR4SUW4ZCvh8n2X00nUpYY
+lmss:RBR4SUW4ZCvh8n2X00nUpYY rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RBzrK4RsgfLScZvC4Z4lCCX ;
+                             rdfs:label "Feticide"@en .
+
+
+###  http://lmss.sali.org/RBSewRxgjTh2VhFX6itIoFA
+lmss:RBSewRxgjTh2VhFX6itIoFA rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RCqBiJAwLT5iG2nvk12tNKW ;
+                             rdfs:label "Bad Check Crime"@en .
+
+
+###  http://lmss.sali.org/RBUS0L6evAK1r6HGe8b92cw
+lmss:RBUS0L6evAK1r6HGe8b92cw rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R7V9R3w28BDjOd4lLUUrvQ5 ;
+                             rdfs:label "Sabotage"@en .
+
+
+###  http://lmss.sali.org/RBVpHQ7fb2I2B69LOWszQjd
+lmss:RBVpHQ7fb2I2B69LOWszQjd rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RBzrK4RsgfLScZvC4Z4lCCX ;
+                             rdfs:label "Justifiable Homicide"@en .
+
+
+###  http://lmss.sali.org/RBXVU4vw8lOn8Q1MVwyiBuM
+lmss:RBXVU4vw8lOn8Q1MVwyiBuM rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RCqBiJAwLT5iG2nvk12tNKW ;
+                             rdfs:label "Runaway"@en .
+
+
+###  http://lmss.sali.org/RBbjh6B7AdBQ6Bks9h6sEwE
+lmss:RBbjh6B7AdBQ6Bks9h6sEwE rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RDJwYAhLKCUFLjsFuACCRPB ;
+                             owl:disjointWith lmss:RCzEqK9mhxGTmmz2g2T7cTM ;
+                             rdfs:label "Providing Alcohol to Minor"@en .
+
+
+###  http://lmss.sali.org/RBc8llmdnVBvfzkSbQxpOLJ
+lmss:RBc8llmdnVBvfzkSbQxpOLJ rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R8ldDGTh6RHzt0IDL7p597U ,
+                                             lmss:RCqBiJAwLT5iG2nvk12tNKW ;
+                             rdfs:label "Criminal Trespass"@en ,
+                                        "Criminal Tresspass"@en .
+
+
+###  http://lmss.sali.org/RBd9N0Cnx1TPqy63TmkCk7w
+lmss:RBd9N0Cnx1TPqy63TmkCk7w rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R7MbuFEaL6NyU9tM2AXk7lk ;
+                             rdfs:label "Family Offenses - Nonviolent"@en .
+
+
+###  http://lmss.sali.org/RBgAFGiEeC2W7cHvjmy7knW
+lmss:RBgAFGiEeC2W7cHvjmy7knW rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R9KcDahapJG8vbCxXh6JDwm ;
+                             rdfs:label "Cyberbullying"@en .
+
+
+###  http://lmss.sali.org/RBhkRzl30PudT2hM5OESMlu
+lmss:RBhkRzl30PudT2hM5OESMlu rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:Ra8NCYdJb9YwmAxaOmLDbI ;
+                             rdfs:label "Drug Equipment Violation"@en .
+
+
+###  http://lmss.sali.org/RBizcuAme8glPLFlQSQLCq5
+lmss:RBizcuAme8glPLFlQSQLCq5 rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R8TvbewYypS9Uy4y5JGIwEH ;
+                             rdfs:label "Forcible Fondling"@en .
+
+
+###  http://lmss.sali.org/RBpSXv8uOXDikW5jk944sRN
+lmss:RBpSXv8uOXDikW5jk944sRN rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R8ldDGTh6RHzt0IDL7p597U ;
+                             rdfs:label "Criminal Theft"@en .
+
+
+###  http://lmss.sali.org/RBqBxJEzhWW5x12JraZHgQd
+lmss:RBqBxJEzhWW5x12JraZHgQd rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R8TvbewYypS9Uy4y5JGIwEH ;
+                             rdfs:label "Oral Copulation"@en .
+
+
+###  http://lmss.sali.org/RBruJuhQHB6JHVTvEpkQ2t3
+lmss:RBruJuhQHB6JHVTvEpkQ2t3 rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R7kmGY1Jxz3BC2ub5y1F9e ;
+                             rdfs:label "Criminal Mayhem"@en .
+
+
+###  http://lmss.sali.org/RBt6PLnwAaeJLOUww0swcdQ
+lmss:RBt6PLnwAaeJLOUww0swcdQ rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RBzrK4RsgfLScZvC4Z4lCCX ;
+                             rdfs:label "Manslaughter"@en .
+
+
+###  http://lmss.sali.org/RBzrK4RsgfLScZvC4Z4lCCX
+lmss:RBzrK4RsgfLScZvC4Z4lCCX rdf:type owl:Class ;
+                             rdfs:subClassOf cco:CriminalAct ;
+                             rdfs:label "Criminal Homicide Offenses"@en .
+
+
+###  http://lmss.sali.org/RC2sDzkhJsoDium48Imqwn8
+lmss:RC2sDzkhJsoDium48Imqwn8 rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R9KC6PngzJi80MRTJgJyVad ;
+                             rdfs:label "Possession of a Prohibited Weapon"@en .
+
+
+###  http://lmss.sali.org/RC4QMCtqIKU9i366bPpd3rG
+lmss:RC4QMCtqIKU9i366bPpd3rG rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R8ldDGTh6RHzt0IDL7p597U ,
+                                             lmss:RCqBiJAwLT5iG2nvk12tNKW ;
+                             rdfs:label "Petty Theft"@en .
+
+
+###  http://lmss.sali.org/RC5FOOj5LHE2ITa2pdb9s5i
+lmss:RC5FOOj5LHE2ITa2pdb9s5i rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RDgbjRGvnprxnFm9CAqCjYs ;
+                             rdfs:label "Curfew Violation"@en .
+
+
+###  http://lmss.sali.org/RCA6fbUUZ39zOrCLn4i9WXJ
+lmss:RCA6fbUUZ39zOrCLn4i9WXJ rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R7V9R3w28BDjOd4lLUUrvQ5 ;
+                             rdfs:label "Tax Evasion"@en .
+
+
+###  http://lmss.sali.org/RCDSmXwVa56dRfhw74VL2nr
+lmss:RCDSmXwVa56dRfhw74VL2nr rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R7V9R3w28BDjOd4lLUUrvQ5 ;
+                             rdfs:label "Insurrection"@en .
+
+
+###  http://lmss.sali.org/RCJErtCAFcUeLV84PJ5PjgS
+lmss:RCJErtCAFcUeLV84PJ5PjgS rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RCqBiJAwLT5iG2nvk12tNKW ;
+                             rdfs:label "Violation of Probation"@en .
+
+
+###  http://lmss.sali.org/RCM3v341KIhe0jNcQu9sxym
+lmss:RCM3v341KIhe0jNcQu9sxym rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RLvhxz3b1k2IU3MaAgeRtF ;
+                             rdfs:label "Unlawful Gaming and Lotteries"@en .
+
+
+###  http://lmss.sali.org/RCMeywGHqtDlkLxwnDrD0CF
+lmss:RCMeywGHqtDlkLxwnDrD0CF rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RCqBiJAwLT5iG2nvk12tNKW ;
+                             rdfs:label "Boating DUI/BUI"@en .
+
+
+###  http://lmss.sali.org/RCNAtjkDm3rutL4bPBsEz1I
+lmss:RCNAtjkDm3rutL4bPBsEz1I rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R7MbuFEaL6NyU9tM2AXk7lk ;
+                             rdfs:label "Kidnapping"@en .
+
+
+###  http://lmss.sali.org/RCNCBNpw84e0SAwaLCvbKNf
+lmss:RCNCBNpw84e0SAwaLCvbKNf rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R7V9R3w28BDjOd4lLUUrvQ5 ;
+                             rdfs:label "Obstruction of Justice"@en .
+
+
+###  http://lmss.sali.org/RCPRLx0shv6uO5vmBtHKGYO
+lmss:RCPRLx0shv6uO5vmBtHKGYO rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RCqBiJAwLT5iG2nvk12tNKW ,
+                                             lmss:Ra8NCYdJb9YwmAxaOmLDbI ;
+                             rdfs:label "Drug Possession"@en .
+
+
+###  http://lmss.sali.org/RCPiv0qrO78genaWsaWaRYf
+lmss:RCPiv0qrO78genaWsaWaRYf rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RCqBiJAwLT5iG2nvk12tNKW ;
+                             rdfs:label "Peeping Tom Violation"@en .
+
+
+###  http://lmss.sali.org/RCQXpw41uM3yqHOjIcq53oT
+lmss:RCQXpw41uM3yqHOjIcq53oT rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R7V9R3w28BDjOd4lLUUrvQ5 ;
+                             rdfs:label "Campaign Finance Violation"@en .
+
+
+###  http://lmss.sali.org/RCY8A7phqZ78VpWZvsYqMTq
+lmss:RCY8A7phqZ78VpWZvsYqMTq rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R9pC5rYhFMiLaQiSZETyftd ;
+                             rdfs:label "Vehicular Manslaughter"@en .
+
+
+###  http://lmss.sali.org/RCZKHTsfA7SC5yhl8xy8fXh
+lmss:RCZKHTsfA7SC5yhl8xy8fXh rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R9KcDahapJG8vbCxXh6JDwm ,
+                                             lmss:RCqBiJAwLT5iG2nvk12tNKW ;
+                             rdfs:label "Criminal Stalking"@en .
+
+
+###  http://lmss.sali.org/RCfdkasigpXYpOViJrDY7lZ
+lmss:RCfdkasigpXYpOViJrDY7lZ rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R7V9R3w28BDjOd4lLUUrvQ5 ;
+                             rdfs:label "Bribery"@en .
+
+
+###  http://lmss.sali.org/RCqBiJAwLT5iG2nvk12tNKW
+lmss:RCqBiJAwLT5iG2nvk12tNKW rdf:type owl:Class ;
+                             rdfs:subClassOf cco:CriminalAct ;
+                             rdfs:label "Criminal Misdemeanor Offenses"@en .
+
+
+###  http://lmss.sali.org/RCqPLSe1mf54V2jUhySvbzh
+lmss:RCqPLSe1mf54V2jUhySvbzh rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R9uiDByr48mJfLgUdiIZrSi ;
+                             rdfs:label "Modern Sodomy"@en .
+
+
+###  http://lmss.sali.org/RCrTf9ZkUrd8tgXOWt0smLc
+lmss:RCrTf9ZkUrd8tgXOWt0smLc rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R7MbuFEaL6NyU9tM2AXk7lk ;
+                             rdfs:label "Criminal False Imprisonment"@en .
+
+
+###  http://lmss.sali.org/RCzEqK9mhxGTmmz2g2T7cTM
+lmss:RCzEqK9mhxGTmmz2g2T7cTM rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RDJwYAhLKCUFLjsFuACCRPB ,
+                                             lmss:Ra8NCYdJb9YwmAxaOmLDbI ;
+                             rdfs:label "Minor in Possession of Alcohol"@en .
+
+
+###  http://lmss.sali.org/RD1NJOilfS2J7giDdQdLPek
+lmss:RD1NJOilfS2J7giDdQdLPek rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R9KC6PngzJi80MRTJgJyVad ;
+                             rdfs:label "Unlawful Discharge of a Weapon"@en .
+
+
+###  http://lmss.sali.org/RDDo89IYNYywizH9jSXp6zY
+lmss:RDDo89IYNYywizH9jSXp6zY rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RCqBiJAwLT5iG2nvk12tNKW ;
+                             rdfs:label "Unlawful Restraint"@en .
+
+
+###  http://lmss.sali.org/RDGL2gCEacTZDXEK0m1dhp2
+lmss:RDGL2gCEacTZDXEK0m1dhp2 rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R7ma9Q5FiHDcIYgKoxKNUk9 ;
+                             rdfs:label "Solicitation"@en .
+
+
+###  http://lmss.sali.org/RDJwYAhLKCUFLjsFuACCRPB
+lmss:RDJwYAhLKCUFLjsFuACCRPB rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RCqBiJAwLT5iG2nvk12tNKW ;
+                             rdfs:label "Liquor Law Violations"@en .
+
+
+###  http://lmss.sali.org/RDMNx0AK0j8Rc7MLtq2cQqK
+lmss:RDMNx0AK0j8Rc7MLtq2cQqK rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RCqBiJAwLT5iG2nvk12tNKW ;
+                             rdfs:label "Obscenity"@en .
+
+
+###  http://lmss.sali.org/RDSX126wEHguoKDOWIJ7rBE
+lmss:RDSX126wEHguoKDOWIJ7rBE rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RCqBiJAwLT5iG2nvk12tNKW ;
+                             rdfs:label "Public Sexual Activity"@en .
+
+
+###  http://lmss.sali.org/RDV9p8R7hPvWmMR1XyiJsm9
+lmss:RDV9p8R7hPvWmMR1XyiJsm9 rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RCqBiJAwLT5iG2nvk12tNKW ;
+                             rdfs:label "Resisting Arrest"@en .
+
+
+###  http://lmss.sali.org/RDX6d1gZG7nkRrDFAC6gDM2
+lmss:RDX6d1gZG7nkRrDFAC6gDM2 rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RCqBiJAwLT5iG2nvk12tNKW ;
+                             rdfs:label "Reckless Driving"@en .
+
+
+###  http://lmss.sali.org/RDaX0mn1Z8fDrW3ZkzpmH1N
+lmss:RDaX0mn1Z8fDrW3ZkzpmH1N rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R7V9R3w28BDjOd4lLUUrvQ5 ;
+                             rdfs:label "Illegal Re-Entry"@en .
+
+
+###  http://lmss.sali.org/RDgbjRGvnprxnFm9CAqCjYs
+lmss:RDgbjRGvnprxnFm9CAqCjYs rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RLvhxz3b1k2IU3MaAgeRtF ;
+                             rdfs:label "Curfew, Loitering, and Vagrancy Violations"@en .
+
+
+###  http://lmss.sali.org/RDjMjjBlt5UcxM5InqAQx7P
+lmss:RDjMjjBlt5UcxM5InqAQx7P rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R7V9R3w28BDjOd4lLUUrvQ5 ;
+                             rdfs:label "Rescue of Prisoner"@en .
+
+
+###  http://lmss.sali.org/RDm9mvoBd5B4aS18jAGrLRD
+lmss:RDm9mvoBd5B4aS18jAGrLRD rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R81ea6Rg9Cd8vEEma9Eqp9t ;
+                             owl:disjointWith lmss:RdSAc25dvhITVjwN0V8orK ;
+                             rdfs:label "Domestic Terrorism"@en .
+
+
+###  http://lmss.sali.org/RDwDmcN0z56JIukw0vYcGte
+lmss:RDwDmcN0z56JIukw0vYcGte rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RCqBiJAwLT5iG2nvk12tNKW ;
+                             rdfs:label "Disturbing the Peace"@en .
+
+
+###  http://lmss.sali.org/RDwISw0syjjwmS6UpyiShve
+lmss:RDwISw0syjjwmS6UpyiShve rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R9pC5rYhFMiLaQiSZETyftd ;
+                             rdfs:label "Reckless Involuntary Manslaughter"@en .
+
+
+###  http://lmss.sali.org/REGXoYYhM0kwLwMTfS9SDl
+lmss:REGXoYYhM0kwLwMTfS9SDl rdf:type owl:Class ;
+                            rdfs:subClassOf lmss:RDgbjRGvnprxnFm9CAqCjYs ;
+                            rdfs:label "Vagrancy"@en .
+
+
+###  http://lmss.sali.org/REoC9pAO1UEoK68TDxn96Y
+lmss:REoC9pAO1UEoK68TDxn96Y rdf:type owl:Class ;
+                            rdfs:subClassOf lmss:RCqBiJAwLT5iG2nvk12tNKW ,
+                                            lmss:Ra8NCYdJb9YwmAxaOmLDbI ;
+                            rdfs:label "Possession of Drug Paraphernalia"@en .
+
+
+###  http://lmss.sali.org/RFrien46eAPSSbu8WgoU6S
+lmss:RFrien46eAPSSbu8WgoU6S rdf:type owl:Class ;
+                            rdfs:subClassOf lmss:R8ldDGTh6RHzt0IDL7p597U ,
+                                            lmss:RCqBiJAwLT5iG2nvk12tNKW ;
+                            rdfs:label "Shoplifting"@en .
+
+
+###  http://lmss.sali.org/RIl8s2tEaoYUUYasF92UWc
+lmss:RIl8s2tEaoYUUYasF92UWc rdf:type owl:Class ;
+                            rdfs:subClassOf lmss:RDgbjRGvnprxnFm9CAqCjYs ;
+                            rdfs:label "Loitering"@en .
+
+
+###  http://lmss.sali.org/RJlp1OGx7ZwGezwMkUlBnP
+lmss:RJlp1OGx7ZwGezwMkUlBnP rdf:type owl:Class ;
+                            rdfs:subClassOf lmss:RLvhxz3b1k2IU3MaAgeRtF ;
+                            rdfs:label "Disorderly House"@en .
+
+
+###  http://lmss.sali.org/RLvhxz3b1k2IU3MaAgeRtF
+lmss:RLvhxz3b1k2IU3MaAgeRtF rdf:type owl:Class ;
+                            rdfs:subClassOf cco:CriminalAct ;
+                            rdfs:label "Crimes Against the Public"@en .
+
+
+###  http://lmss.sali.org/RNtr2KMwM33LplYnmmxxVY
+lmss:RNtr2KMwM33LplYnmmxxVY rdf:type owl:Class ;
+                            rdfs:subClassOf lmss:R8BLgPtZOuKFI8MtZNTaT0u ;
+                            rdfs:label "Domestic Violence"@en .
+
+
+###  http://lmss.sali.org/RRa8pbp0z1jaRfCG5da6lC
+lmss:RRa8pbp0z1jaRfCG5da6lC rdf:type owl:Class ;
+                            rdfs:subClassOf lmss:RCqBiJAwLT5iG2nvk12tNKW ;
+                            rdfs:label "Evading Arrest"@en .
+
+
+###  http://lmss.sali.org/RTidRiJfp65AGi8fDsfUYa
+lmss:RTidRiJfp65AGi8fDsfUYa rdf:type owl:Class ;
+                            rdfs:subClassOf lmss:R7V9R3w28BDjOd4lLUUrvQ5 ;
+                            rdfs:label "Treason"@en .
+
+
+###  http://lmss.sali.org/RV45b8NoF16FFpjXgZYmpz
+lmss:RV45b8NoF16FFpjXgZYmpz rdf:type owl:Class ;
+                            rdfs:subClassOf lmss:R9pC5rYhFMiLaQiSZETyftd ;
+                            rdfs:label "Misdemeanor Manslaughter"@en .
+
+
+###  http://lmss.sali.org/RWLKWLYuVzXk91nvlM2VD4
+lmss:RWLKWLYuVzXk91nvlM2VD4 rdf:type owl:Class ;
+                            rdfs:subClassOf lmss:R8BLgPtZOuKFI8MtZNTaT0u ;
+                            rdfs:label "Threatened Battery Assault"@en .
+
+
+###  http://lmss.sali.org/RYQtICTQZAQzMuF7hmmszk
+lmss:RYQtICTQZAQzMuF7hmmszk rdf:type owl:Class ;
+                            rdfs:subClassOf lmss:R7Xjkk7EkIgiSA3LmsPofVx ;
+                            rdfs:label "Operating / Promoting / Assisting Gambling"@en .
+
+
+###  http://lmss.sali.org/RYehmm3LZTmCeOeVsilwXH
+lmss:RYehmm3LZTmCeOeVsilwXH rdf:type owl:Class ;
+                            rdfs:subClassOf lmss:RBQZfWGxOZnZAvQ3ghLRvae ;
+                            rdfs:label "Pocket Picking Theft"@en .
+
+
+###  http://lmss.sali.org/RYtzibGIkGDjMH5zFGlU8H
+lmss:RYtzibGIkGDjMH5zFGlU8H rdf:type owl:Class ;
+                            rdfs:subClassOf lmss:RLvhxz3b1k2IU3MaAgeRtF ;
+                            rdfs:label "Failure to Disperse"@en .
+
+
+###  http://lmss.sali.org/Ra8NCYdJb9YwmAxaOmLDbI
+lmss:Ra8NCYdJb9YwmAxaOmLDbI rdf:type owl:Class ;
+                            rdfs:subClassOf lmss:RLvhxz3b1k2IU3MaAgeRtF ,
+                                            cco:CriminalAct ;
+                            rdfs:label "Drug Crimes"@en .
+
+
+###  http://lmss.sali.org/RdSAc25dvhITVjwN0V8orK
+lmss:RdSAc25dvhITVjwN0V8orK rdf:type owl:Class ;
+                            rdfs:subClassOf lmss:R81ea6Rg9Cd8vEEma9Eqp9t ;
+                            rdfs:label "International Terrorism"@en .
+
+
+###  http://lmss.sali.org/RedqB4xsmjzseIURMCJI6l
+lmss:RedqB4xsmjzseIURMCJI6l rdf:type owl:Class ;
+                            rdfs:subClassOf lmss:R8ldDGTh6RHzt0IDL7p597U ;
+                            rdfs:label "Arson"@en .
+
+
+###  http://lmss.sali.org/RfcfQz0nz5VI5iHiR9077D
+lmss:RfcfQz0nz5VI5iHiR9077D rdf:type owl:Class ;
+                            rdfs:subClassOf lmss:R7V9R3w28BDjOd4lLUUrvQ5 ;
+                            rdfs:label "Sedition"@en .
+
+
+###  http://lmss.sali.org/RlVwfGbgKDt6ZToBprQ4sU
+lmss:RlVwfGbgKDt6ZToBprQ4sU rdf:type owl:Class ;
+                            rdfs:subClassOf lmss:R7V9R3w28BDjOd4lLUUrvQ5 ;
+                            rdfs:label "Escape from Correctional Facility"@en .
+
+
+###  http://lmss.sali.org/RuNRzptxqnjdnI9WDZmYYC
+lmss:RuNRzptxqnjdnI9WDZmYYC rdf:type owl:Class ;
+                            rdfs:subClassOf lmss:R7V9R3w28BDjOd4lLUUrvQ5 ;
+                            rdfs:label "Subornation of Perjury"@en .
+
+
+###  http://lmss.sali.org/Rw514WrvQbSAQN7bZyT3fK
+lmss:Rw514WrvQbSAQN7bZyT3fK rdf:type owl:Class ;
+                            rdfs:subClassOf lmss:R7V9R3w28BDjOd4lLUUrvQ5 ;
+                            rdfs:label "Espionage"@en .
+
+
+###  http://lmss.sali.org/RxQ9amGYNaNNyjzrOzxcFH
+lmss:RxQ9amGYNaNNyjzrOzxcFH rdf:type owl:Class ;
+                            rdfs:subClassOf lmss:RCqBiJAwLT5iG2nvk12tNKW ;
+                            rdfs:label "Indecent Exposure"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000001
+obo:BFO_0000001 rdf:type owl:Class ;
+                rdfs:label "entity"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000002
+obo:BFO_0000002 rdf:type owl:Class ;
+                rdfs:subClassOf obo:BFO_0000001 ;
+                owl:disjointWith obo:BFO_0000003 ;
+                rdfs:label "continuant"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000003
+obo:BFO_0000003 rdf:type owl:Class ;
+                rdfs:subClassOf obo:BFO_0000001 ;
+                rdfs:label "occurrent"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000004
+obo:BFO_0000004 rdf:type owl:Class ;
+                rdfs:subClassOf obo:BFO_0000002 ;
+                rdfs:label "independent continuant"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000015
+obo:BFO_0000015 rdf:type owl:Class ;
+                rdfs:subClassOf obo:BFO_0000003 ;
+                rdfs:label "process"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000020
+obo:BFO_0000020 rdf:type owl:Class ;
+                rdfs:subClassOf obo:BFO_0000002 ;
+                rdfs:label "specifically dependent continuant"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000031
+obo:BFO_0000031 rdf:type owl:Class ;
+                rdfs:subClassOf obo:BFO_0000002 ;
+                rdfs:label "generically dependent continuant"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000040
+obo:BFO_0000040 rdf:type owl:Class ;
+                rdfs:subClassOf obo:BFO_0000004 ;
+                rdfs:label "material entity"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/Act
+cco:Act rdf:type owl:Class ;
+        rdfs:subClassOf obo:BFO_0000015 ;
+        rdfs:label "Act"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/Artifact
+cco:Artifact rdf:type owl:Class ;
+             rdfs:subClassOf obo:BFO_0000040 ;
+             rdfs:label "Material Artifact"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/CriminalAct
+cco:CriminalAct rdf:type owl:Class ;
+                rdfs:subClassOf cco:IntentionalAct ;
+                owl:disjointWith cco:LegalSystemAct ;
+                rdfs:label "Criminal Act"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/Facility
+cco:Facility rdf:type owl:Class ;
+             rdfs:subClassOf cco:Artifact ;
+             owl:disjointWith cco:InformationBearingArtifact ;
+             rdfs:label "Facility"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingArtifact
+cco:InformationBearingArtifact rdf:type owl:Class ;
+                               rdfs:subClassOf cco:Artifact ;
+                               rdfs:label "Information Bearing Artifact"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity
+cco:InformationContentEntity rdf:type owl:Class ;
+                             rdfs:subClassOf obo:BFO_0000031 ;
+                             rdfs:label "Information Content Entity"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/IntentionalAct
+cco:IntentionalAct rdf:type owl:Class ;
+                   rdfs:subClassOf cco:Act ;
+                   rdfs:label "Planned Act"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/LegalInstrument
+cco:LegalInstrument rdf:type owl:Class ;
+                    rdfs:subClassOf cco:Artifact ;
+                    rdfs:label "Legal Instrument"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/LegalSystemAct
+cco:LegalSystemAct rdf:type owl:Class ;
+                   rdfs:subClassOf cco:IntentionalAct ;
+                   rdfs:label "Legal System Act"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/PoliceStation
+cco:PoliceStation rdf:type owl:Class ;
+                  rdfs:subClassOf cco:PublicSafetyFacility ;
+                  rdfs:label "Police Station"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/PublicSafetyFacility
+cco:PublicSafetyFacility rdf:type owl:Class ;
+                         rdfs:subClassOf cco:Facility ;
+                         rdfs:label "Public Safety Facility"@en .
+
+
+###  http://www.semanticweb.org/alecsculley/ontologies/2023/4/CrimO#OWLClass_02ce04bc_75d0_45fa_882a_2f2b64d0ab15
+:OWLClass_02ce04bc_75d0_45fa_882a_2f2b64d0ab15 rdf:type owl:Class ;
+                                               rdfs:subClassOf :OWLClass_84c25caa_6db8_42bb_a631_be4887062f5f ;
+                                               rdfs:label "Legal Document"@en .
+
+
+###  http://www.semanticweb.org/alecsculley/ontologies/2023/4/CrimO#OWLClass_42fec90e_b472_47a7_9d92_938b108f28b8
+:OWLClass_42fec90e_b472_47a7_9d92_938b108f28b8 rdf:type owl:Class ;
+                                               rdfs:subClassOf obo:BFO_0000020 ;
+                                               rdfs:label "realizable entity"@en .
+
+
+###  http://www.semanticweb.org/alecsculley/ontologies/2023/4/CrimO#OWLClass_607a64ff_b169_4bc3_9f0f_ce8aad68c679
+:OWLClass_607a64ff_b169_4bc3_9f0f_ce8aad68c679 rdf:type owl:Class ;
+                                               rdfs:subClassOf :OWLClass_9c53d429_29a9_4cd2_b2ae_d6f757e452ec ;
+                                               rdfs:label "function"@en .
+
+
+###  http://www.semanticweb.org/alecsculley/ontologies/2023/4/CrimO#OWLClass_84c25caa_6db8_42bb_a631_be4887062f5f
+:OWLClass_84c25caa_6db8_42bb_a631_be4887062f5f rdf:type owl:Class ;
+                                               rdfs:subClassOf cco:InformationBearingArtifact ;
+                                               rdfs:label "Document"@en .
+
+
+###  http://www.semanticweb.org/alecsculley/ontologies/2023/4/CrimO#OWLClass_9c53d429_29a9_4cd2_b2ae_d6f757e452ec
+:OWLClass_9c53d429_29a9_4cd2_b2ae_d6f757e452ec rdf:type owl:Class ;
+                                               rdfs:subClassOf :OWLClass_42fec90e_b472_47a7_9d92_938b108f28b8 ;
+                                               rdfs:label "disposition"@en .
+
+
+###  http://www.semanticweb.org/alecsculley/ontologies/2023/4/untitled-ontology-242#OWLClass_7fe0f470_32e9_4bb0_904f_12a77febfc35
+:OWLClass_7fe0f470_32e9_4bb0_904f_12a77febfc35 rdf:type owl:Class ;
+                                               rdfs:subClassOf lmss:RCqBiJAwLT5iG2nvk12tNKW ,
+                                                               lmss:RLvhxz3b1k2IU3MaAgeRtF ;
+                                               rdfs:label "Disorderly Conduct"@en .
+
+
+###  http://www.semanticweb.org/alecsculley/ontologies/2023/4/untitled-ontology-242#OWLClass_dff43be2_759c_4631_b85a_3daad31a6692
+:OWLClass_dff43be2_759c_4631_b85a_3daad31a6692 rdf:type owl:Class ;
+                                               rdfs:subClassOf :OWLClass_e4aae7b9_1f30_42d3_b5b8_55f6756be280 ;
+                                               owl:disjointWith :OWLClass_f4e7e05c_5018_435b_bf04_c1d0a93ae821 ;
+                                               rdfs:label "Criminal Claims"@en .
+
+
+###  http://www.semanticweb.org/alecsculley/ontologies/2023/4/untitled-ontology-242#OWLClass_e4aae7b9_1f30_42d3_b5b8_55f6756be280
+:OWLClass_e4aae7b9_1f30_42d3_b5b8_55f6756be280 rdf:type owl:Class ;
+                                               rdfs:subClassOf cco:LegalSystemAct ;
+                                               rdfs:label "Criminal Justice System Act"@en .
+
+
+###  http://www.semanticweb.org/alecsculley/ontologies/2023/4/untitled-ontology-242#OWLClass_f4e7e05c_5018_435b_bf04_c1d0a93ae821
+:OWLClass_f4e7e05c_5018_435b_bf04_c1d0a93ae821 rdf:type owl:Class ;
+                                               rdfs:subClassOf :OWLClass_e4aae7b9_1f30_42d3_b5b8_55f6756be280 ;
+                                               rdfs:label "Criminal Proceedings"@en .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( lmss:R1PY9E13YhPhV7QvMke50C
+                lmss:R71pRv6BCoGqZQLMrFskDOX
+                lmss:R7Xjkk7EkIgiSA3LmsPofVx
+                lmss:R7e6JFsdgxEOnQLXBpY1lD3
+                lmss:R7nYjWxGQdHVUZcYq7nUpSZ
+                lmss:R8P8o9JZGG11Tcu8bJ1BTzi
+                lmss:R8ZZ3NsCK0vyOmGji7SpKkW
+                lmss:R94gDxMezQBU6wop953l6By
+                lmss:R98NBwfojmCq1Cx8A2uiP4C
+                lmss:R98k0yAEKsTntybplyKMtUn
+                lmss:R9AhUjR6gNCb1ExMXhUpR1F
+                lmss:R9KcDahapJG8vbCxXh6JDwm
+                lmss:R9YJidoNtjYJ9ullx9SRy6k
+                lmss:R9fzqoKTpwXpqadubImm69L
+                lmss:R9jLBBEicl6JwMj2Jf8GHWN
+                lmss:R9mSfKgf9j4vIGxmQrnBd1I
+                lmss:RBDjAM773PfjvwDFIBwA6hZ
+                lmss:RBNz30rxM6l0GnL6R9XDyU2
+                lmss:RBQZfWGxOZnZAvQ3ghLRvae
+                lmss:RBSewRxgjTh2VhFX6itIoFA
+                lmss:RBXVU4vw8lOn8Q1MVwyiBuM
+                lmss:RBc8llmdnVBvfzkSbQxpOLJ
+                lmss:RC4QMCtqIKU9i366bPpd3rG
+                lmss:RCJErtCAFcUeLV84PJ5PjgS
+                lmss:RCMeywGHqtDlkLxwnDrD0CF
+                lmss:RCPRLx0shv6uO5vmBtHKGYO
+                lmss:RCPiv0qrO78genaWsaWaRYf
+                lmss:RCZKHTsfA7SC5yhl8xy8fXh
+                lmss:RDDo89IYNYywizH9jSXp6zY
+                lmss:RDJwYAhLKCUFLjsFuACCRPB
+                lmss:RDMNx0AK0j8Rc7MLtq2cQqK
+                lmss:RDSX126wEHguoKDOWIJ7rBE
+                lmss:RDV9p8R7hPvWmMR1XyiJsm9
+                lmss:RDX6d1gZG7nkRrDFAC6gDM2
+                lmss:RDwDmcN0z56JIukw0vYcGte
+                lmss:REoC9pAO1UEoK68TDxn96Y
+                lmss:RFrien46eAPSSbu8WgoU6S
+                lmss:RRa8pbp0z1jaRfCG5da6lC
+                lmss:RxQ9amGYNaNNyjzrOzxcFH
+                :OWLClass_7fe0f470_32e9_4bb0_904f_12a77febfc35
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( lmss:R1PY9E13YhPhV7QvMke50C
+                lmss:R7nYjWxGQdHVUZcYq7nUpSZ
+                lmss:R8ZZ3NsCK0vyOmGji7SpKkW
+                lmss:R94gDxMezQBU6wop953l6By
+                lmss:R9KcDahapJG8vbCxXh6JDwm
+                lmss:R9fzqoKTpwXpqadubImm69L
+                lmss:RBDjAM773PfjvwDFIBwA6hZ
+                lmss:RBSewRxgjTh2VhFX6itIoFA
+                lmss:RBc8llmdnVBvfzkSbQxpOLJ
+                lmss:RCMeywGHqtDlkLxwnDrD0CF
+                lmss:RCPRLx0shv6uO5vmBtHKGYO
+                lmss:RCZKHTsfA7SC5yhl8xy8fXh
+                lmss:RDwDmcN0z56JIukw0vYcGte
+                lmss:RRa8pbp0z1jaRfCG5da6lC
+                :OWLClass_7fe0f470_32e9_4bb0_904f_12a77febfc35
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( lmss:R24YN1aRTJ9uZ8QVvLjK21
+                lmss:R7kmGY1Jxz3BC2ub5y1F9e
+                lmss:R8BLgPtZOuKFI8MtZNTaT0u
+                lmss:R9KcDahapJG8vbCxXh6JDwm
+                lmss:RBL4zPemNCEq2piqyBMgxJx
+                lmss:RBd9N0Cnx1TPqy63TmkCk7w
+                lmss:RCNAtjkDm3rutL4bPBsEz1I
+                lmss:RCrTf9ZkUrd8tgXOWt0smLc
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( lmss:R4tTlnh0xdCEoQbj8CkWoB
+                lmss:R99AHv1FlKRYKZE5bhs8jf9
+                lmss:R9KC6PngzJi80MRTJgJyVad
+                lmss:R9T8KGJd3wcbSBjdX3K2mGy
+                lmss:R9dnzX0qUAhZLPdLq97fapE
+                lmss:RCM3v341KIhe0jNcQu9sxym
+                lmss:RDgbjRGvnprxnFm9CAqCjYs
+                lmss:RJlp1OGx7ZwGezwMkUlBnP
+                lmss:RYtzibGIkGDjMH5zFGlU8H
+                lmss:Ra8NCYdJb9YwmAxaOmLDbI
+                :OWLClass_7fe0f470_32e9_4bb0_904f_12a77febfc35
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( lmss:R4tTlnh0xdCEoQbj8CkWoB
+                lmss:R9dnzX0qUAhZLPdLq97fapE
+                lmss:RDgbjRGvnprxnFm9CAqCjYs
+                lmss:RJlp1OGx7ZwGezwMkUlBnP
+                lmss:RYtzibGIkGDjMH5zFGlU8H
+                lmss:Ra8NCYdJb9YwmAxaOmLDbI
+                :OWLClass_7fe0f470_32e9_4bb0_904f_12a77febfc35
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( lmss:R521qAP3nT6dy1GiNVvs1v
+                lmss:R9BXCMDokckNeStJ1otnRDJ
+                lmss:RB45dXxacmQbbLYaT8gCptW
+                lmss:RYQtICTQZAQzMuF7hmmszk
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( lmss:R7Ttdyo4FsvaupPKT35Qry0
+                lmss:R9gcJW5zpEIb8x5yJrfxBMg
+                lmss:RBR4SUW4ZCvh8n2X00nUpYY
+                lmss:RBVpHQ7fb2I2B69LOWszQjd
+                lmss:RBt6PLnwAaeJLOUww0swcdQ
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( lmss:R7YToQxzuXojCNWk2g0gIk8
+                lmss:R7wJH5ybR7TZzVpLpsdEgof
+                lmss:R9PvfnPfjiIwXwWoldE1svT
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( lmss:R81ea6Rg9Cd8vEEma9Eqp9t
+                lmss:R8xhTgEOLxauZ6mN68JsaoD
+                lmss:R9Zpw6W6vllQC97Xj87kMAX
+                lmss:RBUS0L6evAK1r6HGe8b92cw
+                lmss:RCA6fbUUZ39zOrCLn4i9WXJ
+                lmss:RCDSmXwVa56dRfhw74VL2nr
+                lmss:RCNCBNpw84e0SAwaLCvbKNf
+                lmss:RCQXpw41uM3yqHOjIcq53oT
+                lmss:RCfdkasigpXYpOViJrDY7lZ
+                lmss:RDaX0mn1Z8fDrW3ZkzpmH1N
+                lmss:RDjMjjBlt5UcxM5InqAQx7P
+                lmss:RTidRiJfp65AGi8fDsfUYa
+                lmss:RfcfQz0nz5VI5iHiR9077D
+                lmss:RlVwfGbgKDt6ZToBprQ4sU
+                lmss:RuNRzptxqnjdnI9WDZmYYC
+                lmss:Rw514WrvQbSAQN7bZyT3fK
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( lmss:R8GWqW81e0FjChbniaaemlb
+                lmss:R8TvbewYypS9Uy4y5JGIwEH
+                lmss:RBE78Mm4K5ZmjzUOnFO2eg4
+                lmss:RNtr2KMwM33LplYnmmxxVY
+                lmss:RWLKWLYuVzXk91nvlM2VD4
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( lmss:R8GyzIcRehN0R4uVAjMJgp7
+                lmss:R8U7OnAYHvuh8BdypxQfRgX
+                lmss:RBQZfWGxOZnZAvQ3ghLRvae
+                lmss:RYehmm3LZTmCeOeVsilwXH
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( lmss:R8P8o9JZGG11Tcu8bJ1BTzi
+                lmss:RBhkRzl30PudT2hM5OESMlu
+                lmss:RCPRLx0shv6uO5vmBtHKGYO
+                lmss:RCzEqK9mhxGTmmz2g2T7cTM
+                lmss:REoC9pAO1UEoK68TDxn96Y
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( lmss:R8UT0E6e2nZwTF2iqF4ftc
+                lmss:RC2sDzkhJsoDium48Imqwn8
+                lmss:RD1NJOilfS2J7giDdQdLPek
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( lmss:R8VNf1SBFc3ThnKIJ5qsLYR
+                lmss:R8fcGNgScyMlOAFxW5Omw5Y
+                lmss:R9AAcAvFK3IQBy7L6qWyuDb
+                lmss:R9XKn4ikKfuZ410TDVvNmyq
+                lmss:R9uiDByr48mJfLgUdiIZrSi
+                lmss:RBizcuAme8glPLFlQSQLCq5
+                lmss:RBqBxJEzhWW5x12JraZHgQd
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( lmss:R8xIIJGedrUnNDQeOch1W6v
+                lmss:R9KRos9FExHDk32mNl2DxFe
+                lmss:RBI1GgQFGHi8jZxymdj6eTL
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( lmss:R94gDxMezQBU6wop953l6By
+                lmss:RBNz30rxM6l0GnL6R9XDyU2
+                lmss:RBc8llmdnVBvfzkSbQxpOLJ
+                lmss:RBpSXv8uOXDikW5jk944sRN
+                lmss:RC4QMCtqIKU9i366bPpd3rG
+                lmss:RFrien46eAPSSbu8WgoU6S
+                lmss:RedqB4xsmjzseIURMCJI6l
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( lmss:R9YJidoNtjYJ9ullx9SRy6k
+                lmss:R9jLBBEicl6JwMj2Jf8GHWN
+                lmss:RBgAFGiEeC2W7cHvjmy7knW
+                lmss:RCZKHTsfA7SC5yhl8xy8fXh
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( lmss:RC5FOOj5LHE2ITa2pdb9s5i
+                lmss:REGXoYYhM0kwLwMTfS9SDl
+                lmss:RIl8s2tEaoYUUYasF92UWc
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( lmss:RCY8A7phqZ78VpWZvsYqMTq
+                lmss:RDwISw0syjjwmS6UpyiShve
+                lmss:RV45b8NoF16FFpjXgZYmpz
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( obo:BFO_0000004
+                obo:BFO_0000020
+                obo:BFO_0000031
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( cco:Facility
+                cco:InformationBearingArtifact
+                cco:LegalInstrument
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
