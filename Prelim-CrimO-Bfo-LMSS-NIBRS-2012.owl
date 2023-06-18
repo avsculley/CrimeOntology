@@ -1,0 +1,2168 @@
+@prefix : <http://www.semanticweb.org/alecsculley/ontologies/2023/5/untitled-ontology-270#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix lmss: <http://lmss.sali.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@base <http://www.semanticweb.org/alecsculley/ontologies/2023/5/untitled-ontology-270> .
+
+<http://www.semanticweb.org/alecsculley/ontologies/2023/5/untitled-ontology-270> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/IAO:0000412
+<http://purl.obolibrary.org/obo/IAO:0000412> rdf:type owl:AnnotationProperty ;
+                                             rdfs:label "imported from" .
+
+
+###  http://purl.org/dc/elements/1.1/contributor
+dc:contributor rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+dc:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#altLabel
+skos:altLabel rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+skos:definition rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.w3.org/2000/01/rdf-schema#seeAlso
+rdfs:seeAlso rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://lmss.sali.org/R1PY9E13YhPhV7QvMke50C
+lmss:R1PY9E13YhPhV7QvMke50C rdf:type owl:Class ;
+                            rdfs:subClassOf lmss:RCqBiJAwLT5iG2nvk12tNKW ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty rdfs:seeAlso ;
+                                              owl:someValuesFrom lmss:RLvhxz3b1k2IU3MaAgeRtF
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty rdfs:seeAlso ;
+                                              owl:someValuesFrom lmss:Rj1p7FbFSLxlWfUlSPZxhX
+                                            ] ;
+                            rdfs:label "Exhibition of Speed" ;
+                            skos:altLabel "Exhibición de velocidad"@es-es ,
+                                          "Exhibición de velocidad"@es-mx ,
+                                          "Exhibition of Speed"@en-uk ,
+                                          "Racing on the Freeway" ,
+                                          "Racing on the Highway" ,
+                                          "תערוכת מהירות"@he-il ,
+                                          "गति का प्रदर्शन"@hi-in ;
+                            skos:definition "The Exhibition of Speed is a criminal misdemeanor offense that involves racing on the freeway or highway." .
+
+
+###  http://lmss.sali.org/R24YN1aRTJ9uZ8QVvLjK21
+lmss:R24YN1aRTJ9uZ8QVvLjK21 rdf:type owl:Class ;
+                            rdfs:subClassOf lmss:R7MbuFEaL6NyU9tM2AXk7lk ;
+                            rdfs:label "Unlawful Visitation" ;
+                            skos:altLabel "Unlawful Visitation"@en-uk ,
+                                          "Visita ilegal"@es-es ,
+                                          "Visita ilegal"@es-mx ,
+                                          "ביקור בלתי חוקי"@he-il ,
+                                          "अवैध दौरा"@hi-in ;
+                            skos:definition "The act of visiting someone without legal permission or authority, which is considered a crime against an individual." .
+
+
+###  http://lmss.sali.org/R4tTlnh0xdCEoQbj8CkWoB
+lmss:R4tTlnh0xdCEoQbj8CkWoB rdf:type owl:Class ;
+                            rdfs:subClassOf lmss:RLvhxz3b1k2IU3MaAgeRtF ;
+                            rdfs:isDefinedBy <https://ucr.fbi.gov/nibrs/2012/resources/nibrs-offense-definitions> ;
+                            rdfs:label "Prostitution Crimes" ;
+                            skos:altLabel "Delitos de prostitución"@es-es ,
+                                          "Delitos de prostitución"@es-mx ,
+                                          "Prostitution Crimes"@en-uk ,
+                                          "פשעי זנות"@he-il ,
+                                          "वेश्यावृत्ति अपराध"@hi-in ;
+                            skos:definition "To unlawfully engage in or promote sexual activities for anything of value." .
+
+
+###  http://lmss.sali.org/R5jFFdAx82IJWPe4JDkFqg
+lmss:R5jFFdAx82IJWPe4JDkFqg rdf:type owl:Class .
+
+
+###  http://lmss.sali.org/R5ks6eYBkfLh4Fgv1Zusal
+lmss:R5ks6eYBkfLh4Fgv1Zusal rdf:type owl:Class .
+
+
+###  http://lmss.sali.org/R6Di7zzOceYNz3OQVz8zy
+lmss:R6Di7zzOceYNz3OQVz8zy rdf:type owl:Class .
+
+
+###  http://lmss.sali.org/R71pRv6BCoGqZQLMrFskDOX
+lmss:R71pRv6BCoGqZQLMrFskDOX rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RCqBiJAwLT5iG2nvk12tNKW ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty rdfs:seeAlso ;
+                                               owl:someValuesFrom lmss:R7MbuFEaL6NyU9tM2AXk7lk
+                                             ] ;
+                             rdfs:label "Misdemeanor Assault" ;
+                             skos:altLabel "Agresión Menor"@es-es ,
+                                           "Asalto Menor"@es-mx ,
+                                           "Misdemeanour Assault"@en-uk ,
+                                           "התקפה קלה"@he-il ,
+                                           "अपराधी आक्रमण"@hi-in ;
+                             skos:definition "Misdemeanor Assault refers to a criminal offense that involves the intentional infliction of physical harm or injury on another person, which is considered less serious than a felony assault." .
+
+
+###  http://lmss.sali.org/R7MbuFEaL6NyU9tM2AXk7lk
+lmss:R7MbuFEaL6NyU9tM2AXk7lk rdf:type owl:Class ;
+                             rdfs:subClassOf :OWLClass_20981083_af39_42fc_b018_5b2d9e6ccb9a ;
+                             rdfs:label "Crimes Against People" ;
+                             skos:altLabel "Crimes Against Individuals" ,
+                                           "Crimes Against People"@en-uk ,
+                                           "Delitos contra las personas"@es-es ,
+                                           "Delitos contra las personas"@es-mx ,
+                                           "פשעים נגד אנשים"@he-il ,
+                                           "लोगों के खिलाफ अपराध"@hi-in ;
+                             skos:definition "Crimes Against People (Individuals) refers to a category of criminal offenses that involve harm or injury to an individual, including but not limited to assault, battery, sexual offenses, kidnapping, and false imprisonment." .
+
+
+###  http://lmss.sali.org/R7Ttdyo4FsvaupPKT35Qry0
+lmss:R7Ttdyo4FsvaupPKT35Qry0 rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RBzrK4RsgfLScZvC4Z4lCCX ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty rdfs:seeAlso ;
+                                               owl:someValuesFrom lmss:RBt6PLnwAaeJLOUww0swcdQ
+                                             ] ;
+                             rdfs:label "Murder" ;
+                             skos:altLabel "Asesinato"@es-es ,
+                                           "Homicide" ,
+                                           "Homicidio"@es-mx ,
+                                           "Meurtre"@fr ,
+                                           "Murder"@en-uk ,
+                                           "רצח"@he-il ,
+                                           "हत्या"@hi-in ;
+                             skos:definition "The intentional killing of another person, with malice aforethought, which is a criminal offense and can be classified as second-degree murder, first-degree murder, or felony murder." .
+
+
+###  http://lmss.sali.org/R7V9R3w28BDjOd4lLUUrvQ5
+lmss:R7V9R3w28BDjOd4lLUUrvQ5 rdf:type owl:Class ;
+                             rdfs:subClassOf :OWLClass_20981083_af39_42fc_b018_5b2d9e6ccb9a ;
+                             rdfs:label "Crimes Against the Government" ;
+                             skos:altLabel "Crimes Against the Government"@en-uk ,
+                                           "Delitos contra el Gobierno"@es-es ,
+                                           "Delitos contra el Gobierno"@es-mx ,
+                                           "פשעים נגד הממשלה"@he-il ,
+                                           "सरकार के खिलाफ अपराध"@hi-in ;
+                             skos:definition "Crimes Against the Government refer to illegal acts committed against the state or its institutions, including but not limited to terrorism, perjury, counterfeiting, sabotage, tax evasion, insurrection, obstruction of justice, campaign finance violation, bribery, illegal re-entry, rescue of prisoner, treason, sedition, escape from correctional facility, subornation of perjury, and espionage." .
+
+
+###  http://lmss.sali.org/R7Xjkk7EkIgiSA3LmsPofVx
+lmss:R7Xjkk7EkIgiSA3LmsPofVx rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RCqBiJAwLT5iG2nvk12tNKW ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty rdfs:seeAlso ;
+                                               owl:someValuesFrom lmss:R8C21XIcxp9SGBNeg8jgUaU
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty rdfs:seeAlso ;
+                                               owl:someValuesFrom lmss:RCC22bPzCCS3PR1Q5hBr7PO
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty rdfs:seeAlso ;
+                                               owl:someValuesFrom lmss:RLvhxz3b1k2IU3MaAgeRtF
+                                             ] ;
+                             rdfs:isDefinedBy <https://ucr.fbi.gov/nibrs/2012/resources/nibrs-offense-definitions> ;
+                             rdfs:label "Illegal Gambling" ;
+                             skos:altLabel "Illegal Gambling"@en-uk ,
+                                           "Juego ilegal"@es-es ,
+                                           "Juego ilegal"@es-mx ,
+                                           "הימורים בלתי חוקיים"@he-il ,
+                                           "अवैध जुआ"@hi-in ;
+                             skos:definition "To unlawfully bet or wager money or something else of value; assist, promote, or operate a game of chance for money or some other stake; possess or transmit wagering information; manufacture, sell, purchase, possess, or transport gambling equipment, devices or goods; or tamper with the outcome of a sporting event or contest to gain a gambling advantage." .
+
+
+###  http://lmss.sali.org/R7Y2YIqmaVxoK50QYYZVoDS
+lmss:R7Y2YIqmaVxoK50QYYZVoDS rdf:type owl:Class .
+
+
+###  http://lmss.sali.org/R7YToQxzuXojCNWk2g0gIk8
+lmss:R7YToQxzuXojCNWk2g0gIk8 rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R7Ttdyo4FsvaupPKT35Qry0 ;
+                             rdfs:label "Second-Degree Murder" ;
+                             skos:altLabel "Asesinato en segundo grado"@es-es ,
+                                           "Depraved Heart Murder" ,
+                                           "Homicidio en segundo grado"@es-mx ,
+                                           "Second-Degree Murder"@en-uk ,
+                                           "רצח ממעולה שנייה"@he-il ,
+                                           "द्वितीय डिग्री हत्या"@hi-in ;
+                             skos:definition "The concept of Second-Degree Murder, also known as Depraved Heart Murder, refers to the intentional killing of another person with malice aforethought, but without premeditation or deliberation, and with a reckless disregard for human life." .
+
+
+###  http://lmss.sali.org/R7e6JFsdgxEOnQLXBpY1lD3
+lmss:R7e6JFsdgxEOnQLXBpY1lD3 rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RCqBiJAwLT5iG2nvk12tNKW ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty rdfs:seeAlso ;
+                                               owl:someValuesFrom lmss:RLvhxz3b1k2IU3MaAgeRtF
+                                             ] ;
+                             rdfs:isDefinedBy <https://ucr.fbi.gov/nibrs/2012/resources/nibrs-offense-definitions> ;
+                             rdfs:label "Public Intoxication" ;
+                             skos:altLabel "Drunkenness" ,
+                                           "Ebriedad en la vía pública"@es-mx ,
+                                           "Intoxicación pública"@es-es ,
+                                           "Public Intoxication"@en-uk ,
+                                           "שכרות ציבורית"@he-il ,
+                                           "सार्वजनिक मतवाद"@hi-in ;
+                             skos:definition "To drink alcoholic beverages to the extent that one’s mental faculties and physical coordination are substantially impaired." .
+
+
+###  http://lmss.sali.org/R7etM048pOaM3neM2QLQVU1
+lmss:R7etM048pOaM3neM2QLQVU1 rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R9gcJW5zpEIb8x5yJrfxBMg ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty rdfs:seeAlso ;
+                                               owl:someValuesFrom lmss:RDK3ploePpyFDgIkSzbOCtX
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty rdfs:seeAlso ;
+                                               owl:someValuesFrom lmss:Rxpa6slGHQ2Fw06qkFTzjW
+                                             ] ;
+                             rdfs:label "Assisted Suicide" ;
+                             skos:altLabel "Assisted Suicide"@en-uk ,
+                                           "Euthenasia" ,
+                                           "Suicidio asistido"@es-es ,
+                                           "Suicidio asistido"@es-mx ,
+                                           "התאבדות מוסכמת"@he-il ,
+                                           "सहायता से आत्महत्या"@hi-in ;
+                             skos:definition "Assisted Suicide: The act of intentionally helping another person end their life, typically in cases where the person is suffering from a terminal illness or severe pain, and where the person has expressed a desire to die." .
+
+
+###  http://lmss.sali.org/R7hDCTMLoPZrFgIFAMlNHvf
+lmss:R7hDCTMLoPZrFgIFAMlNHvf rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:Rj1p7FbFSLxlWfUlSPZxhX ;
+                             rdfs:label "Non-criminal Traffic Violation" ;
+                             skos:altLabel "Infracción de tráfico no penal"@es-es ,
+                                           "Infracción de tráfico no penal"@es-mx ,
+                                           "Non-criminal Traffic Violation"@en-uk ,
+                                           "הפרת תעבורה לא פלילית"@he-il ,
+                                           "गैर-आपराधिक ट्रैफिक उल्लंघन"@hi-in ;
+                             skos:definition "A non-criminal traffic violation is a type of traffic violation claim that does not involve criminal charges or penalties." .
+
+
+###  http://lmss.sali.org/R7kmGY1Jxz3BC2ub5y1F9e
+lmss:R7kmGY1Jxz3BC2ub5y1F9e rdf:type owl:Class ;
+                            rdfs:subClassOf lmss:R7MbuFEaL6NyU9tM2AXk7lk ;
+                            rdfs:label "Criminal Battery"@en .
+
+
+###  http://lmss.sali.org/R7ma9Q5FiHDcIYgKoxKNUk9
+lmss:R7ma9Q5FiHDcIYgKoxKNUk9 rdf:type owl:Class ;
+                             rdfs:subClassOf :OWLClass_20981083_af39_42fc_b018_5b2d9e6ccb9a ;
+                             rdfs:label "Inchoate Criminal Offenses" ;
+                             skos:definition "Inchoate Criminal Offenses are incomplete or anticipatory criminal acts that have not yet been fully carried out, but are still punishable by law." .
+
+
+###  http://lmss.sali.org/R7nYjWxGQdHVUZcYq7nUpSZ
+lmss:R7nYjWxGQdHVUZcYq7nUpSZ rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RCqBiJAwLT5iG2nvk12tNKW ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty rdfs:seeAlso ;
+                                               owl:someValuesFrom lmss:RLvhxz3b1k2IU3MaAgeRtF
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty rdfs:seeAlso ;
+                                               owl:someValuesFrom lmss:Rj1p7FbFSLxlWfUlSPZxhX
+                                             ] ;
+                             rdfs:label "Hit and Run" ;
+                             skos:altLabel "Darse a la fuga"@es-mx ,
+                                           "Failure to Stop and Give Information" ,
+                                           "Fuga de la escena del accidente"@es-es ,
+                                           "Hit and Run"@en-uk ,
+                                           "פריצה ובריחה"@he-il ,
+                                           "हिट एंड रन"@hi-in ;
+                             skos:definition "The concept of Hit and Run refers to a criminal offense where a person involved in an accident fails to stop and provide information, such as their name and contact details, to the other party involved." .
+
+
+###  http://lmss.sali.org/R7u1GstOpfAmZ3mI7yFcbgU
+lmss:R7u1GstOpfAmZ3mI7yFcbgU rdf:type owl:Class .
+
+
+###  http://lmss.sali.org/R7wJH5ybR7TZzVpLpsdEgof
+lmss:R7wJH5ybR7TZzVpLpsdEgof rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R7Ttdyo4FsvaupPKT35Qry0 ;
+                             rdfs:label "First-Degree Murder" ;
+                             skos:altLabel "Asesinato en primer grado"@es-es ,
+                                           "First-Degree Murder"@en-uk ,
+                                           "Homicidio calificado"@es-mx ,
+                                           "רצח מתכנן"@he-il ,
+                                           "प्रथम डिग्री हत्या"@hi-in ;
+                             skos:definition "The intentional killing of another person with malice aforethought, which is planned and premeditated, and is considered the most serious form of murder." .
+
+
+###  http://lmss.sali.org/R81ea6Rg9Cd8vEEma9Eqp9t
+lmss:R81ea6Rg9Cd8vEEma9Eqp9t rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R7V9R3w28BDjOd4lLUUrvQ5 ;
+                             rdfs:label "Terrorism" ;
+                             skos:altLabel "Terrorism"@en-uk ,
+                                           "Terrorismo"@es-es ,
+                                           "Terrorismo"@es-mx ,
+                                           "טרוריזם"@he-il ,
+                                           "आतंकवाद"@hi-in ;
+                             skos:definition "The concept of Terrorism refers to the use of violence and intimidation in pursuit of political aims, often targeting civilians and carried out by individuals or groups against a government or society." .
+
+
+###  http://lmss.sali.org/R88qzlkGwBdq4BRktxQ0noK
+lmss:R88qzlkGwBdq4BRktxQ0noK rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R9gcJW5zpEIb8x5yJrfxBMg ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty rdfs:seeAlso ;
+                                               owl:someValuesFrom lmss:R6Di7zzOceYNz3OQVz8zy
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty rdfs:seeAlso ;
+                                               owl:someValuesFrom lmss:RCExQDQMRV5lwxQZb0jTcDH
+                                             ] ;
+                             rdfs:label "Prisoner Suicide" ;
+                             skos:altLabel "Prisoner Suicide"@en-uk ,
+                                           "Suicidio de preso"@es-es ,
+                                           "Suicidio de preso"@es-mx ,
+                                           "התאבדות של אסיר"@he-il ,
+                                           "कैदी आत्महत्या"@hi-in ;
+                             skos:definition "The concept of \"Prisoner Suicide\" refers to the act of intentionally taking one's own life by an individual who is incarcerated, and the legal claims related to the right to die in such circumstances." .
+
+
+###  http://lmss.sali.org/R8AhhP8gb3fCPRIOJmR3oyD
+lmss:R8AhhP8gb3fCPRIOJmR3oyD rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R7ma9Q5FiHDcIYgKoxKNUk9 ,
+                                             lmss:R8iqvgE2NjybgksTeqsGhr3 ;
+                             rdfs:label "Criminal Conspiracy" ;
+                             skos:altLabel "Conspiración Criminal"@es-es ,
+                                           "Conspiración Criminal"@es-mx ,
+                                           "Criminal Conspiracy"@en-uk ,
+                                           "קשר פלילי"@he-il ,
+                                           "अपराधी षडयंत्र"@hi-in ;
+                             skos:definition "A criminal agreement between two or more people to commit a crime, even if the crime is never carried out, falls under the concept of Criminal Conspiracy in the field of Inchoate Criminal Offenses and Concert of Action Crimes." .
+
+
+###  http://lmss.sali.org/R8BLgPtZOuKFI8MtZNTaT0u
+lmss:R8BLgPtZOuKFI8MtZNTaT0u rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R7MbuFEaL6NyU9tM2AXk7lk ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty rdfs:seeAlso ;
+                                               owl:someValuesFrom lmss:ROWic2EEHARyyBGyKraIEC
+                                             ] ;
+                             rdfs:isDefinedBy <https://ucr.fbi.gov/nibrs/2012/resources/nibrs-offense-definitions> ;
+                             rdfs:label "Criminal Assault" ;
+                             skos:altLabel "Simple Assault" ;
+                             skos:definition "An unlawful physical attack by one person upon another where neither the offender displays a weapon, nor the victim suffers obvious severe or aggravated bodily injury involving apparent broken bones, loss of teeth, possible internal injury, severe laceration, or loss of consciousness." .
+
+
+###  http://lmss.sali.org/R8C21XIcxp9SGBNeg8jgUaU
+lmss:R8C21XIcxp9SGBNeg8jgUaU rdf:type owl:Class .
+
+
+###  http://lmss.sali.org/R8GWqW81e0FjChbniaaemlb
+lmss:R8GWqW81e0FjChbniaaemlb rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R8BLgPtZOuKFI8MtZNTaT0u ;
+                             rdfs:label "Attempted Battery" ;
+                             skos:altLabel "Agresión con tentativa de lesiones"@es-es ,
+                                           "Agresión con tentativa de lesiones"@es-mx ,
+                                           "Attempted Battery"@en-uk ,
+                                           "סולם נסיון"@he-il ,
+                                           "प्रयासित बैटरी"@hi-in ;
+                             skos:definition "Attempted Battery is a criminal offense that involves the intent to cause bodily harm to another person, but falls short of actual physical contact." .
+
+
+###  http://lmss.sali.org/R8Ko5XSFEDGISXRWlQIT9C9
+lmss:R8Ko5XSFEDGISXRWlQIT9C9 rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RCqBiJAwLT5iG2nvk12tNKW ,
+                                             lmss:RLvhxz3b1k2IU3MaAgeRtF ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty rdfs:seeAlso ;
+                                               owl:someValuesFrom lmss:RLvhxz3b1k2IU3MaAgeRtF
+                                             ] ;
+                             rdfs:isDefinedBy <https://ucr.fbi.gov/nibrs/2012/resources/nibrs-offense-definitions> ;
+                             rdfs:label "Disorderly Conduct" ;
+                             skos:altLabel "Conducta desordenada"@es-mx ,
+                                           "Desorden público"@es-es ,
+                                           "Disorderly Conduct"@en-uk ,
+                                           "התנהגות לא מסודרת"@he-il ,
+                                           "अनुशासित आचरण"@hi-in ;
+                             skos:definition "Any behavior that tends to disturb the public or decorum, scandalize the community, or shock the public sense of morality." .
+
+
+###  http://lmss.sali.org/R8P8o9JZGG11Tcu8bJ1BTzi
+lmss:R8P8o9JZGG11Tcu8bJ1BTzi rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RCqBiJAwLT5iG2nvk12tNKW ,
+                                             lmss:Ra8NCYdJb9YwmAxaOmLDbI ;
+                             rdfs:isDefinedBy <https://ucr.fbi.gov/nibrs/2012/resources/nibrs-offense-definitions> ;
+                             rdfs:label "Possession of a Controlled Substance" ;
+                             skos:altLabel "Posesión de una sustancia controlada"@es-es ,
+                                           "Posesión de una sustancia controlada"@es-mx ,
+                                           "Possession of a Controlled Substance"@en-uk ,
+                                           "בעלות חומר ממוצע מבוקר"@he-il ,
+                                           "नियंत्रित पदार्थ के संबंध में हवाला"@hi-in ;
+                             skos:definition "The unlawful cultivation, manufacture, distribution, sale, purchase, use, possession, transportation, or importation of any controlled drug or narcotic substance." .
+
+
+###  http://lmss.sali.org/R8TvbewYypS9Uy4y5JGIwEH
+lmss:R8TvbewYypS9Uy4y5JGIwEH rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R7MbuFEaL6NyU9tM2AXk7lk ,
+                                             lmss:R8BLgPtZOuKFI8MtZNTaT0u ;
+                             rdfs:isDefinedBy <https://ucr.fbi.gov/nibrs/2012/resources/nibrs-offense-definitions> ;
+                             rdfs:label "Sex Offenses" ;
+                             skos:altLabel "Delitos sexuales"@es-es ,
+                                           "Delitos sexuales"@es-mx ,
+                                           "Sex Offences"@en-uk ,
+                                           "פשעי מין"@he-il ,
+                                           "लैंगिक अपराध"@hi-in ;
+                             skos:definition "Any sexual act directed against another person, without the consent of the victim including instances where the victim is incapable of giving consent." .
+
+
+###  http://lmss.sali.org/R8UT0E6e2nZwTF2iqF4ftc
+lmss:R8UT0E6e2nZwTF2iqF4ftc rdf:type owl:Class ;
+                            rdfs:subClassOf lmss:R9KC6PngzJi80MRTJgJyVad ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty rdfs:seeAlso ;
+                                              owl:someValuesFrom lmss:RLvhxz3b1k2IU3MaAgeRtF
+                                            ] ;
+                            rdfs:label "Carrying a Concealed Weapon" ;
+                            skos:altLabel "Carrying a Concealed Weapon"@en-uk ,
+                                          "Portar un arma oculta"@es-es ,
+                                          "Portar un arma oculta"@es-mx ,
+                                          "נשיאת נשק מוסתר"@he-il ,
+                                          "छिपी हुई हथियार लेना"@hi-in ;
+                            skos:definition "The concept of \"Carrying a Concealed Weapon\" refers to the act of possessing a weapon, such as a gun or firearm, in a hidden or disguised manner, which is considered a criminal offense under certain circumstances." .
+
+
+###  http://lmss.sali.org/R8V50oNSRyZdNrkoQqe9nq
+lmss:R8V50oNSRyZdNrkoQqe9nq rdf:type owl:Class ;
+                            rdfs:subClassOf lmss:R9AAcAvFK3IQBy7L6qWyuDb ;
+                            rdfs:label "Clergy Sex Abuse" ;
+                            skos:altLabel "Abuso sexual del clero"@es-es ,
+                                          "Abuso sexual del clero"@es-mx ,
+                                          "Clergy Sex Abuse"@en-uk ,
+                                          "התעללות מינית על ידי כומרים"@he-il ,
+                                          "पादरी सेक्स अपराध"@hi-in ;
+                            skos:definition "Sexual abuse committed by members of the clergy, including priests, ministers, and other religious officials." .
+
+
+###  http://lmss.sali.org/R8VNf1SBFc3ThnKIJ5qsLYR
+lmss:R8VNf1SBFc3ThnKIJ5qsLYR rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R8TvbewYypS9Uy4y5JGIwEH ;
+                             rdfs:isDefinedBy <https://ucr.fbi.gov/nibrs/2012/resources/nibrs-offense-definitions> ;
+                             rdfs:label "Sexual Assault with an Object" ;
+                             skos:altLabel "Agresión Sexual con Objeto"@es-mx ,
+                                           "Agresión Sexual con un Objeto"@es-es ,
+                                           "Sexual Assault with an Object"@en-uk ,
+                                           "תקיפה מינית עם חפץ"@he-il ,
+                                           "वस्तु से यौन उत्पीड़न"@hi-in ;
+                             skos:definition "To use an object or instrument to unlawfully penetrate, however slightly, the genital or anal opening of the body of another person, forcibly and/or against that person’s will or not forcibly or against the person’s will in instances where the victim is incapable of giving consent because of his/her youth or because of his/her temporary or permanent mental or physical incapacity." .
+
+
+###  http://lmss.sali.org/R8ZZ3NsCK0vyOmGji7SpKkW
+lmss:R8ZZ3NsCK0vyOmGji7SpKkW rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RCqBiJAwLT5iG2nvk12tNKW ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty rdfs:seeAlso ;
+                                               owl:someValuesFrom lmss:RLvhxz3b1k2IU3MaAgeRtF
+                                             ] ;
+                             rdfs:label "Illegal Dumping" ;
+                             skos:altLabel "Illegal Dumping"@en-uk ,
+                                           "Tirar basura ilegalmente"@es-mx ,
+                                           "Vertido ilegal"@es-es ,
+                                           "זריקת פסולת בלתי חוקית"@he-il ,
+                                           "अवैध डंपिंग"@hi-in ;
+                             skos:definition "The act of disposing of waste materials in an unauthorized or illegal manner, which is classified as a minor criminal offense." .
+
+
+###  http://lmss.sali.org/R8afVWfZ0cr5TifIBZTdpL2
+lmss:R8afVWfZ0cr5TifIBZTdpL2 rdf:type owl:Class .
+
+
+###  http://lmss.sali.org/R8dxOsfM0gsVdvh1SKyl4ub
+lmss:R8dxOsfM0gsVdvh1SKyl4ub rdf:type owl:Class .
+
+
+###  http://lmss.sali.org/R8fcGNgScyMlOAFxW5Omw5Y
+lmss:R8fcGNgScyMlOAFxW5Omw5Y rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R8TvbewYypS9Uy4y5JGIwEH ;
+                             rdfs:isDefinedBy <https://ucr.fbi.gov/nibrs/2012/resources/nibrs-offense-definitions> ;
+                             rdfs:label "Rape" ;
+                             skos:altLabel "Rape"@en-uk ,
+                                           "Violación"@es-es ,
+                                           "Violación"@es-mx ,
+                                           "אונס"@he-il ,
+                                           "बलात्कार"@hi-in ;
+                             skos:definition "The carnal knowledge of a person, forcibly and/or against that person’s will or not forcibly or against the person’s will in instances where the victim is incapable of giving consent because of his/her temporary or permanent mental or physical incapacity." .
+
+
+###  http://lmss.sali.org/R8iqvgE2NjybgksTeqsGhr3
+lmss:R8iqvgE2NjybgksTeqsGhr3 rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R5jFFdAx82IJWPe4JDkFqg ,
+                                             lmss:RSRxb9psAJdqf8rppoiYI8 ,
+                                             :OWLClass_20981083_af39_42fc_b018_5b2d9e6ccb9a ;
+                             rdfs:label "Concert of Action Crimes" ;
+                             skos:altLabel "Concert of Action Crimes"@en-uk ,
+                                           "Delitos de Concierto"@es-es ,
+                                           "Delitos de Concierto"@es-mx ,
+                                           "פשעי קונצרט של פעולה"@he-il ,
+                                           "कार्यवाही के अनुयोज्य अपराध"@hi-in ;
+                             skos:definition "Concert of Action Crimes refer to a group of criminal offenses where two or more individuals work together to commit a crime, and each member of the group is held responsible for the actions of the others." .
+
+
+###  http://lmss.sali.org/R8iwuYOjEZFcHyzVQeXJql
+lmss:R8iwuYOjEZFcHyzVQeXJql rdf:type owl:Class .
+
+
+###  http://lmss.sali.org/R8ldDGTh6RHzt0IDL7p597U
+lmss:R8ldDGTh6RHzt0IDL7p597U rdf:type owl:Class ;
+                             rdfs:subClassOf :OWLClass_20981083_af39_42fc_b018_5b2d9e6ccb9a ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty rdfs:seeAlso ;
+                                               owl:someValuesFrom lmss:RDSBerlLWg1ntpLqDQn1eVn
+                                             ] ;
+                             rdfs:isDefinedBy <https://ucr.fbi.gov/nibrs/2012/resources/nibrs-offense-definitions> ;
+                             rdfs:label "Crimes Against Property" ;
+                             skos:altLabel "Crimes Against Property"@en-uk ,
+                                           "Delitos contra la propiedad"@es-es ,
+                                           "Delitos contra la propiedad"@es-mx ,
+                                           "פשעים נגד המוניות"@he-il ,
+                                           "संपत्ति के खिलाफ अपराध"@hi-in ;
+                             skos:definition "To willfully or maliciously destroy, damage, deface, or otherwise injure real or personal property without the consent of the owner or the person having custody or control of it." .
+
+
+###  http://lmss.sali.org/R8xIIJGedrUnNDQeOch1W6v
+lmss:R8xIIJGedrUnNDQeOch1W6v rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R8fcGNgScyMlOAFxW5Omw5Y ;
+                             rdfs:label "Modern Rape" ;
+                             skos:altLabel "Modern Rape"@en-uk ,
+                                           "Violación moderna"@es-es ,
+                                           "Violación moderna"@es-mx ,
+                                           "אונס מודרני"@he-il ,
+                                           "आधुनिक बलात्कार"@hi-in ;
+                             skos:definition "Non-consensual sexual intercourse that involves physical force, coercion, or the inability to give consent, and which is prosecuted under contemporary legal definitions and standards." .
+
+
+###  http://lmss.sali.org/R8xhTgEOLxauZ6mN68JsaoD
+lmss:R8xhTgEOLxauZ6mN68JsaoD rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R7V9R3w28BDjOd4lLUUrvQ5 ,
+                                             lmss:RSRxb9psAJdqf8rppoiYI8 ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty rdfs:seeAlso ;
+                                               owl:someValuesFrom lmss:RuNRzptxqnjdnI9WDZmYYC
+                                             ] ;
+                             rdfs:label "Perjury" ;
+                             skos:altLabel "Falso testimonio"@es-es ,
+                                           "Perjurio"@es-mx ,
+                                           "Perjury"@en-uk ,
+                                           "שקר בנשים"@he-il ,
+                                           "झूठी शपथ"@hi-in ;
+                             skos:definition "The intentional act of lying or giving false testimony under oath in a legal proceeding, which is considered a crime against the government and can result in judicial and procedural tort claims." .
+
+
+###  http://lmss.sali.org/R94gDxMezQBU6wop953l6By
+lmss:R94gDxMezQBU6wop953l6By rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R8ldDGTh6RHzt0IDL7p597U ,
+                                             lmss:RCqBiJAwLT5iG2nvk12tNKW ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty rdfs:seeAlso ;
+                                               owl:someValuesFrom lmss:RLvhxz3b1k2IU3MaAgeRtF
+                                             ] ;
+                             rdfs:label "Criminal Mischief" ;
+                             skos:altLabel "Criminal Damage"@en-uk ,
+                                           "Daño criminal"@es-mx ,
+                                           "Daños criminales"@es-es ,
+                                           "פשע מזיקה"@he-il ,
+                                           "अपराधिक उपद्रव"@hi-in ;
+                             skos:definition "The intentional damaging or destruction of another person's property without their consent, which is classified as a criminal offense of a lesser degree than a felony and falls under the broader category of crimes against property." .
+
+
+###  http://lmss.sali.org/R98NBwfojmCq1Cx8A2uiP4C
+lmss:R98NBwfojmCq1Cx8A2uiP4C rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R4tTlnh0xdCEoQbj8CkWoB ,
+                                             lmss:RCqBiJAwLT5iG2nvk12tNKW ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty rdfs:seeAlso ;
+                                               owl:someValuesFrom lmss:RLvhxz3b1k2IU3MaAgeRtF
+                                             ] ;
+                             rdfs:isDefinedBy <https://ucr.fbi.gov/nibrs/2012/resources/nibrs-offense-definitions> ;
+                             rdfs:label "Prostitution" ;
+                             skos:altLabel "Prostitución"@es-es ,
+                                           "Prostitución"@es-mx ,
+                                           "Prostitution"@en-uk ,
+                                           "זונות"@he-il ,
+                                           "वेश्यावृत्ति"@hi-in ;
+                             skos:definition "The act of engaging in sexual activity in exchange for money or other forms of compensation, which is considered a criminal offense under certain circumstances." .
+
+
+###  http://lmss.sali.org/R98k0yAEKsTntybplyKMtUn
+lmss:R98k0yAEKsTntybplyKMtUn rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RCqBiJAwLT5iG2nvk12tNKW ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty rdfs:seeAlso ;
+                                               owl:someValuesFrom lmss:RLvhxz3b1k2IU3MaAgeRtF
+                                             ] ;
+                             rdfs:label "Public Lewdness" ;
+                             skos:altLabel "Exhibicionismo"@es-es ,
+                                           "Exhibicionismo en público"@es-mx ,
+                                           "Public Lewdness"@en-uk ,
+                                           "זנות ציבורית"@he-il ,
+                                           "सार्वजनिक अश्लीलता"@hi-in ;
+                             skos:definition "Public Lewdness is a criminal offense that involves engaging in sexual activity or indecent exposure in a public place, which is considered offensive to the public's decency and morals." .
+
+
+###  http://lmss.sali.org/R99AHv1FlKRYKZE5bhs8jf9
+lmss:R99AHv1FlKRYKZE5bhs8jf9 rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RLvhxz3b1k2IU3MaAgeRtF ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty rdfs:seeAlso ;
+                                               owl:someValuesFrom lmss:R9T8KGJd3wcbSBjdX3K2mGy
+                                             ] ;
+                             rdfs:label "Riot" ;
+                             skos:altLabel "Disturbios"@es-es ,
+                                           "Motín"@es-mx ,
+                                           "Riot"@en-uk ,
+                                           "מהומה"@he-il ,
+                                           "दंगा"@hi-in ;
+                             skos:definition "A riot is a type of crime against the public that involves a group of people engaging in violent or tumultuous behavior that poses a threat to public safety and order." .
+
+
+###  http://lmss.sali.org/R9AAcAvFK3IQBy7L6qWyuDb
+lmss:R9AAcAvFK3IQBy7L6qWyuDb rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R8TvbewYypS9Uy4y5JGIwEH ;
+                             rdfs:label "Sex Abuse" ;
+                             skos:altLabel "Abuso Sexual"@es-es ,
+                                           "Abuso Sexual"@es-mx ,
+                                           "Sexual Abuse"@en-uk ,
+                                           "התעללות מינית"@he-il ,
+                                           "लैंगिक उत्पीड़न"@hi-in ;
+                             skos:definition "Sex abuse refers to any form of sexual misconduct or exploitation committed against a person, including but not limited to sexual assault, molestation, and harassment, and specifically pertains to cases involving clergy members as perpetrators." .
+
+
+###  http://lmss.sali.org/R9AhUjR6gNCb1ExMXhUpR1F
+lmss:R9AhUjR6gNCb1ExMXhUpR1F rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R4tTlnh0xdCEoQbj8CkWoB ,
+                                             lmss:RCqBiJAwLT5iG2nvk12tNKW ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty rdfs:seeAlso ;
+                                               owl:someValuesFrom lmss:RLvhxz3b1k2IU3MaAgeRtF
+                                             ] ;
+                             rdfs:label "Solicitation of Prostitution" ;
+                             skos:altLabel "Solicitation of Prostitution"@en-uk ,
+                                           "Solicitud de prostitución"@es-es ,
+                                           "Solicitud de prostitución"@es-mx ,
+                                           "הצעת זנות"@he-il ,
+                                           "वेश्यावृत्ति का अनुरोध"@hi-in ;
+                             skos:definition "The solicitation of prostitution is a criminal misdemeanor offense that involves the act of offering or agreeing to pay for sexual acts with another person in exchange for money or other goods/services." .
+
+
+###  http://lmss.sali.org/R9JP1ZcUhPxVoXQqmTruykZ
+lmss:R9JP1ZcUhPxVoXQqmTruykZ rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R9uiDByr48mJfLgUdiIZrSi ;
+                             rdfs:label "Common-Law Sodomy" ;
+                             skos:altLabel "Common-Law Sodomy"@en-uk ,
+                                           "Sodomía de Common Law"@es-es ,
+                                           "Sodomía de Common Law"@es-mx ,
+                                           "סודומיה במשפט המצויין"@he-il ,
+                                           "कॉमन-लॉ सोडोमी"@hi-in ;
+                             skos:definition "The act of engaging in non-procreative sexual intercourse between persons of the same sex, which is prohibited by common law." .
+
+
+###  http://lmss.sali.org/R9KC6PngzJi80MRTJgJyVad
+lmss:R9KC6PngzJi80MRTJgJyVad rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RLvhxz3b1k2IU3MaAgeRtF ;
+                             rdfs:isDefinedBy <https://ucr.fbi.gov/nibrs/2012/resources/nibrs-offense-definitions> ;
+                             rdfs:label "Weapon, Gun, and Firearms Crimes" ;
+                             skos:altLabel "Delitos de Armas, Pistolas y Armas de Fuego"@es-es ,
+                                           "Delitos de Armas, Pistolas y Armas de Fuego"@es-mx ,
+                                           "Weapon Law Violations" ,
+                                           "Weapon, Gun, and Firearms Crimes"@en-uk ,
+                                           "פשעי נשק, תחמושת ונשקי חום"@he-il ,
+                                           "हथियार, बंदूक और अग्निशस्त्र अपराध"@hi-in ;
+                             skos:definition "The violation of laws or ordinances prohibiting the manufacture, sale, purchase, transportation, possession, concealment, or use of firearms, cutting instruments, explosives, incendiary devices, or other deadly weapons." .
+
+
+###  http://lmss.sali.org/R9KRos9FExHDk32mNl2DxFe
+lmss:R9KRos9FExHDk32mNl2DxFe rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R8fcGNgScyMlOAFxW5Omw5Y ;
+                             rdfs:label "Common-Law Rape" ;
+                             skos:altLabel "Common-Law Rape"@en-uk ,
+                                           "Violación en derecho común"@es-es ,
+                                           "Violación en derecho común"@es-mx ,
+                                           "אונס על פי המשפט המצוי"@he-il ,
+                                           "सामान्य कानून बलात्कार"@hi-in ;
+                             skos:definition "Common-Law Rape is a type of rape that is defined by the common law legal system, which includes elements such as lack of consent and use of force or threat of force." .
+
+
+###  http://lmss.sali.org/R9KcDahapJG8vbCxXh6JDwm
+lmss:R9KcDahapJG8vbCxXh6JDwm rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R7MbuFEaL6NyU9tM2AXk7lk ,
+                                             lmss:RCqBiJAwLT5iG2nvk12tNKW ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty rdfs:seeAlso ;
+                                               owl:someValuesFrom lmss:R7MbuFEaL6NyU9tM2AXk7lk
+                                             ] ;
+                             rdfs:label "Criminal Harassment" ;
+                             skos:altLabel "Acoso penal"@es-es ,
+                                           "Acoso penal"@es-mx ,
+                                           "Criminal Harassment"@en-uk ,
+                                           "הטרדה פלילית"@he-il ,
+                                           "आपराधिक उत्पीड़न"@hi-in ;
+                             skos:definition "Criminal Harassment is a type of crime against individuals that involves intentionally and persistently causing fear, alarm, or distress to another person through various forms of behavior, such as stalking, cyberbullying, or making terroristic threats." .
+
+
+###  http://lmss.sali.org/R9Kny3xe2sxcb4gxu16vEkk
+lmss:R9Kny3xe2sxcb4gxu16vEkk rdf:type owl:Class ;
+                             rdfs:subClassOf :OWLClass_20981083_af39_42fc_b018_5b2d9e6ccb9a ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty rdfs:seeAlso ;
+                                               owl:someValuesFrom lmss:R7u1GstOpfAmZ3mI7yFcbgU
+                                             ] ;
+                             rdfs:label "Criminal Contempt" ;
+                             skos:altLabel "Criminal Contempt"@en-uk ,
+                                           "Desacato penal"@es-es ,
+                                           "Desacato penal"@es-mx ,
+                                           "בוז פלילי"@he-il ,
+                                           "आपराधिक अवमान"@hi-in ;
+                             skos:definition "Criminal Contempt refers to the intentional disobedience or disregard of a court order or judgment, which is punishable by fines or imprisonment." .
+
+
+###  http://lmss.sali.org/R9LVBKjvGRuzwgtlhuLST36
+lmss:R9LVBKjvGRuzwgtlhuLST36 rdf:type owl:Class .
+
+
+###  http://lmss.sali.org/R9PvfnPfjiIwXwWoldE1svT
+lmss:R9PvfnPfjiIwXwWoldE1svT rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R7Ttdyo4FsvaupPKT35Qry0 ;
+                             rdfs:label "Felony Murder" ;
+                             skos:altLabel "Asesinato durante la comisión de un delito grave"@es-es ,
+                                           "Felony Murder"@en-uk ,
+                                           "Homicidio cometido durante la comisión de un delito grave"@es-mx ,
+                                           "רצח על רקע פשע"@he-il ,
+                                           "जुर्माने के दौरान हत्या"@hi-in ;
+                             skos:definition "Felony Murder is a type of murder where a death occurs during the commission of a felony, regardless of whether the death was intentional or not." .
+
+
+###  http://lmss.sali.org/R9T8KGJd3wcbSBjdX3K2mGy
+lmss:R9T8KGJd3wcbSBjdX3K2mGy rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RLvhxz3b1k2IU3MaAgeRtF ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty rdfs:seeAlso ;
+                                               owl:someValuesFrom lmss:R8iwuYOjEZFcHyzVQeXJql
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty rdfs:seeAlso ;
+                                               owl:someValuesFrom lmss:R99AHv1FlKRYKZE5bhs8jf9
+                                             ] ;
+                             rdfs:label "Unlawful Assembly" ;
+                             skos:altLabel "Aglomeración ilegal"@es-es ,
+                                           "Reunión ilícita"@es-mx ,
+                                           "Unlawful Assembly"@en-uk ,
+                                           "התקהלות בלתי חוקית"@he-il ,
+                                           "अवैध सभा"@hi-in ;
+                             skos:definition "An Unlawful Assembly is a criminal offense against the public, where a group of people gather with the intention of committing a crime or engaging in violent behavior." .
+
+
+###  http://lmss.sali.org/R9XKn4ikKfuZ410TDVvNmyq
+lmss:R9XKn4ikKfuZ410TDVvNmyq rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R8TvbewYypS9Uy4y5JGIwEH ;
+                             rdfs:isDefinedBy <https://ucr.fbi.gov/nibrs/2012/resources/nibrs-offense-definitions> ;
+                             rdfs:label "Incest" ;
+                             skos:altLabel "Incest"@en-uk ,
+                                           "Incesto"@es-es ,
+                                           "Incesto"@es-mx ,
+                                           "אינסטינקט"@he-il ,
+                                           "अभिशाप"@hi-in ;
+                             skos:definition "Nonforcible sexual intercourse between persons who are related to each other within the degrees wherein marriage is prohibited by law." .
+
+
+###  http://lmss.sali.org/R9Y09dMEpmgMiRHyRz2U1aC
+lmss:R9Y09dMEpmgMiRHyRz2U1aC rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RBt6PLnwAaeJLOUww0swcdQ ;
+                             rdfs:label "Voluntary Manslaughter" ;
+                             skos:altLabel "Homicidio Voluntario"@es-es ,
+                                           "Homicidio Voluntario"@es-mx ,
+                                           "Voluntary Manslaughter"@en-uk ,
+                                           "רצח רצון"@he-il ,
+                                           "स्वैच्छिक मानसिक रोष हत्या"@hi-in ;
+                             skos:definition "The unlawful killing of a person without malice aforethought, committed intentionally but in the heat of passion or under adequate provocation, and without premeditation or deliberation." .
+
+
+###  http://lmss.sali.org/R9YJidoNtjYJ9ullx9SRy6k
+lmss:R9YJidoNtjYJ9ullx9SRy6k rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R9KcDahapJG8vbCxXh6JDwm ,
+                                             lmss:RCqBiJAwLT5iG2nvk12tNKW ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty rdfs:seeAlso ;
+                                               owl:someValuesFrom lmss:R7V9R3w28BDjOd4lLUUrvQ5
+                                             ] ;
+                             rdfs:label "Violation of a Restraining Order" ;
+                             skos:altLabel "Breach of a Restraining Order"@en-uk ,
+                                           "Quebrantamiento de una Orden de Alejamiento"@es-es ,
+                                           "Violación de una Orden de Restricción"@es-mx ,
+                                           "הפרת צו הגבלה"@he-il ,
+                                           "पाबंदी आदेश का उल्लंघन"@hi-in ;
+                             skos:definition "The violation of a restraining order refers to the act of disregarding a court order that prohibits contact with a particular person or entering a specific area, which can result in criminal charges for harassment or misdemeanor offenses." .
+
+
+###  http://lmss.sali.org/R9Zpw6W6vllQC97Xj87kMAX
+lmss:R9Zpw6W6vllQC97Xj87kMAX rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R7V9R3w28BDjOd4lLUUrvQ5 ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty rdfs:seeAlso ;
+                                               owl:someValuesFrom lmss:R8dxOsfM0gsVdvh1SKyl4ub
+                                             ] ;
+                             rdfs:isDefinedBy <https://ucr.fbi.gov/nibrs/2012/resources/nibrs-offense-definitions> ;
+                             rdfs:label "Counterfeiting" ;
+                             skos:altLabel "Counterfeiting"@en-uk ,
+                                           "Falsificación"@es-es ,
+                                           "Falsificación"@es-mx ,
+                                           "זיוף"@he-il ,
+                                           "नकली"@hi-in ;
+                             skos:definition "(Definition of \"Counterfeiting/Forgery\") The altering, copying, or imitation of something, without authority or right, with the intent to deceive or defraud by passing the copy or thing altered or imitated as that which is original or genuine; or the selling, buying, or possession of an altered, copied, or imitated thing with the intent to deceive or defraud." .
+
+
+###  http://lmss.sali.org/R9dnzX0qUAhZLPdLq97fapE
+lmss:R9dnzX0qUAhZLPdLq97fapE rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RLvhxz3b1k2IU3MaAgeRtF ;
+                             rdfs:label "Criminal Gang Participation" ;
+                             skos:altLabel "Criminal Gang Participation"@en-uk ,
+                                           "Participación en pandillas criminales"@es-es ,
+                                           "Participación en pandillas criminales"@es-mx ,
+                                           "השתתפות בקבוצות פושעות"@he-il ,
+                                           "अपराधी गिरोह में भागीदारी"@hi-in ;
+                             skos:definition "Participation in a group or organization that engages in criminal activities, such as drug trafficking or extortion, and is considered a crime against the public." .
+
+
+###  http://lmss.sali.org/R9fzqoKTpwXpqadubImm69L
+lmss:R9fzqoKTpwXpqadubImm69L rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RCqBiJAwLT5iG2nvk12tNKW ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty rdfs:seeAlso ;
+                                               owl:someValuesFrom lmss:R7V9R3w28BDjOd4lLUUrvQ5
+                                             ] ;
+                             rdfs:label "Failure to Identify to a Police Office" ;
+                             skos:altLabel "Failure to Identify to a Police Officer"@en-uk ,
+                                           "Negativa a identificarse ante un agente de policía"@es-es ,
+                                           "Negativa a identificarse ante un oficial de policía"@es-mx ,
+                                           "כישלון בזיהוי עצמי לקצין משטרה"@he-il ,
+                                           "पुलिस अधिकारी को पहचान नहीं बताने की असफलता"@hi-in ;
+                             skos:definition "The failure of an individual to disclose their identity to a police officer, which is categorized as a criminal misdemeanor offense." .
+
+
+###  http://lmss.sali.org/R9gcJW5zpEIb8x5yJrfxBMg
+lmss:R9gcJW5zpEIb8x5yJrfxBMg rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RBzrK4RsgfLScZvC4Z4lCCX ,
+                                             lmss:RCfunX4u69LUQ3gbhckE0oI ;
+                             rdfs:label "Suicide and \"Right to Die\" Claims" ;
+                             skos:altLabel "Suicide and \"Right to Die\" Claims"@en-uk ,
+                                           "Suicidio y reclamaciones de \"derecho a morir\""@es-es ,
+                                           "Suicidio y reclamos de \"derecho a morir\""@es-mx ,
+                                           "התאבדות ותביעות \"זכות למות\""@he-il ,
+                                           "आत्महत्या और \"मरने का अधिकार\" दावे"@hi-in ;
+                             skos:definition "The concept of \"Suicide and 'Right to Die' Claims\" refers to legal claims and arguments related to intentional self-harm or assisted suicide, including cases involving prisoners and allegations of negligence." .
+
+
+###  http://lmss.sali.org/R9jLBBEicl6JwMj2Jf8GHWN
+lmss:R9jLBBEicl6JwMj2Jf8GHWN rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R9KcDahapJG8vbCxXh6JDwm ,
+                                             lmss:RCqBiJAwLT5iG2nvk12tNKW ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty rdfs:seeAlso ;
+                                               owl:someValuesFrom lmss:R7MbuFEaL6NyU9tM2AXk7lk
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty rdfs:seeAlso ;
+                                               owl:someValuesFrom lmss:RDyuiajPgpJaNFF1R0ncApX
+                                             ] ;
+                             rdfs:label "Terroristic Threats" ;
+                             skos:altLabel "Amenazas Terroristas"@es-es ,
+                                           "Amenazas Terroristas"@es-mx ,
+                                           "Terroristic Threats"@en-uk ,
+                                           "איומי טרור"@he-il ,
+                                           "आतंकी धमकी"@hi-in ;
+                             skos:definition "The concept of \"Terroristic Threats\" refers to the act of making threats to cause serious harm or death to individuals or groups of people, with the intention of creating fear and panic in society." .
+
+
+###  http://lmss.sali.org/R9mSfKgf9j4vIGxmQrnBd1I
+lmss:R9mSfKgf9j4vIGxmQrnBd1I rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RCqBiJAwLT5iG2nvk12tNKW ;
+                             rdfs:isDefinedBy <https://ucr.fbi.gov/nibrs/2012/resources/nibrs-offense-definitions> ;
+                             rdfs:label "Pornography and Obscene Material" ;
+                             skos:altLabel "Pornografía y Material Obsceno"@es-es ,
+                                           "Pornografía y Material Obsceno"@es-mx ,
+                                           "Pornography and Obscene Material"@en-uk ,
+                                           "פורנוגרפיה וחומר מגונה"@he-il ,
+                                           "पोर्नोग्राफी और अश्लील सामग्री"@hi-in ;
+                             skos:definition "The violation of laws or ordinances prohibiting the manufacture, publishing, sale, purchase, or possession of sexually explicit material, e.g., literature, photographs, etc." .
+
+
+###  http://lmss.sali.org/R9pC5rYhFMiLaQiSZETyftd
+lmss:R9pC5rYhFMiLaQiSZETyftd rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RBt6PLnwAaeJLOUww0swcdQ ;
+                             rdfs:isDefinedBy <https://ucr.fbi.gov/nibrs/2012/resources/nibrs-offense-definitions> ;
+                             rdfs:label "Negligent Manslaughter" ;
+                             skos:altLabel "Homicidio culposo"@es-mx ,
+                                           "Homicidio por negligencia"@es-es ,
+                                           "Negligent Manslaughter"@en-uk ,
+                                           "רצח שלא במתכוון עקב הפרת חובת זהירות"@he-il ,
+                                           "लापरवाह हत्या"@hi-in ;
+                             skos:definition "The killing of another person through negligence." .
+
+
+###  http://lmss.sali.org/R9uiDByr48mJfLgUdiIZrSi
+lmss:R9uiDByr48mJfLgUdiIZrSi rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R8TvbewYypS9Uy4y5JGIwEH ;
+                             rdfs:isDefinedBy <https://ucr.fbi.gov/nibrs/2012/resources/nibrs-offense-definitions> ;
+                             rdfs:label "Sodomy" ;
+                             skos:altLabel "Sodomy"@en-uk ,
+                                           "Sodomía"@es-es ,
+                                           "Sodomía"@es-mx ,
+                                           "סודומיה"@he-il ,
+                                           "सोडोमी"@hi-in ;
+                             skos:definition "Oral or anal sexual intercourse with another person, forcibly and/or against that person’s will or not forcibly or against the person’s will in instances where the victim is incapable of giving consent because of his/her youth or because of his/her temporary or permanent mental or physical incapacity." .
+
+
+###  http://lmss.sali.org/RBDjAM773PfjvwDFIBwA6hZ
+lmss:RBDjAM773PfjvwDFIBwA6hZ rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RCqBiJAwLT5iG2nvk12tNKW ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty rdfs:seeAlso ;
+                                               owl:someValuesFrom lmss:R7V9R3w28BDjOd4lLUUrvQ5
+                                             ] ;
+                             rdfs:label "Driving on a Suspended or Revoked License" ;
+                             skos:altLabel "Conducir con una licencia suspendida o revocada"@es-es ,
+                                           "Conducir con una licencia suspendida o revocada"@es-mx ,
+                                           "Driving on a Suspended or Revoked License"@en-uk ,
+                                           "נהיגה על רישיון מושעה או שגוי"@he-il ,
+                                           "सस्पेंड या रद्द लाइसेंस पर गाड़ी चलाना"@hi-in ;
+                             skos:definition "Driving on a Suspended or Revoked License: Operating a motor vehicle while one's driver's license has been temporarily or permanently revoked or suspended by the state due to a prior traffic offense or violation." .
+
+
+###  http://lmss.sali.org/RBE78Mm4K5ZmjzUOnFO2eg4
+lmss:RBE78Mm4K5ZmjzUOnFO2eg4 rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R8BLgPtZOuKFI8MtZNTaT0u ;
+                             rdfs:isDefinedBy <https://ucr.fbi.gov/nibrs/2012/resources/nibrs-offense-definitions> ;
+                             rdfs:label "Intimidation" ;
+                             skos:altLabel "Intimidación"@es-es ,
+                                           "Intimidación"@es-mx ,
+                                           "Intimidation"@en-uk ,
+                                           "איומים"@he-il ,
+                                           "धमकाना"@hi-in ;
+                             skos:definition "To unlawfully place another person in reasonable fear of bodily harm through the use of threatening words and/or other conduct, but without displaying a weapon or subjecting the victim to actual physical attack." .
+
+
+###  http://lmss.sali.org/RBFgL4Dth9VONjmIdH0bEOs
+lmss:RBFgL4Dth9VONjmIdH0bEOs rdf:type owl:Class .
+
+
+###  http://lmss.sali.org/RBFuGRXSksUz7DZ9ryC7C1F
+lmss:RBFuGRXSksUz7DZ9ryC7C1F rdf:type owl:Class .
+
+
+###  http://lmss.sali.org/RBI1GgQFGHi8jZxymdj6eTL
+lmss:RBI1GgQFGHi8jZxymdj6eTL rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R8fcGNgScyMlOAFxW5Omw5Y ;
+                             rdfs:isDefinedBy <https://ucr.fbi.gov/nibrs/2012/resources/nibrs-offense-definitions> ;
+                             rdfs:label "Statutory Rape" ;
+                             skos:altLabel "Statutory Rape"@en-uk ,
+                                           "Unlawful Sexual Intercourse" ,
+                                           "Violación Estatutaria"@es-es ,
+                                           "Violación Estatutaria"@es-mx ,
+                                           "אונס סטטוטורי"@he-il ,
+                                           "कानूनी बलात्कार"@hi-in ;
+                             skos:definition "Nonforcible sexual intercourse with a person who is under the statutory age of consent." .
+
+
+###  http://lmss.sali.org/RBL4zPemNCEq2piqyBMgxJx
+lmss:RBL4zPemNCEq2piqyBMgxJx rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R7MbuFEaL6NyU9tM2AXk7lk ;
+                             rdfs:label "Interference with the Custody of Children" ;
+                             skos:altLabel "Interference with the Custody of Children"@en-uk ,
+                                           "Interferencia en la custodia de los niños"@es-es ,
+                                           "Interferencia en la custodia de menores"@es-mx ,
+                                           "הפרת זכויות הורים"@he-il ,
+                                           "बच्चों की हुजूम के साथ दखल देना"@hi-in ;
+                             skos:definition "The concept of \"Interference with the Custody of Children\" refers to the act of intentionally taking, withholding, or concealing a child from their legal guardian or custodian without permission, which is considered a crime against individuals under the law." .
+
+
+###  http://lmss.sali.org/RBNz30rxM6l0GnL6R9XDyU2
+lmss:RBNz30rxM6l0GnL6R9XDyU2 rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RCqBiJAwLT5iG2nvk12tNKW ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty rdfs:seeAlso ;
+                                               owl:someValuesFrom lmss:R8ldDGTh6RHzt0IDL7p597U
+                                             ] ;
+                             rdfs:isDefinedBy <https://ucr.fbi.gov/nibrs/2012/resources/nibrs-offense-definitions> ;
+                             rdfs:label "Vandalism" ;
+                             skos:altLabel "Vandalism"@en-uk ,
+                                           "Vandalismo"@es-es ,
+                                           "Vandalismo"@es-mx ,
+                                           "וינדליזם"@he-il ,
+                                           "उपद्रव"@hi-in ;
+                             skos:definition "DEFINITION OF Destruction/Damage/Vandalism of Property — To willfully or maliciously destroy, damage, deface, or otherwise injure real or personal property without the consent of the owner or the person having custody or control of it." .
+
+
+###  http://lmss.sali.org/RBR4SUW4ZCvh8n2X00nUpYY
+lmss:RBR4SUW4ZCvh8n2X00nUpYY rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RBzrK4RsgfLScZvC4Z4lCCX ;
+                             rdfs:label "Feticide" ;
+                             skos:altLabel "Feticide"@en-uk ,
+                                           "Feticidio"@es-es ,
+                                           "Feticidio"@es-mx ,
+                                           "פטיקידה"@he-il ,
+                                           "भ्रूण हत्या"@hi-in ;
+                             skos:definition "The intentional killing of a fetus, typically committed by a third party, which is considered a criminal offense under the category of criminal homicide." .
+
+
+###  http://lmss.sali.org/RBSewRxgjTh2VhFX6itIoFA
+lmss:RBSewRxgjTh2VhFX6itIoFA rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RCqBiJAwLT5iG2nvk12tNKW ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty rdfs:seeAlso ;
+                                               owl:someValuesFrom lmss:RCI3WOQ6o2s2tlKJfZuW9UH
+                                             ] ;
+                             rdfs:isDefinedBy <https://ucr.fbi.gov/nibrs/2012/resources/nibrs-offense-definitions> ;
+                             rdfs:label "Bad Check Crime" ;
+                             skos:definition "Knowingly and intentionally writing and/or negotiating checks drawn against insufficient or nonexistent funds." .
+
+
+###  http://lmss.sali.org/RBUS0L6evAK1r6HGe8b92cw
+lmss:RBUS0L6evAK1r6HGe8b92cw rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R7V9R3w28BDjOd4lLUUrvQ5 ;
+                             rdfs:label "Sabotage" ;
+                             skos:altLabel "Sabotage"@en-uk ,
+                                           "Sabotaje"@es-es ,
+                                           "Sabotaje"@es-mx ,
+                                           "סבוטאז'"@he-il ,
+                                           "सबोटाज"@hi-in ;
+                             skos:definition "The intentional destruction or damage of property or equipment belonging to the government or its citizens, with the aim of hindering or disrupting government operations or activities." .
+
+
+###  http://lmss.sali.org/RBVpHQ7fb2I2B69LOWszQjd
+lmss:RBVpHQ7fb2I2B69LOWszQjd rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RBzrK4RsgfLScZvC4Z4lCCX ;
+                             rdfs:isDefinedBy <https://ucr.fbi.gov/nibrs/2012/resources/nibrs-offense-definitions> ;
+                             rdfs:label "Justifiable Homicide" ;
+                             skos:altLabel "Homicidio justificable"@es-mx ,
+                                           "Homicidio justificado"@es-es ,
+                                           "Justifiable Homicide"@en-uk ,
+                                           "התנצלות רצח"@he-il ,
+                                           "ज्युस्टिफायबल होमिसाइड"@hi-in ;
+                             skos:definition "The killing of a perpetrator of a serious criminal offense by a peace officer in the line of duty, or the killing, during the commission of a serious criminal offense, of the perpetrator by a private individual." .
+
+
+###  http://lmss.sali.org/RBXVU4vw8lOn8Q1MVwyiBuM
+lmss:RBXVU4vw8lOn8Q1MVwyiBuM rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RCqBiJAwLT5iG2nvk12tNKW ;
+                             rdfs:isDefinedBy <https://ucr.fbi.gov/nibrs/2012/resources/nibrs-offense-definitions> ;
+                             rdfs:label "Runaway" ;
+                             skos:altLabel "Fugitivo"@es-es ,
+                                           "Fugitivo"@es-mx ,
+                                           "Runaway"@en-uk ,
+                                           "ברחן"@he-il ,
+                                           "भगोड़ा"@hi-in ;
+                             skos:definition "A person under 18 years of age who has left home without permission of his/her parent(s) or legal guardian" .
+
+
+###  http://lmss.sali.org/RBc8llmdnVBvfzkSbQxpOLJ
+lmss:RBc8llmdnVBvfzkSbQxpOLJ rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R8ldDGTh6RHzt0IDL7p597U ,
+                                             lmss:RCqBiJAwLT5iG2nvk12tNKW ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty rdfs:seeAlso ;
+                                               owl:someValuesFrom lmss:R8ldDGTh6RHzt0IDL7p597U
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty rdfs:seeAlso ;
+                                               owl:someValuesFrom lmss:RCwxVWPUdbPjn2tWtFJg6IZ
+                                             ] ;
+                             rdfs:isDefinedBy <https://ucr.fbi.gov/nibrs/2012/resources/nibrs-offense-definitions> ;
+                             rdfs:label "Criminal Trespass" ;
+                             skos:altLabel "Allanamiento de morada"@es-es ,
+                                           "Allanamiento de morada"@es-mx ,
+                                           "Criminal Trespass"@en-uk ,
+                                           "Criminal Trespass of Real Property" ,
+                                           "פשיעת חדירה"@he-il ,
+                                           "अपराधी अतिक्रमण"@hi-in ;
+                             skos:definition "To unlawfully enter land, a dwelling, or other real property." .
+
+
+###  http://lmss.sali.org/RBd9N0Cnx1TPqy63TmkCk7w
+lmss:RBd9N0Cnx1TPqy63TmkCk7w rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R7MbuFEaL6NyU9tM2AXk7lk ;
+                             rdfs:isDefinedBy <https://ucr.fbi.gov/nibrs/2012/resources/nibrs-offense-definitions> ;
+                             rdfs:label "Family Offenses - Nonviolent" ;
+                             skos:altLabel "Delitos Familiares - No violentos"@es-es ,
+                                           "Delitos Familiares - No violentos"@es-mx ,
+                                           "Family Offences - Nonviolent"@en-uk ,
+                                           "Nonviolent Family Offenses" ,
+                                           "פשעי משפחה - לא אלים"@he-il ,
+                                           "परिवार अपराध - गैर हिंसात्मक"@hi-in ;
+                             skos:definition "Unlawful, nonviolent acts by a family member (or legal guardian) that threaten the physical, mental, or economic well-being or morals of another family member and that are not classifiable as other offenses, such as Assault, Incest, Statutory Rape, etc." .
+
+
+###  http://lmss.sali.org/RBgAFGiEeC2W7cHvjmy7knW
+lmss:RBgAFGiEeC2W7cHvjmy7knW rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R9KcDahapJG8vbCxXh6JDwm ;
+                             rdfs:label "Cyberbullying" ;
+                             skos:altLabel "Ciberacoso"@es-es ,
+                                           "Ciberacoso"@es-mx ,
+                                           "Cyberbullying"@en-uk ,
+                                           "בולי סייבר"@he-il ,
+                                           "साइबर बुलींग"@hi-in ;
+                             skos:definition "Cyberbullying is a form of criminal harassment that involves the use of electronic communication to repeatedly intimidate, threaten, or harm another person." .
+
+
+###  http://lmss.sali.org/RBhkRzl30PudT2hM5OESMlu
+lmss:RBhkRzl30PudT2hM5OESMlu rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:Ra8NCYdJb9YwmAxaOmLDbI ;
+                             rdfs:isDefinedBy <https://ucr.fbi.gov/nibrs/2012/resources/nibrs-offense-definitions> ;
+                             rdfs:label "Drug Equipment Violation" ;
+                             skos:altLabel "Drug Equipment Violation"@en-uk ,
+                                           "Violación de equipo de drogas"@es-es ,
+                                           "Violación de equipo de drogas"@es-mx ,
+                                           "הפרת ציוד סמים"@he-il ,
+                                           "ड्रग उपकरण उल्लंघन"@hi-in ;
+                             skos:definition "The unlawful manufacture, sale, purchase, possession, or transportation of equipment or devices utilized in preparing and/or using drugs or narcotics." .
+
+
+###  http://lmss.sali.org/RBizcuAme8glPLFlQSQLCq5
+lmss:RBizcuAme8glPLFlQSQLCq5 rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R8TvbewYypS9Uy4y5JGIwEH ;
+                             rdfs:isDefinedBy <https://ucr.fbi.gov/nibrs/2012/resources/nibrs-offense-definitions> ;
+                             rdfs:label "Forcible Fondling" ;
+                             skos:altLabel "Forcible Fondling"@en-uk ,
+                                           "Manoseo Forzado"@es-es ,
+                                           "Manoseo Forzado"@es-mx ,
+                                           "גירופים בכוח"@he-il ,
+                                           "बलात्कारी झपटना"@hi-in ;
+                             skos:definition "The touching of the private body parts of another person for the purpose of sexual gratification, forcibly and/or against that person’s will or not forcibly or against the person’s will in instances where the victim is incapable of giving consent because of his/her youth or because of his/her temporary or permanent mental or physical incapacity." .
+
+
+###  http://lmss.sali.org/RBpSXv8uOXDikW5jk944sRN
+lmss:RBpSXv8uOXDikW5jk944sRN rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R8ldDGTh6RHzt0IDL7p597U ;
+                             rdfs:isDefinedBy <https://ucr.fbi.gov/nibrs/2012/resources/nibrs-offense-definitions> ;
+                             rdfs:label "Criminal Theft" ;
+                             skos:altLabel "Criminal Theft"@en-uk ,
+                                           "Robo Criminal"@es-es ,
+                                           "Robo Criminal"@es-mx ,
+                                           "גניבה פלילית"@he-il ,
+                                           "अपराधिक चोरी"@hi-in ;
+                             skos:definition "The unlawful taking, carrying, leading, or riding away of property from the possession, or constructive possession, of another person." .
+
+
+###  http://lmss.sali.org/RBqBxJEzhWW5x12JraZHgQd
+lmss:RBqBxJEzhWW5x12JraZHgQd rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R8TvbewYypS9Uy4y5JGIwEH ;
+                             rdfs:label "Oral Copulation" ;
+                             skos:altLabel "Cópula Oral"@es-es ,
+                                           "Cópula Oral"@es-mx ,
+                                           "Oral Copulation"@en-uk ,
+                                           "זיון פה"@he-il ,
+                                           "मुख संबंध"@hi-in ;
+                             skos:definition "Oral copulation is a sexual act involving the stimulation of the genitals by the mouth, which is considered a sex offense under the law." .
+
+
+###  http://lmss.sali.org/RBruJuhQHB6JHVTvEpkQ2t3
+lmss:RBruJuhQHB6JHVTvEpkQ2t3 rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R7kmGY1Jxz3BC2ub5y1F9e ;
+                             rdfs:isDefinedBy <https://www.justia.com/criminal/docs/calcrim/800/801/> ;
+                             rdfs:label "Criminal Mayhem" ;
+                             skos:altLabel "Caos Criminal"@es-es ,
+                                           "Caos Criminal"@es-mx ,
+                                           "Criminal Mayhem"@en-uk ,
+                                           "מהומה פלילית"@he-il ,
+                                           "अपराधिक महिमा"@hi-in ;
+                             skos:definition "The intentional and unlawful act of causing injury to another person, resulting in serious bodily harm or disfigurement, with the intent to cause such harm." .
+
+
+###  http://lmss.sali.org/RBt6PLnwAaeJLOUww0swcdQ
+lmss:RBt6PLnwAaeJLOUww0swcdQ rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RBzrK4RsgfLScZvC4Z4lCCX ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty rdfs:seeAlso ;
+                                               owl:someValuesFrom lmss:R7Ttdyo4FsvaupPKT35Qry0
+                                             ] ;
+                             rdfs:label "Manslaughter" ;
+                             skos:definition "The unlawful killing of a human being without malice aforethought, but with either intent to cause harm or reckless disregard for human life." .
+
+
+###  http://lmss.sali.org/RBuYThXwp8tJjNWkTeuFvAZ
+lmss:RBuYThXwp8tJjNWkTeuFvAZ rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:Rj1p7FbFSLxlWfUlSPZxhX ;
+                             rdfs:label "Parking Violation" ;
+                             skos:altLabel "Infracción de estacionamiento"@es-es ,
+                                           "Infracción de estacionamiento"@es-mx ,
+                                           "Parking Offence"@en-uk ,
+                                           "הפרת חניה"@he-il ,
+                                           "पार्किंग उल्लंघन"@hi-in ;
+                             skos:definition "A parking violation is a type of traffic violation claim that involves the improper or illegal parking of a vehicle, often resulting in a fine or penalty." .
+
+
+###  http://lmss.sali.org/RBzrK4RsgfLScZvC4Z4lCCX
+lmss:RBzrK4RsgfLScZvC4Z4lCCX rdf:type owl:Class ;
+                             rdfs:subClassOf :OWLClass_20981083_af39_42fc_b018_5b2d9e6ccb9a ;
+                             rdfs:label "Criminal Homicide Offenses" ;
+                             skos:altLabel "Criminal Homicide Offenses"@en-uk ,
+                                           "Delitos de Homicidio Criminal"@es-es ,
+                                           "Delitos de Homicidio Criminal"@es-mx ,
+                                           "עבירות רצח פליליות"@he-il ,
+                                           "अपराधिक हत्या अपराध"@hi-in ;
+                             skos:definition "Criminal Homicide Offenses: The unlawful killing of a human being by another, including murder, manslaughter, and other related claims." .
+
+
+###  http://lmss.sali.org/RC2sDzkhJsoDium48Imqwn8
+lmss:RC2sDzkhJsoDium48Imqwn8 rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R9KC6PngzJi80MRTJgJyVad ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty rdfs:seeAlso ;
+                                               owl:someValuesFrom lmss:RLvhxz3b1k2IU3MaAgeRtF
+                                             ] ;
+                             rdfs:label "Possession of a Prohibited Weapon" ;
+                             skos:altLabel "Posesión de un arma prohibida"@es-es ,
+                                           "Posesión de un arma prohibida"@es-mx ,
+                                           "Possession of a Prohibited Weapon"@en-uk ,
+                                           "בעלות נשק אסור"@he-il ,
+                                           "एक प्रतिबंधित हथियार की हवाले रखना"@hi-in ;
+                             skos:definition "The possession of a prohibited weapon refers to the act of having in one's control or ownership a weapon that is illegal to possess under the law, such as a firearm that has been modified to be fully automatic or a weapon that is designed for military use." .
+
+
+###  http://lmss.sali.org/RC4QMCtqIKU9i366bPpd3rG
+lmss:RC4QMCtqIKU9i366bPpd3rG rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RCqBiJAwLT5iG2nvk12tNKW ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty rdfs:seeAlso ;
+                                               owl:someValuesFrom lmss:R8ldDGTh6RHzt0IDL7p597U
+                                             ] ;
+                             rdfs:label "Petty Theft" ;
+                             skos:altLabel "Hurto Menor"@es-es ,
+                                           "Petty Theft"@en-uk ,
+                                           "Robo Menor"@es-mx ,
+                                           "גניבה קטנה"@he-il ,
+                                           "छोटी चोरी"@hi-in ;
+                             skos:definition "Petty Theft is a criminal offense that involves the unlawful taking of property or money that is of relatively low value, typically classified as a misdemeanor." .
+
+
+###  http://lmss.sali.org/RC5FOOj5LHE2ITa2pdb9s5i
+lmss:RC5FOOj5LHE2ITa2pdb9s5i rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RDgbjRGvnprxnFm9CAqCjYs ;
+                             rdfs:isDefinedBy <https://ucr.fbi.gov/nibrs/2012/resources/nibrs-offense-definitions> ;
+                             rdfs:label "Curfew Violation" ;
+                             skos:altLabel "Curfew Breach"@en-uk ,
+                                           "Infracción del toque de queda"@es-es ,
+                                           "Violación del toque de queda"@es-mx ,
+                                           "הפרת צו הקליאות"@he-il ,
+                                           "कर्फ्यू उल्लंघन"@hi-in ;
+                             skos:definition "A curfew violation is a specific type of legal offense that occurs when an individual fails to comply with a set curfew time, typically imposed on minors, and can result in legal consequences." .
+
+
+###  http://lmss.sali.org/RCA6fbUUZ39zOrCLn4i9WXJ
+lmss:RCA6fbUUZ39zOrCLn4i9WXJ rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R5ks6eYBkfLh4Fgv1Zusal ,
+                                             lmss:R7V9R3w28BDjOd4lLUUrvQ5 ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty rdfs:seeAlso ;
+                                               owl:someValuesFrom lmss:R7Y2YIqmaVxoK50QYYZVoDS
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty rdfs:seeAlso ;
+                                               owl:someValuesFrom lmss:RDGdgxwCGXpkY1zfT2WwGl9
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty rdfs:seeAlso ;
+                                               owl:someValuesFrom lmss:RcVabDAyOfCmuIYjaqoxHf
+                                             ] ;
+                             rdfs:label "Tax Evasion" ;
+                             skos:altLabel "Evasión de impuestos"@es-mx ,
+                                           "Evasión fiscal"@es-es ,
+                                           "Tax Evasion"@en-uk ,
+                                           "התחמקות ממסים"@he-il ,
+                                           "कर अराजकता"@hi-in ;
+                             skos:definition "The intentional and illegal act of not paying taxes owed to the government, which is considered a form of criminal fraud and a crime against the government." .
+
+
+###  http://lmss.sali.org/RCC22bPzCCS3PR1Q5hBr7PO
+lmss:RCC22bPzCCS3PR1Q5hBr7PO rdf:type owl:Class .
+
+
+###  http://lmss.sali.org/RCDSmXwVa56dRfhw74VL2nr
+lmss:RCDSmXwVa56dRfhw74VL2nr rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R7V9R3w28BDjOd4lLUUrvQ5 ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty rdfs:seeAlso ;
+                                               owl:someValuesFrom lmss:RfcfQz0nz5VI5iHiR9077D
+                                             ] ;
+                             rdfs:label "Insurrection" ;
+                             skos:altLabel "Insurrección"@es-es ,
+                                           "Insurrección"@es-mx ,
+                                           "Insurrection"@en-uk ,
+                                           "התקוממות"@he-il ,
+                                           "विद्रोह"@hi-in ;
+                             skos:definition "An insurrection is a type of crime against the government that involves a violent uprising or rebellion against the established authority." .
+
+
+###  http://lmss.sali.org/RCExQDQMRV5lwxQZb0jTcDH
+lmss:RCExQDQMRV5lwxQZb0jTcDH rdf:type owl:Class .
+
+
+###  http://lmss.sali.org/RCI3WOQ6o2s2tlKJfZuW9UH
+lmss:RCI3WOQ6o2s2tlKJfZuW9UH rdf:type owl:Class .
+
+
+###  http://lmss.sali.org/RCJErtCAFcUeLV84PJ5PjgS
+lmss:RCJErtCAFcUeLV84PJ5PjgS rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RCqBiJAwLT5iG2nvk12tNKW ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty rdfs:seeAlso ;
+                                               owl:someValuesFrom lmss:R7V9R3w28BDjOd4lLUUrvQ5
+                                             ] ;
+                             rdfs:label "Violation of Probation" ;
+                             skos:altLabel "Breach of Probation"@en-uk ,
+                                           "Quebrantamiento de la Libertad Condicional"@es-es ,
+                                           "Violación de la Libertad Condicional"@es-mx ,
+                                           "הפרת תנאי השחרור המותנה"@he-il ,
+                                           "परख का उल्लंघन"@hi-in ;
+                             skos:definition "The violation of probation is a breach of the terms and conditions set forth by a court order that requires an individual to comply with certain rules and regulations as a result of a prior criminal misdemeanor offense." .
+
+
+###  http://lmss.sali.org/RCM3v341KIhe0jNcQu9sxym
+lmss:RCM3v341KIhe0jNcQu9sxym rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RLvhxz3b1k2IU3MaAgeRtF ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty rdfs:seeAlso ;
+                                               owl:someValuesFrom lmss:R8C21XIcxp9SGBNeg8jgUaU
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty rdfs:seeAlso ;
+                                               owl:someValuesFrom lmss:RCC22bPzCCS3PR1Q5hBr7PO
+                                             ] ;
+                             rdfs:label "Unlawful Gaming and Lotteries" ;
+                             skos:altLabel "Juegos y loterías ilegales"@es-es ,
+                                           "Juegos y loterías ilegales"@es-mx ,
+                                           "Unlawful Gaming and Lotteries"@en-uk ,
+                                           "משחקי הימורים וגרעינים בלתי חוקיים"@he-il ,
+                                           "अवैध जुआ और लॉटरी"@hi-in ;
+                             skos:definition "Unlawful Gaming and Lotteries refers to the illegal act of participating in games of chance or lotteries that are not authorized by law, and is considered a crime against the public." .
+
+
+###  http://lmss.sali.org/RCMeywGHqtDlkLxwnDrD0CF
+lmss:RCMeywGHqtDlkLxwnDrD0CF rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RCqBiJAwLT5iG2nvk12tNKW ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty rdfs:seeAlso ;
+                                               owl:someValuesFrom lmss:RLvhxz3b1k2IU3MaAgeRtF
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty rdfs:seeAlso ;
+                                               owl:someValuesFrom lmss:Rj1p7FbFSLxlWfUlSPZxhX
+                                             ] ;
+                             rdfs:label "Boating DUI/BUI" ;
+                             skos:altLabel "Boating DUI/BUI"@en-uk ,
+                                           "DUI/BUI en barco"@es-es ,
+                                           "DUI/BUI en barco"@es-mx ,
+                                           "DUI/BUI בסירה"@he-il ,
+                                           "नावगेत पीएनडी/बीयूआई"@hi-in ;
+                             skos:definition "Operating a boat or watercraft while under the influence of drugs or alcohol, which is classified as a criminal misdemeanor offense." .
+
+
+###  http://lmss.sali.org/RCNAtjkDm3rutL4bPBsEz1I
+lmss:RCNAtjkDm3rutL4bPBsEz1I rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R7MbuFEaL6NyU9tM2AXk7lk ;
+                             rdfs:isDefinedBy <https://ucr.fbi.gov/nibrs/2012/resources/nibrs-offense-definitions> ,
+                                              "The unlawful seizure, transportation, and/or detention of a person against his/her will, or of a minor without the consent of his/her custodial parent(s) or legal guardian." ;
+                             rdfs:label "Kidnapping" ;
+                             skos:altLabel "Abduction" ,
+                                           "Kidnapping"@en-uk ,
+                                           "Secuestro"@es-es ,
+                                           "Secuestro"@es-mx ,
+                                           "חטיפה"@he-il ,
+                                           "अपहरण"@hi-in ;
+                             skos:definition "The act of unlawfully taking or confining a person, typically for ransom or as a means of coercion, and is considered a crime against individuals." .
+
+
+###  http://lmss.sali.org/RCNCBNpw84e0SAwaLCvbKNf
+lmss:RCNCBNpw84e0SAwaLCvbKNf rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R7V9R3w28BDjOd4lLUUrvQ5 ;
+                             rdfs:label "Obstruction of Justice" ;
+                             skos:altLabel "Obstrucción a la Justicia"@es-es ,
+                                           "Obstrucción de la Justicia"@es-mx ,
+                                           "Obstruction of Justice"@en-uk ,
+                                           "מניעת צדק"@he-il ,
+                                           "न्याय विरोध"@hi-in ;
+                             skos:definition "The intentional interference with the administration of law or justice, including but not limited to the tampering with or destruction of evidence, the intimidation of witnesses, or the giving of false testimony." .
+
+
+###  http://lmss.sali.org/RCPRLx0shv6uO5vmBtHKGYO
+lmss:RCPRLx0shv6uO5vmBtHKGYO rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RCqBiJAwLT5iG2nvk12tNKW ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty rdfs:seeAlso ;
+                                               owl:someValuesFrom lmss:Ra8NCYdJb9YwmAxaOmLDbI
+                                             ] ;
+                             rdfs:label "Drug Possession" ;
+                             skos:altLabel "Drug Possession"@en-uk ,
+                                           "Posesión de drogas"@es-es ,
+                                           "Posesión de drogas"@es-mx ,
+                                           "אחזקת סמים"@he-il ,
+                                           "ड्रग संचयन"@hi-in ;
+                             skos:definition "The possession of illegal or controlled substances, which is classified as a criminal offense that is less serious than a felony." .
+
+
+###  http://lmss.sali.org/RCPiv0qrO78genaWsaWaRYf
+lmss:RCPiv0qrO78genaWsaWaRYf rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RCqBiJAwLT5iG2nvk12tNKW ;
+                             rdfs:isDefinedBy <https://ucr.fbi.gov/nibrs/2012/resources/nibrs-offense-definitions> ;
+                             rdfs:label "Peeping Tom Violation" ;
+                             skos:altLabel "Peeping Tom Violation"@en-uk ,
+                                           "Violación de la intimidad"@es-es ,
+                                           "Violación de la privacidad"@es-mx ,
+                                           "Voyeurism" ,
+                                           "הפרת חקיקת פיגול"@he-il ,
+                                           "पीपिंग टॉम उल्लंघन"@hi-in ;
+                             skos:definition "To secretly look through a window, doorway, keyhole, or other aperture for the purpose of voyeurism." .
+
+
+###  http://lmss.sali.org/RCQXpw41uM3yqHOjIcq53oT
+lmss:RCQXpw41uM3yqHOjIcq53oT rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R7V9R3w28BDjOd4lLUUrvQ5 ,
+                                             lmss:R9LVBKjvGRuzwgtlhuLST36 ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty rdfs:seeAlso ;
+                                               owl:someValuesFrom lmss:RGVrDmO3wOb1JN6PDlLBFK
+                                             ] ;
+                             rdfs:label "Campaign Finance Violation" ;
+                             skos:altLabel "Campaign Finance Violation"@en-uk ,
+                                           "Violación de Financiación de Campañas"@es-es ,
+                                           "Violación de Financiamiento de Campañas"@es-mx ,
+                                           "הפרת מימון מסעות מבצעים"@he-il ,
+                                           "अभियान वित्त उल्लंघन"@hi-in ;
+                             skos:definition "A campaign finance violation is a type of crime against the government and a statutory or regulatory claim that involves breaking laws related to the financing of political campaigns." .
+
+
+###  http://lmss.sali.org/RCY8A7phqZ78VpWZvsYqMTq
+lmss:RCY8A7phqZ78VpWZvsYqMTq rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R9pC5rYhFMiLaQiSZETyftd ;
+                             rdfs:label "Vehicular Manslaughter" ;
+                             skos:altLabel "Homicidio Vehicular"@es-mx ,
+                                           "Homicidio Vial"@es-es ,
+                                           "Vehicular Manslaughter"@en-uk ,
+                                           "רצח עם רכב"@he-il ,
+                                           "वाहन मॉन्स्लॉटर"@hi-in ;
+                             skos:definition "The unlawful killing of a human being caused by the operation of a motor vehicle by a person who acted with gross negligence or recklessness." .
+
+
+###  http://lmss.sali.org/RCZKHTsfA7SC5yhl8xy8fXh
+lmss:RCZKHTsfA7SC5yhl8xy8fXh rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R9KcDahapJG8vbCxXh6JDwm ,
+                                             lmss:RCqBiJAwLT5iG2nvk12tNKW ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty rdfs:seeAlso ;
+                                               owl:someValuesFrom lmss:R7MbuFEaL6NyU9tM2AXk7lk
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty rdfs:seeAlso ;
+                                               owl:someValuesFrom lmss:RDyuiajPgpJaNFF1R0ncApX
+                                             ] ;
+                             rdfs:label "Criminal Stalking" ;
+                             skos:altLabel "Acoso Criminal"@es-es ,
+                                           "Acoso Criminal"@es-mx ,
+                                           "Criminal Stalking"@en-uk ,
+                                           "ציד פלילי"@he-il ,
+                                           "अपराधिक स्टॉकिंग"@hi-in ;
+                             skos:definition "Criminal Stalking is a criminal offense that involves a pattern of behavior that causes fear or distress to another person, including following, harassing, or threatening them." .
+
+
+###  http://lmss.sali.org/RCfdkasigpXYpOViJrDY7lZ
+lmss:RCfdkasigpXYpOViJrDY7lZ rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R7V9R3w28BDjOd4lLUUrvQ5 ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty rdfs:seeAlso ;
+                                               owl:someValuesFrom lmss:R8afVWfZ0cr5TifIBZTdpL2
+                                             ] ;
+                             rdfs:isDefinedBy <https://ucr.fbi.gov/nibrs/2012/resources/nibrs-offense-definitions> ;
+                             rdfs:label "Bribery" ;
+                             skos:altLabel "Bribery"@en-uk ,
+                                           "Soborno"@es-es ,
+                                           "Soborno"@es-mx ,
+                                           "שחיתות"@he-il ,
+                                           "रिश्वत"@hi-in ;
+                             skos:definition "The offering, giving, receiving, or soliciting of anything of value (i.e., a bribe, gratuity, or kickback) to sway the judgment or action of a person in a position of trust or influence." .
+
+
+###  http://lmss.sali.org/RCfunX4u69LUQ3gbhckE0oI
+lmss:RCfunX4u69LUQ3gbhckE0oI rdf:type owl:Class .
+
+
+###  http://lmss.sali.org/RCle92dC68FgjvzRNv0eQoF
+lmss:RCle92dC68FgjvzRNv0eQoF rdf:type owl:Class .
+
+
+###  http://lmss.sali.org/RCqBiJAwLT5iG2nvk12tNKW
+lmss:RCqBiJAwLT5iG2nvk12tNKW rdf:type owl:Class ;
+                             rdfs:subClassOf :OWLClass_20981083_af39_42fc_b018_5b2d9e6ccb9a ;
+                             rdfs:label "Criminal Misdemeanor Offenses" ;
+                             skos:altLabel "Criminal Misdemeanor Offenses"@en-uk ,
+                                           "Delitos menores penales"@es-es ,
+                                           "Delitos menores penales"@es-mx ,
+                                           "עבירות פליליות קלות"@he-il ,
+                                           "आपराधिक अपराध अपराध"@hi-in ;
+                             skos:definition "Criminal Misdemeanor Offenses are minor criminal offenses that are punishable by a fine or imprisonment for up to one year, such as disorderly conduct, possession of a controlled substance, and driving under the influence." .
+
+
+###  http://lmss.sali.org/RCqPLSe1mf54V2jUhySvbzh
+lmss:RCqPLSe1mf54V2jUhySvbzh rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R9uiDByr48mJfLgUdiIZrSi ;
+                             rdfs:label "Modern Sodomy" ;
+                             skos:altLabel "Modern Sodomy"@en-uk ,
+                                           "Sodomía moderna"@es-es ,
+                                           "Sodomía moderna"@es-mx ,
+                                           "סודומיה מודרנית"@he-il ,
+                                           "आधुनिक सोडोमी"@hi-in ;
+                             skos:definition "The act of engaging in non-procreative sexual acts between same-sex individuals, which is no longer considered a criminal offense in many jurisdictions." .
+
+
+###  http://lmss.sali.org/RCrTf9ZkUrd8tgXOWt0smLc
+lmss:RCrTf9ZkUrd8tgXOWt0smLc rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R7MbuFEaL6NyU9tM2AXk7lk ;
+                             rdfs:label "Criminal False Imprisonment" ;
+                             skos:altLabel "Criminal False Imprisonment"@en-uk ,
+                                           "Encarcelamiento Falso Criminal"@es-es ,
+                                           "Encarcelamiento Falso Criminal"@es-mx ,
+                                           "הכלאה שקרית פלילית"@he-il ,
+                                           "आपराधिक झूठी बंदी"@hi-in ;
+                             skos:definition "The concept of Criminal False Imprisonment refers to the intentional and unlawful confinement or restraint of an individual against their will, without legal justification or authority, and with the knowledge that the confinement is unlawful." .
+
+
+###  http://lmss.sali.org/RCwxVWPUdbPjn2tWtFJg6IZ
+lmss:RCwxVWPUdbPjn2tWtFJg6IZ rdf:type owl:Class .
+
+
+###  http://lmss.sali.org/RCzEqK9mhxGTmmz2g2T7cTM
+lmss:RCzEqK9mhxGTmmz2g2T7cTM rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RDJwYAhLKCUFLjsFuACCRPB ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty rdfs:seeAlso ;
+                                               owl:someValuesFrom lmss:Ra8NCYdJb9YwmAxaOmLDbI
+                                             ] ;
+                             rdfs:label "Minor in Possession of Alcohol" ;
+                             skos:altLabel "Menor en posesión de alcohol"@es-es ,
+                                           "Menor en posesión de alcohol"@es-mx ,
+                                           "Minor in Possession of Alcohol"@en-uk ,
+                                           "קטן בבעלות אלכוהול"@he-il ,
+                                           "शराब के साथ अवैध रूप से नाबालिग होना"@hi-in ;
+                             skos:definition "A Minor in Possession of Alcohol refers to the illegal act of a person under the legal drinking age possessing or consuming alcohol, which falls under the category of Liquor Law Violations." .
+
+
+###  http://lmss.sali.org/RD1NJOilfS2J7giDdQdLPek
+lmss:RD1NJOilfS2J7giDdQdLPek rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R9KC6PngzJi80MRTJgJyVad ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty rdfs:seeAlso ;
+                                               owl:someValuesFrom lmss:RLvhxz3b1k2IU3MaAgeRtF
+                                             ] ;
+                             rdfs:label "Unlawful Discharge of a Weapon" ;
+                             skos:altLabel "Descarga ilegal de un arma"@es-es ,
+                                           "Descarga ilegal de un arma"@es-mx ,
+                                           "Unlawful Discharge of a Weapon"@en-uk ,
+                                           "ירי לא חוקי של נשק"@he-il ,
+                                           "अवैध हथियार फेंकना"@hi-in ;
+                             skos:definition "The Unlawful Discharge of a Weapon refers to the illegal act of firing a gun or other firearm, and is a specific type of crime related to the use of weapons." .
+
+
+###  http://lmss.sali.org/RDDo89IYNYywizH9jSXp6zY
+lmss:RDDo89IYNYywizH9jSXp6zY rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RCqBiJAwLT5iG2nvk12tNKW ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty rdfs:seeAlso ;
+                                               owl:someValuesFrom lmss:R7MbuFEaL6NyU9tM2AXk7lk
+                                             ] ;
+                             rdfs:label "Unlawful Restraint" ;
+                             skos:altLabel "Detención ilegal"@es-es ,
+                                           "Detención ilegal"@es-mx ,
+                                           "Unlawful Restraint"@en-uk ,
+                                           "עיכוב בלתי חוקי"@he-il ,
+                                           "अवैध रोकथाम"@hi-in ;
+                             skos:definition "The concept of Unlawful Restraint refers to the criminal offense of intentionally restricting someone's movement without their consent, and is classified as a misdemeanor offense." .
+
+
+###  http://lmss.sali.org/RDGL2gCEacTZDXEK0m1dhp2
+lmss:RDGL2gCEacTZDXEK0m1dhp2 rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R7ma9Q5FiHDcIYgKoxKNUk9 ;
+                             rdfs:label "Solicitation" ;
+                             skos:altLabel "Solicitation"@en-uk ,
+                                           "Solicitud"@es-es ,
+                                           "Solicitud"@es-mx ,
+                                           "הצעת עסקה"@he-il ,
+                                           "अनुरोध"@hi-in ;
+                             skos:definition "The concept of Solicitation refers to the act of encouraging, requesting, or commanding another person to commit a crime, with the intent that the crime be committed." .
+
+
+###  http://lmss.sali.org/RDGdgxwCGXpkY1zfT2WwGl9
+lmss:RDGdgxwCGXpkY1zfT2WwGl9 rdf:type owl:Class .
+
+
+###  http://lmss.sali.org/RDJwYAhLKCUFLjsFuACCRPB
+lmss:RDJwYAhLKCUFLjsFuACCRPB rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RCqBiJAwLT5iG2nvk12tNKW ;
+                             rdfs:isDefinedBy <https://ucr.fbi.gov/nibrs/2012/resources/nibrs-offense-definitions> ;
+                             rdfs:label "Liquor Law Violations" ;
+                             skos:altLabel "Alcohol Law Violations" ,
+                                           "Infracciones a la Ley de Bebidas Alcohólicas"@es-es ,
+                                           "Liquor Law Violations"@en-uk ,
+                                           "Violaciones a la Ley de Bebidas Alcohólicas"@es-mx ,
+                                           "הפרות חוקי הסגולה"@he-il ,
+                                           "शराब कानून उल्लंघन"@hi-in ;
+                             skos:definition "The violation of laws or ordinances prohibiting the manufacture, sale, purchase, transportation, possession, or use of alcoholic beverages." .
+
+
+###  http://lmss.sali.org/RDK3ploePpyFDgIkSzbOCtX
+lmss:RDK3ploePpyFDgIkSzbOCtX rdf:type owl:Class .
+
+
+###  http://lmss.sali.org/RDMNx0AK0j8Rc7MLtq2cQqK
+lmss:RDMNx0AK0j8Rc7MLtq2cQqK rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RCqBiJAwLT5iG2nvk12tNKW ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty rdfs:seeAlso ;
+                                               owl:someValuesFrom lmss:RLvhxz3b1k2IU3MaAgeRtF
+                                             ] ;
+                             rdfs:label "Obscenity" ;
+                             skos:altLabel "Obscenidad"@es-es ,
+                                           "Obscenidad"@es-mx ,
+                                           "Obscenity"@en-uk ,
+                                           "פוגעניות"@he-il ,
+                                           "अश्लीलता"@hi-in ;
+                             skos:definition "Obscenity refers to a criminal offense that involves the distribution or display of materials that are considered offensive or indecent according to community standards." .
+
+
+###  http://lmss.sali.org/RDSBerlLWg1ntpLqDQn1eVn
+lmss:RDSBerlLWg1ntpLqDQn1eVn rdf:type owl:Class .
+
+
+###  http://lmss.sali.org/RDSX126wEHguoKDOWIJ7rBE
+lmss:RDSX126wEHguoKDOWIJ7rBE rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RCqBiJAwLT5iG2nvk12tNKW ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty rdfs:seeAlso ;
+                                               owl:someValuesFrom lmss:RLvhxz3b1k2IU3MaAgeRtF
+                                             ] ;
+                             rdfs:label "Public Sexual Activity" ;
+                             skos:altLabel "Actividad Sexual en Público"@es-es ,
+                                           "Actividad Sexual en Público"@es-mx ,
+                                           "Public Sexual Activity"@en-uk ,
+                                           "פעילות מינית ציבורית"@he-il ,
+                                           "सार्वजनिक यौन गतिविधि"@hi-in ;
+                             skos:definition "Public Sexual Activity: Engaging in sexual acts or conduct in a public place, which is considered a criminal misdemeanor offense." .
+
+
+###  http://lmss.sali.org/RDV9p8R7hPvWmMR1XyiJsm9
+lmss:RDV9p8R7hPvWmMR1XyiJsm9 rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RCqBiJAwLT5iG2nvk12tNKW ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty rdfs:seeAlso ;
+                                               owl:someValuesFrom lmss:R7V9R3w28BDjOd4lLUUrvQ5
+                                             ] ;
+                             rdfs:label "Resisting Arrest" ;
+                             skos:altLabel "Resistencia a la detención"@es-es ,
+                                           "Resistencia al arresto"@es-mx ,
+                                           "Resisting Arrest"@en-uk ,
+                                           "מתנגד למעצר"@he-il ,
+                                           "गिरफ्तारी से संभलना"@hi-in ;
+                             skos:definition "Resisting Arrest refers to the act of using force or violence to prevent a law enforcement officer from lawfully arresting or detaining an individual." .
+
+
+###  http://lmss.sali.org/RDX6d1gZG7nkRrDFAC6gDM2
+lmss:RDX6d1gZG7nkRrDFAC6gDM2 rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RCqBiJAwLT5iG2nvk12tNKW ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty rdfs:seeAlso ;
+                                               owl:someValuesFrom lmss:RLvhxz3b1k2IU3MaAgeRtF
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty rdfs:seeAlso ;
+                                               owl:someValuesFrom lmss:Rj1p7FbFSLxlWfUlSPZxhX
+                                             ] ;
+                             rdfs:label "Reckless Driving" ;
+                             skos:altLabel "Conducción imprudente"@es-mx ,
+                                           "Conducción temeraria"@es-es ,
+                                           "Reckless Driving"@en-uk ,
+                                           "נהיגה בלתי אחראית"@he-il ,
+                                           "लापरवाह चलान"@hi-in ;
+                             skos:definition "Reckless Driving: A criminal misdemeanor offense that involves operating a vehicle with a willful or wanton disregard for the safety of others on the road." .
+
+
+###  http://lmss.sali.org/RDaX0mn1Z8fDrW3ZkzpmH1N
+lmss:RDaX0mn1Z8fDrW3ZkzpmH1N rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R7V9R3w28BDjOd4lLUUrvQ5 ,
+                                             lmss:RqWYmNLhfvzysGhC75yUNw ;
+                             rdfs:label "Illegal Re-Entry" ;
+                             skos:definition "The concept of \"Illegal Re-Entry\" refers to the act of a person who has been deported from a country, returning to that country without proper authorization, which is considered a crime against the government and falls under the category of immigration claims." .
+
+
+###  http://lmss.sali.org/RDgbjRGvnprxnFm9CAqCjYs
+lmss:RDgbjRGvnprxnFm9CAqCjYs rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RLvhxz3b1k2IU3MaAgeRtF ;
+                             rdfs:isDefinedBy <https://ucr.fbi.gov/nibrs/2012/resources/nibrs-offense-definitions> ;
+                             rdfs:label "Curfew, Loitering, and Vagrancy Violations" ;
+                             skos:altLabel "Curfew, Loitering, and Vagrancy Violations"@en-uk ,
+                                           "Violaciones de toque de queda, vagancia y merodeo"@es-es ,
+                                           "Violaciones de toque de queda, vagancia y merodeo"@es-mx ,
+                                           "הפרות צווארון לילה, תגרות ובזבזות"@he-il ,
+                                           "कर्फ्यू, घूमना-फिरना और बेघरी उल्लंघन"@hi-in ;
+                             skos:definition "The violation of a court order, regulation, ordinance, or law requiring the withdrawal of persons from the streets or other specified areas; prohibiting persons from remaining in an area or place in an idle or aimless manner; or prohibiting persons from going from place to place without visible means of support." .
+
+
+###  http://lmss.sali.org/RDjMjjBlt5UcxM5InqAQx7P
+lmss:RDjMjjBlt5UcxM5InqAQx7P rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R7V9R3w28BDjOd4lLUUrvQ5 ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty rdfs:seeAlso ;
+                                               owl:someValuesFrom lmss:RCExQDQMRV5lwxQZb0jTcDH
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty rdfs:seeAlso ;
+                                               owl:someValuesFrom lmss:RlVwfGbgKDt6ZToBprQ4sU
+                                             ] ;
+                             rdfs:label "Rescue of Prisoner" ;
+                             skos:altLabel "Rescate de prisionero"@es-es ,
+                                           "Rescate de prisionero"@es-mx ,
+                                           "Rescue of Prisoner"@en-uk ,
+                                           "הצלת אסיר"@he-il ,
+                                           "कैदी का बचाव"@hi-in ;
+                             skos:definition "The Rescue of Prisoner is a criminal act against the government that involves the unlawful liberation of a person who is being held in custody." .
+
+
+###  http://lmss.sali.org/RDm9mvoBd5B4aS18jAGrLRD
+lmss:RDm9mvoBd5B4aS18jAGrLRD rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R81ea6Rg9Cd8vEEma9Eqp9t ;
+                             rdfs:label "Domestic Terrorism" ;
+                             skos:definition "The unlawful use of violence and intimidation, often against civilians, in order to achieve political or social objectives within the borders of a particular country." .
+
+
+###  http://lmss.sali.org/RDwDmcN0z56JIukw0vYcGte
+lmss:RDwDmcN0z56JIukw0vYcGte rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:RCqBiJAwLT5iG2nvk12tNKW ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty rdfs:seeAlso ;
+                                               owl:someValuesFrom lmss:RLvhxz3b1k2IU3MaAgeRtF
+                                             ] ;
+                             rdfs:label "Disturbing the Peace" ;
+                             skos:altLabel "Alteración del Orden Público"@es-es ,
+                                           "Alteración del Orden Público"@es-mx ,
+                                           "Disturbing the Peace"@en-uk ,
+                                           "הפרת שקט ציבור"@he-il ,
+                                           "शांति को व्यवधान"@hi-in ;
+                             skos:definition "The act of disturbing the peace refers to behavior that disrupts public order and tranquility, and is classified as a criminal misdemeanor offense." .
+
+
+###  http://lmss.sali.org/RDwISw0syjjwmS6UpyiShve
+lmss:RDwISw0syjjwmS6UpyiShve rdf:type owl:Class ;
+                             rdfs:subClassOf lmss:R9pC5rYhFMiLaQiSZETyftd ;
+                             rdfs:label "Reckless Involuntary Manslaughter" ;
+                             skos:altLabel "Homicidio Involuntario Imprudente"@es-es ,
+                                           "Homicidio Involuntario Imprudente"@es-mx ,
+                                           "Reckless Involuntary Manslaughter"@en-uk ,
+                                           "רצח לא מתכוון ברשלנות"@he-il ,
+                                           "लापरवाह अवश्यक हत्या"@hi-in ;
+                             skos:definition "The unlawful killing of a person without intent, caused by a reckless disregard for human life." .
+
+
+###  http://lmss.sali.org/RDyuiajPgpJaNFF1R0ncApX
+lmss:RDyuiajPgpJaNFF1R0ncApX rdf:type owl:Class .
+
+
+###  http://lmss.sali.org/REGXoYYhM0kwLwMTfS9SDl
+lmss:REGXoYYhM0kwLwMTfS9SDl rdf:type owl:Class ;
+                            rdfs:subClassOf lmss:RDgbjRGvnprxnFm9CAqCjYs ;
+                            rdfs:label "Vagrancy" ;
+                            skos:altLabel "Vagancia"@es-es ,
+                                          "Vagancia"@es-mx ,
+                                          "Vagrancy"@en-uk ,
+                                          "בזבזות"@he-il ,
+                                          "भटकाव"@hi-in ;
+                            skos:definition "The concept of Vagrancy refers to the act of wandering or loitering in public places without a clear purpose or means of support, which may be prohibited by law and subject to penalties." .
+
+
+###  http://lmss.sali.org/REoC9pAO1UEoK68TDxn96Y
+lmss:REoC9pAO1UEoK68TDxn96Y rdf:type owl:Class ;
+                            rdfs:subClassOf lmss:RCqBiJAwLT5iG2nvk12tNKW ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty rdfs:seeAlso ;
+                                              owl:someValuesFrom lmss:Ra8NCYdJb9YwmAxaOmLDbI
+                                            ] ;
+                            rdfs:label "Possession of Drug Paraphernalia" ;
+                            skos:altLabel "Posesión de parafernalia de drogas"@es-es ,
+                                          "Posesión de parafernalia para drogas"@es-mx ,
+                                          "Possession of Drug Paraphernalia"@en-uk ,
+                                          "בעלות ציוד לסמים"@he-il ,
+                                          "ड्रग पैराफर्नेलिया के स्वामित्व"@hi-in ;
+                            skos:definition "The possession of drug paraphernalia refers to the act of having equipment, materials, or products that are intended for use in the consumption, preparation, or storage of illegal drugs, and is classified as a criminal misdemeanor offense." .
+
+
+###  http://lmss.sali.org/RFrien46eAPSSbu8WgoU6S
+lmss:RFrien46eAPSSbu8WgoU6S rdf:type owl:Class ;
+                            rdfs:subClassOf lmss:RCqBiJAwLT5iG2nvk12tNKW ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty rdfs:seeAlso ;
+                                              owl:someValuesFrom lmss:R8ldDGTh6RHzt0IDL7p597U
+                                            ] ;
+                            rdfs:label "Shoplifting" ;
+                            skos:altLabel "Hurto en tiendas"@es-es ,
+                                          "Robo en tiendas"@es-mx ,
+                                          "Shoplifting"@en-uk ,
+                                          "גניבת חנויות"@he-il ,
+                                          "दुकान चोरी"@hi-in ;
+                            skos:definition "The act of taking merchandise from a store without paying for it, which is classified as a criminal offense of a minor nature." .
+
+
+###  http://lmss.sali.org/RGVrDmO3wOb1JN6PDlLBFK
+lmss:RGVrDmO3wOb1JN6PDlLBFK rdf:type owl:Class .
+
+
+###  http://lmss.sali.org/RIl8s2tEaoYUUYasF92UWc
+lmss:RIl8s2tEaoYUUYasF92UWc rdf:type owl:Class ;
+                            rdfs:subClassOf lmss:RDgbjRGvnprxnFm9CAqCjYs ;
+                            rdfs:label "Loitering" ;
+                            skos:altLabel "Loitering"@en-uk ,
+                                          "Vagabundeo"@es-es ,
+                                          "Vagancia"@es-mx ,
+                                          "זיהום"@he-il ,
+                                          "आवारगर्दी"@hi-in ;
+                            skos:definition "The act of remaining in a public place for an extended period of time without a clear purpose or legitimate reason, often in violation of local laws or ordinances related to curfew, loitering, or vagrancy." .
+
+
+###  http://lmss.sali.org/RJlp1OGx7ZwGezwMkUlBnP
+lmss:RJlp1OGx7ZwGezwMkUlBnP rdf:type owl:Class ;
+                            rdfs:subClassOf lmss:RLvhxz3b1k2IU3MaAgeRtF ;
+                            rdfs:label "Disorderly House" ;
+                            skos:altLabel "Casa de lenocinio"@es-es ,
+                                          "Casa de lenocinio"@es-mx ,
+                                          "Disorderly House"@en-uk ,
+                                          "בית בלתי מסודר"@he-il ,
+                                          "अनुशासहीन घर"@hi-in ;
+                            skos:definition "A Disorderly House is a type of crime against the public that involves maintaining a dwelling or establishment where illegal activities, such as prostitution or gambling, take place." .
+
+
+###  http://lmss.sali.org/RLvhxz3b1k2IU3MaAgeRtF
+lmss:RLvhxz3b1k2IU3MaAgeRtF rdf:type owl:Class ;
+                            rdfs:subClassOf :OWLClass_20981083_af39_42fc_b018_5b2d9e6ccb9a ;
+                            rdfs:label "Crimes Against the Public" ;
+                            skos:altLabel "Crimes Against the Public"@en-uk ,
+                                          "Delitos contra el orden público"@es-es ,
+                                          "Delitos contra la sociedad"@es-mx ,
+                                          "פשעים נגד הציבור"@he-il ,
+                                          "सार्वजनिक विरुद्ध अपराध"@hi-in ;
+                            skos:definition "Crimes Against the Public are offenses that harm or disrupt the general welfare and safety of society, including but not limited to prostitution, disorderly conduct, rioting, weapons offenses, unlawful assembly, criminal gang participation, unlawful gaming and lotteries, curfew violations, loitering, vagrancy, disorderly house, failure to disperse, and drug crimes." .
+
+
+###  http://lmss.sali.org/RNtr2KMwM33LplYnmmxxVY
+lmss:RNtr2KMwM33LplYnmmxxVY rdf:type owl:Class ;
+                            rdfs:subClassOf lmss:R8BLgPtZOuKFI8MtZNTaT0u ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty rdfs:seeAlso ;
+                                              owl:someValuesFrom lmss:RBFgL4Dth9VONjmIdH0bEOs
+                                            ] ;
+                            rdfs:label "Domestic Violence" ;
+                            skos:altLabel "Domestic Violence"@en-uk ,
+                                          "Violencia Doméstica"@es-es ,
+                                          "Violencia Doméstica"@es-mx ,
+                                          "אלימות במשפחה"@he-il ,
+                                          "घरेलू हिंसा"@hi-in ;
+                            skos:definition "Domestic Violence refers to physical, emotional, or sexual abuse that occurs within a domestic relationship, such as between spouses or partners, and is considered a form of criminal assault." .
+
+
+###  http://lmss.sali.org/ROWic2EEHARyyBGyKraIEC
+lmss:ROWic2EEHARyyBGyKraIEC rdf:type owl:Class .
+
+
+###  http://lmss.sali.org/RRa8pbp0z1jaRfCG5da6lC
+lmss:RRa8pbp0z1jaRfCG5da6lC rdf:type owl:Class ;
+                            rdfs:subClassOf lmss:RCqBiJAwLT5iG2nvk12tNKW ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty rdfs:seeAlso ;
+                                              owl:someValuesFrom lmss:R7V9R3w28BDjOd4lLUUrvQ5
+                                            ] ;
+                            rdfs:label "Evading Arrest" ;
+                            skos:altLabel "Evading Arrest"@en-uk ,
+                                          "Evasión de la detención"@es-es ,
+                                          "Evasión de la detención"@es-mx ,
+                                          "התחמקות ממעצר"@he-il ,
+                                          "गिरफ्तारी से बचना"@hi-in ;
+                            skos:definition "The concept of Evading Arrest refers to the act of intentionally avoiding or running away from a law enforcement officer who is attempting to make an arrest, and is classified as a type of criminal misdemeanor offense." .
+
+
+###  http://lmss.sali.org/RSRxb9psAJdqf8rppoiYI8
+lmss:RSRxb9psAJdqf8rppoiYI8 rdf:type owl:Class .
+
+
+###  http://lmss.sali.org/RTidRiJfp65AGi8fDsfUYa
+lmss:RTidRiJfp65AGi8fDsfUYa rdf:type owl:Class ;
+                            rdfs:subClassOf lmss:R7V9R3w28BDjOd4lLUUrvQ5 ;
+                            rdfs:label "Treason" ;
+                            skos:altLabel "Traición"@es-es ,
+                                          "Traición"@es-mx ,
+                                          "Treason"@en-uk ,
+                                          "מרד"@he-il ,
+                                          "देशद्रोह"@hi-in ;
+                            skos:definition "The act of betraying one's country by levying war against it or by giving aid or comfort to its enemies." .
+
+
+###  http://lmss.sali.org/RV45b8NoF16FFpjXgZYmpz
+lmss:RV45b8NoF16FFpjXgZYmpz rdf:type owl:Class ;
+                            rdfs:subClassOf lmss:R9pC5rYhFMiLaQiSZETyftd ;
+                            rdfs:label "Misdemeanor Manslaughter" ;
+                            skos:altLabel "Homicidio culposo"@es-mx ,
+                                          "Homicidio imprudente"@es-es ,
+                                          "Misdemeanor Manslaughter"@en-uk ,
+                                          "רצח לא מתכוון"@he-il ,
+                                          "अपराधी मैंस्लॉटर"@hi-in ;
+                            skos:definition "Misdemeanor Manslaughter is a type of negligent manslaughter that occurs when a person commits a misdemeanor offense that results in the death of another person." .
+
+
+###  http://lmss.sali.org/RWLKWLYuVzXk91nvlM2VD4
+lmss:RWLKWLYuVzXk91nvlM2VD4 rdf:type owl:Class ;
+                            rdfs:subClassOf lmss:R8BLgPtZOuKFI8MtZNTaT0u ;
+                            rdfs:label "Threatened Battery Assault" ;
+                            skos:altLabel "Amenaza de agresión con lesiones"@es-es ,
+                                          "Amenaza de agresión con lesiones"@es-mx ,
+                                          "Threatened Battery Assault"@en-uk ,
+                                          "התקפת סוללה מאיימת"@he-il ,
+                                          "धमकी भरा बैटरी हमला"@hi-in ;
+                            skos:definition "The concept of Threatened Battery Assault refers to a criminal assault where the perpetrator intentionally causes the victim to fear immediate bodily harm or offensive contact, without actually making physical contact." .
+
+
+###  http://lmss.sali.org/RYtzibGIkGDjMH5zFGlU8H
+lmss:RYtzibGIkGDjMH5zFGlU8H rdf:type owl:Class ;
+                            rdfs:subClassOf lmss:RLvhxz3b1k2IU3MaAgeRtF ;
+                            rdfs:label "Failure to Disperse" ;
+                            skos:altLabel "Failure to Disperse"@en-uk ,
+                                          "Fracaso en dispersarse"@es-es ,
+                                          "Fracaso en dispersarse"@es-mx ,
+                                          "כישלון בפיזור"@he-il ,
+                                          "विफलता विस्तार नहीं करना"@hi-in ;
+                            skos:definition "The Failure to Disperse is a type of crime against the public that involves the refusal or failure to leave a public area when ordered to do so by law enforcement." .
+
+
+###  http://lmss.sali.org/Ra8NCYdJb9YwmAxaOmLDbI
+lmss:Ra8NCYdJb9YwmAxaOmLDbI rdf:type owl:Class ;
+                            rdfs:subClassOf lmss:RLvhxz3b1k2IU3MaAgeRtF ,
+                                            :OWLClass_20981083_af39_42fc_b018_5b2d9e6ccb9a ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty rdfs:seeAlso ;
+                                              owl:someValuesFrom lmss:RCle92dC68FgjvzRNv0eQoF
+                                            ] ;
+                            rdfs:isDefinedBy <https://ucr.fbi.gov/nibrs/2012/resources/nibrs-offense-definitions> ;
+                            rdfs:label "Drug Crimes" ;
+                            skos:altLabel "Controlled Substance Crime" ,
+                                          "Delitos de Drogas"@es-es ,
+                                          "Delitos de Narcóticos"@es-mx ,
+                                          "Drug Offences"@en-uk ,
+                                          "Narcotic Crimes" ,
+                                          "פשעי סמים"@he-il ,
+                                          "ड्रग अपराध"@hi-in ;
+                            skos:definition "The violation of laws prohibiting the production, distribution, and/or use of certain controlled substances and the equipment or devices utilized in their preparation and/or use." .
+
+
+###  http://lmss.sali.org/RcVabDAyOfCmuIYjaqoxHf
+lmss:RcVabDAyOfCmuIYjaqoxHf rdf:type owl:Class .
+
+
+###  http://lmss.sali.org/RdSAc25dvhITVjwN0V8orK
+lmss:RdSAc25dvhITVjwN0V8orK rdf:type owl:Class ;
+                            rdfs:subClassOf lmss:R81ea6Rg9Cd8vEEma9Eqp9t ;
+                            rdfs:label "International Terrorism" ;
+                            skos:altLabel "International Terrorism"@en-uk ,
+                                          "Terrorismo Internacional"@es-es ,
+                                          "Terrorismo Internacional"@es-mx ,
+                                          "טרור בינלאומי"@he-il ,
+                                          "अंतरराष्ट्रीय आतंकवाद"@hi-in ;
+                            skos:definition "The use of violence and intimidation in pursuit of political aims that occurs across national borders." .
+
+
+###  http://lmss.sali.org/RedqB4xsmjzseIURMCJI6l
+lmss:RedqB4xsmjzseIURMCJI6l rdf:type owl:Class ;
+                            rdfs:subClassOf lmss:R8ldDGTh6RHzt0IDL7p597U ;
+                            rdfs:isDefinedBy <https://ucr.fbi.gov/nibrs/2012/resources/nibrs-offense-definitions> ;
+                            rdfs:label "Arson" ;
+                            skos:altLabel "Arson"@en-uk ,
+                                          "Incendio provocado"@es-es ,
+                                          "Incendio provocado"@es-mx ,
+                                          "הצתה פושעת"@he-il ,
+                                          "आगजनी"@hi-in ;
+                            skos:definition "To unlawfully and intentionally damage, or attempt to damage, any real or personal property by fire or incendiary device" .
+
+
+###  http://lmss.sali.org/RfcfQz0nz5VI5iHiR9077D
+lmss:RfcfQz0nz5VI5iHiR9077D rdf:type owl:Class ;
+                            rdfs:subClassOf lmss:R7V9R3w28BDjOd4lLUUrvQ5 ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty rdfs:seeAlso ;
+                                              owl:someValuesFrom lmss:RCDSmXwVa56dRfhw74VL2nr
+                                            ] ;
+                            rdfs:label "Sedition" ;
+                            skos:altLabel "Sedición"@es-es ,
+                                          "Sedición"@es-mx ,
+                                          "Sedition"@en-uk ,
+                                          "סְדִיצְיָה"@he-il ,
+                                          "विद्रोह"@hi-in ;
+                            skos:definition "Sedition is a crime against the government that involves inciting rebellion or resistance against lawful authority." .
+
+
+###  http://lmss.sali.org/Rj1p7FbFSLxlWfUlSPZxhX
+lmss:Rj1p7FbFSLxlWfUlSPZxhX rdf:type owl:Class ;
+                            rdfs:subClassOf :OWLClass_20981083_af39_42fc_b018_5b2d9e6ccb9a ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty rdfs:seeAlso ;
+                                              owl:someValuesFrom lmss:RBFuGRXSksUz7DZ9ryC7C1F
+                                            ] ;
+                            rdfs:label "Traffic Violation Claims" ;
+                            skos:altLabel "Reclamaciones por infracciones de tráfico"@es-es ,
+                                          "Reclamaciones por violaciones de tráfico"@es-mx ,
+                                          "Traffic Violation Claims"@en-uk ,
+                                          "תביעות עבירות תנועה"@he-il ,
+                                          "ट्रैफिक उल्लंघन दावे"@hi-in ;
+                            skos:definition "A traffic violation claim is a type of criminal claim that involves the violation of traffic laws, such as speeding or running a red light, and the legal proceedings that follow." .
+
+
+###  http://lmss.sali.org/Rjowv26wyO4F3vHf4nR9ZW
+lmss:Rjowv26wyO4F3vHf4nR9ZW rdf:type owl:Class ;
+                            rdfs:subClassOf lmss:Rj1p7FbFSLxlWfUlSPZxhX ;
+                            rdfs:label "Ordinance Violation" ;
+                            skos:altLabel "Infracción de Ordenanza"@es-es ,
+                                          "Infracción de Ordenanza"@es-mx ,
+                                          "Ordinance Breach"@en-uk ,
+                                          "הפרת תקנות"@he-il ,
+                                          "अधिनियम उल्लंघन"@hi-in ;
+                            skos:definition "A violation of a local law or regulation, typically related to traffic, that is punishable by a fine or other penalty." .
+
+
+###  http://lmss.sali.org/RlVwfGbgKDt6ZToBprQ4sU
+lmss:RlVwfGbgKDt6ZToBprQ4sU rdf:type owl:Class ;
+                            rdfs:subClassOf lmss:R7V9R3w28BDjOd4lLUUrvQ5 ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty rdfs:seeAlso ;
+                                              owl:someValuesFrom lmss:RDjMjjBlt5UcxM5InqAQx7P
+                                            ] ;
+                            rdfs:label "Escape from Correctional Facility" ;
+                            skos:altLabel "Escape" ,
+                                          "Escape from Correctional Facility"@en-uk ,
+                                          "Escape from Jail" ,
+                                          "Escape from Prision" ,
+                                          "Fuga de centro correccional"@es-mx ,
+                                          "Fuga de centro penitenciario"@es-es ,
+                                          "בריחה ממתקן תיקון"@he-il ,
+                                          "सुधारी विद्यालय से भागना"@hi-in ;
+                            skos:definition "The act of leaving a correctional facility without authorization, which is considered a crime against the government." .
+
+
+###  http://lmss.sali.org/RqWYmNLhfvzysGhC75yUNw
+lmss:RqWYmNLhfvzysGhC75yUNw rdf:type owl:Class .
+
+
+###  http://lmss.sali.org/RuNRzptxqnjdnI9WDZmYYC
+lmss:RuNRzptxqnjdnI9WDZmYYC rdf:type owl:Class ;
+                            rdfs:subClassOf lmss:R7V9R3w28BDjOd4lLUUrvQ5 ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty rdfs:seeAlso ;
+                                              owl:someValuesFrom lmss:R8xhTgEOLxauZ6mN68JsaoD
+                                            ] ;
+                            rdfs:label "Subornation of Perjury" ;
+                            skos:altLabel "Soborno de falso testimonio"@es-es ,
+                                          "Soborno de falso testimonio"@es-mx ,
+                                          "Subornation of Perjury"@en-uk ,
+                                          "סוורנות שקר עדות"@he-il ,
+                                          "झूठी गवाही के लिए घूसखोरी"@hi-in ;
+                            skos:definition "The act of persuading someone to commit perjury, which is giving false testimony under oath, with the intention of obstructing justice or misleading the court." .
+
+
+###  http://lmss.sali.org/Rw514WrvQbSAQN7bZyT3fK
+lmss:Rw514WrvQbSAQN7bZyT3fK rdf:type owl:Class ;
+                            rdfs:subClassOf lmss:R7V9R3w28BDjOd4lLUUrvQ5 ;
+                            rdfs:label "Espionage" ;
+                            skos:altLabel "Espionage"@en-uk ,
+                                          "Espionaje"@es-es ,
+                                          "Espionaje"@es-mx ,
+                                          "ריגול"@he-il ,
+                                          "जासूसी"@hi-in ;
+                            skos:definition "The act of spying or gathering confidential information for a foreign government or entity, considered a crime against the government." .
+
+
+###  http://lmss.sali.org/RxQ9amGYNaNNyjzrOzxcFH
+lmss:RxQ9amGYNaNNyjzrOzxcFH rdf:type owl:Class ;
+                            rdfs:subClassOf lmss:RCqBiJAwLT5iG2nvk12tNKW ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty rdfs:seeAlso ;
+                                              owl:someValuesFrom lmss:RLvhxz3b1k2IU3MaAgeRtF
+                                            ] ;
+                            rdfs:label "Indecent Exposure" ;
+                            skos:altLabel "Exhibicionismo"@es-es ,
+                                          "Exhibicionismo"@es-mx ,
+                                          "Indecent Exposure"@en-uk ,
+                                          "חשיפה לפני הציבור"@he-il ,
+                                          "अश्लील उज्ज्वलता"@hi-in ;
+                            skos:definition "The act of exposing one's private parts in public or in the presence of others in a lewd or offensive manner, which is considered a criminal offense of a less serious nature." .
+
+
+###  http://lmss.sali.org/Rxpa6slGHQ2Fw06qkFTzjW
+lmss:Rxpa6slGHQ2Fw06qkFTzjW rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000001
+obo:BFO_0000001 rdf:type owl:Class ;
+                rdfs:label "entity"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000002
+obo:BFO_0000002 rdf:type owl:Class ;
+                rdfs:subClassOf obo:BFO_0000001 ;
+                owl:disjointWith obo:BFO_0000003 ;
+                rdfs:label "continuant"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000003
+obo:BFO_0000003 rdf:type owl:Class ;
+                rdfs:subClassOf obo:BFO_0000001 ;
+                rdfs:label "occurrent"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000015
+obo:BFO_0000015 rdf:type owl:Class ;
+                rdfs:subClassOf obo:BFO_0000003 ;
+                rdfs:label "process"@en .
+
+
+###  http://www.semanticweb.org/alecsculley/ontologies/2023/5/untitled-ontology-270#OWLClass_20981083_af39_42fc_b018_5b2d9e6ccb9a
+:OWLClass_20981083_af39_42fc_b018_5b2d9e6ccb9a rdf:type owl:Class ;
+                                               rdfs:subClassOf obo:BFO_0000015 ;
+                                               owl:disjointWith :OWLClass_39a0098a_ffe1_41db_af4f_14889a88e641 ;
+                                               rdfs:label "Crime"@en ;
+                                               skos:definition "A crime is an act for which some law prescribes some punishment." .
+
+
+###  http://www.semanticweb.org/alecsculley/ontologies/2023/5/untitled-ontology-270#OWLClass_39a0098a_ffe1_41db_af4f_14889a88e641
+:OWLClass_39a0098a_ffe1_41db_af4f_14889a88e641 rdf:type owl:Class ;
+                                               rdfs:subClassOf obo:BFO_0000015 ;
+                                               rdfs:label "Criminal Incident"@en .
+
+
+###  http://www.semanticweb.org/alecsculley/ontologies/2023/5/untitled-ontology-270#OWLClass_40aadcf2_9664_415c_adc8_e5c9add844db
+:OWLClass_40aadcf2_9664_415c_adc8_e5c9add844db rdf:type owl:Class ;
+                                               rdfs:subClassOf obo:BFO_0000015 ;
+                                               rdfs:label "Criminal Proceeding"@en .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
