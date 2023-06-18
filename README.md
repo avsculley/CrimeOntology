@@ -10,7 +10,7 @@ Both ontologies will use [LMSS](https://github.com/sali-legal/LMSS) and [NIBRS](
 
 [NIBRS 2021](https://bjs.ojp.gov/sites/g/files/xyckuh236/files/sarble/data_common/nibrs-user-manual-2021-1041521.pdf)
 
-Any ontologies available on this repo are preliminary and made available primarily for browsing.
+Any ontologies available on this repo are preliminary works in progress and made available primarily for browsing.
 
 Contact info: 
 Alec Sculley
