@@ -1,0 +1,223 @@
+@prefix : <http://www.semanticweb.org/alecsculley/ontologies/untitled-ontology-345#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/alecsculley/ontologies/untitled-ontology-345> .
+
+<http://www.semanticweb.org/alecsculley/ontologies/untitled-ontology-345> rdf:type owl:Ontology ;
+                                                                           owl:imports <http://purl.obolibrary.org/obo/bfo_ro.owl> ,
+                                                                                       <http://www.ontologyrepository.com/CommonCoreOntologies/Mid/MergedAllCoreOntology> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/alecsculley/ontologies/untitled-ontology-345#OWLClass_1e7a188c_0432_48d1_81ef_e0ff86f57737
+:OWLClass_1e7a188c_0432_48d1_81ef_e0ff86f57737 rdf:type owl:Class ;
+                                               rdfs:subClassOf :OWLClass_b4865695_ddec_4020_b80f_afb0298ea0d6 ;
+                                               rdfs:label "Act of Legal Punishment"@en ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "An Act of Legal Punishment is an Act of Punishment which is permitted by some law." .
+
+
+###  http://www.semanticweb.org/alecsculley/ontologies/untitled-ontology-345#OWLClass_24a9a4b8_bc7c_4050_a6c3_8a422e639361
+:OWLClass_24a9a4b8_bc7c_4050_a6c3_8a422e639361 rdf:type owl:Class ;
+                                               rdfs:subClassOf :OWLClass_82c58761_b3e3_4113_857e_9bd43e54ca3d ;
+                                               rdfs:label "Act of Piracy"@en .
+
+
+###  http://www.semanticweb.org/alecsculley/ontologies/untitled-ontology-345#OWLClass_25d7e1eb_fdc7_490b_a8ba_b5f98999d5b6
+:OWLClass_25d7e1eb_fdc7_490b_a8ba_b5f98999d5b6 rdf:type owl:Class ;
+                                               rdfs:subClassOf :OWLClass_fad60a0c_5b18_4ed0_bea0_20c3b4c833f7 ;
+                                               rdfs:label "Crime of Ethnic Cleansing"@en .
+
+
+###  http://www.semanticweb.org/alecsculley/ontologies/untitled-ontology-345#OWLClass_2704586a_8b4d_495e_8a19_b413f47f46ab
+:OWLClass_2704586a_8b4d_495e_8a19_b413f47f46ab rdf:type owl:Class ;
+                                               rdfs:subClassOf :OWLClass_d3809569_5a76_4783_a2d0_e68caa1459ba ;
+                                               rdfs:label "Domestic Law"@en ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "A Law that is output of some Act of Government." .
+
+
+###  http://www.semanticweb.org/alecsculley/ontologies/untitled-ontology-345#OWLClass_39da540a_73d3_464f_ac9e_3c8b0f3246dc
+:OWLClass_39da540a_73d3_464f_ac9e_3c8b0f3246dc rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/WoundedStasis> ;
+                                               rdfs:label "Wounded Person Stasis"@en ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "A Wounded Stasis in which a Person is the bearer of a Quality or Realizable Entity that has suffered impairment (i.e., a decrease or loss) due to an injuring event." .
+
+
+###  http://www.semanticweb.org/alecsculley/ontologies/untitled-ontology-345#OWLClass_3cc3df69_ec13_47bf_b5be_f7a5a8e0a78c
+:OWLClass_3cc3df69_ec13_47bf_b5be_f7a5a8e0a78c rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/Act> ;
+                                               rdfs:label "Deviant Act"@en ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "A Deviant Act is an Act prohibited by some Action Prohibition." .
+
+
+###  http://www.semanticweb.org/alecsculley/ontologies/untitled-ontology-345#OWLClass_3faafb12_5a06_4588_afa4_ba04635c1180
+:OWLClass_3faafb12_5a06_4588_afa4_ba04635c1180 rdf:type owl:Class ;
+                                               owl:equivalentClass [ owl:intersectionOf ( :OWLClass_d80ab36a_f934_465d_8f33_5501c8f52446
+                                                                                          [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/is_cause_of> ;
+                                                                                            owl:someValuesFrom :OWLClass_93ce38e6_b055_4a8e_a704_ac0f7fcb67ca
+                                                                                          ]
+                                                                                        ) ;
+                                                                     rdf:type owl:Class
+                                                                   ] ;
+                                               rdfs:subClassOf :OWLClass_d80ab36a_f934_465d_8f33_5501c8f52446 ;
+                                               rdfs:label "Criminal Act Against Society"@en ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "A Criminal Act that is cause of some Damaged Society Stasis." .
+
+
+###  http://www.semanticweb.org/alecsculley/ontologies/untitled-ontology-345#OWLClass_48123a87_0bbd_40de_adf6_3e5d11b149e0
+:OWLClass_48123a87_0bbd_40de_adf6_3e5d11b149e0 rdf:type owl:Class ;
+                                               owl:equivalentClass [ owl:intersectionOf ( :OWLClass_d80ab36a_f934_465d_8f33_5501c8f52446
+                                                                                          [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/is_cause_of> ;
+                                                                                            owl:someValuesFrom :OWLClass_b8fa3c9f_1fe6_4cf6_b279_2ab3ac605ff9
+                                                                                          ]
+                                                                                        ) ;
+                                                                     rdf:type owl:Class
+                                                                   ] ;
+                                               rdfs:subClassOf :OWLClass_d80ab36a_f934_465d_8f33_5501c8f52446 ;
+                                               rdfs:label "Criminal Act Against Property"@en ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "A Criminal Act that is cause of some Damaged Property Stasis." .
+
+
+###  http://www.semanticweb.org/alecsculley/ontologies/untitled-ontology-345#OWLClass_5559e43e_20fa_4800_a2ca_34040ae4281d
+:OWLClass_5559e43e_20fa_4800_a2ca_34040ae4281d rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/ActionRegulation> ;
+                                               rdfs:label "Legal Action Regulation"@en ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "A Legal Action Regulation is an Action Regulation that is continuant part of some law." .
+
+
+###  http://www.semanticweb.org/alecsculley/ontologies/untitled-ontology-345#OWLClass_79222ca9_b9ab_4972_93be_d76c9f59f66b
+:OWLClass_79222ca9_b9ab_4972_93be_d76c9f59f66b rdf:type owl:Class ;
+                                               rdfs:subClassOf :OWLClass_fad60a0c_5b18_4ed0_bea0_20c3b4c833f7 ;
+                                               rdfs:label "Criminal Act Against Humanity"@en .
+
+
+###  http://www.semanticweb.org/alecsculley/ontologies/untitled-ontology-345#OWLClass_7a7fd07f_2576_4c24_9557_5fe91a39313e
+:OWLClass_7a7fd07f_2576_4c24_9557_5fe91a39313e rdf:type owl:Class ;
+                                               rdfs:subClassOf :OWLClass_3cc3df69_ec13_47bf_b5be_f7a5a8e0a78c ;
+                                               rdfs:label "Illegal Act"@en ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "An Illegal Act is a deviant act that is prohibited by some Legal Action Prohibition." .
+
+
+###  http://www.semanticweb.org/alecsculley/ontologies/untitled-ontology-345#OWLClass_82c58761_b3e3_4113_857e_9bd43e54ca3d
+:OWLClass_82c58761_b3e3_4113_857e_9bd43e54ca3d rdf:type owl:Class ;
+                                               rdfs:subClassOf :OWLClass_85ddd535_c252_44d7_bf1d_dbdda39efb70 ;
+                                               rdfs:isDefinedBy "A Criminal Act prohibited by some International Law." ;
+                                               rdfs:label "International Criminal Act"@en .
+
+
+###  http://www.semanticweb.org/alecsculley/ontologies/untitled-ontology-345#OWLClass_85ddd535_c252_44d7_bf1d_dbdda39efb70
+:OWLClass_85ddd535_c252_44d7_bf1d_dbdda39efb70 rdf:type owl:Class ;
+                                               rdfs:subClassOf :OWLClass_7a7fd07f_2576_4c24_9557_5fe91a39313e ;
+                                               rdfs:label "Criminal Act"@en ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "A Criminal Act is an illegal act whose agent is object of some act of legal punishment." .
+
+
+###  http://www.semanticweb.org/alecsculley/ontologies/untitled-ontology-345#OWLClass_8eb035e1_e2fc_458c_b123_83b1fcbc4986
+:OWLClass_8eb035e1_e2fc_458c_b123_83b1fcbc4986 rdf:type owl:Class ;
+                                               rdfs:subClassOf :OWLClass_fad60a0c_5b18_4ed0_bea0_20c3b4c833f7 ;
+                                               rdfs:label "War Crime"@en .
+
+
+###  http://www.semanticweb.org/alecsculley/ontologies/untitled-ontology-345#OWLClass_9232c321_26e0_4a6c_8625_31269bdff980
+:OWLClass_9232c321_26e0_4a6c_8625_31269bdff980 rdf:type owl:Class ;
+                                               owl:equivalentClass [ owl:intersectionOf ( :OWLClass_d80ab36a_f934_465d_8f33_5501c8f52446
+                                                                                          [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/is_cause_of> ;
+                                                                                            owl:someValuesFrom :OWLClass_39da540a_73d3_464f_ac9e_3c8b0f3246dc
+                                                                                          ]
+                                                                                        ) ;
+                                                                     rdf:type owl:Class
+                                                                   ] ;
+                                               rdfs:subClassOf :OWLClass_d80ab36a_f934_465d_8f33_5501c8f52446 ;
+                                               rdfs:label "Criminal Act Against a Person"@en ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "A Criminal Act that is cause of some Wounded Person Stasis." .
+
+
+###  http://www.semanticweb.org/alecsculley/ontologies/untitled-ontology-345#OWLClass_93ce38e6_b055_4a8e_a704_ac0f7fcb67ca
+:OWLClass_93ce38e6_b055_4a8e_a704_ac0f7fcb67ca rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/DamagedStasis> ;
+                                               rdfs:label "Damaged Society Stasis"@en ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "A Damaged Stasis that has participant some Society." .
+
+
+###  http://www.semanticweb.org/alecsculley/ontologies/untitled-ontology-345#OWLClass_b4865695_ddec_4020_b80f_afb0298ea0d6
+:OWLClass_b4865695_ddec_4020_b80f_afb0298ea0d6 rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/ActOfViolence> ;
+                                               rdfs:label "Act of Punishment"@en ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "An Act of Punishment is an Act of Violence in response to some Deviant Act." .
+
+
+###  http://www.semanticweb.org/alecsculley/ontologies/untitled-ontology-345#OWLClass_b7b84fa6_f560_498b_b6e7_296c7728492d
+:OWLClass_b7b84fa6_f560_498b_b6e7_296c7728492d rdf:type owl:Class ;
+                                               rdfs:subClassOf :OWLClass_5559e43e_20fa_4800_a2ca_34040ae4281d ;
+                                               rdfs:label "Domestic Legal Action Regulation"@en ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "A Legal Action Regulation that is continuant part of some Domestic Law." .
+
+
+###  http://www.semanticweb.org/alecsculley/ontologies/untitled-ontology-345#OWLClass_b8fa3c9f_1fe6_4cf6_b279_2ab3ac605ff9
+:OWLClass_b8fa3c9f_1fe6_4cf6_b279_2ab3ac605ff9 rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/DamagedStasis> ;
+                                               rdfs:label "Damaged Property Stasis"@en ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "A Damage Stasis that has participant some material entity that is object of some Act of Ownership." .
+
+
+###  http://www.semanticweb.org/alecsculley/ontologies/untitled-ontology-345#OWLClass_ceae317a_3bdb_4649_966c_5c513137caf9
+:OWLClass_ceae317a_3bdb_4649_966c_5c513137caf9 rdf:type owl:Class ;
+                                               rdfs:subClassOf :OWLClass_fad60a0c_5b18_4ed0_bea0_20c3b4c833f7 ;
+                                               rdfs:label "Crime of Genocide"@en .
+
+
+###  http://www.semanticweb.org/alecsculley/ontologies/untitled-ontology-345#OWLClass_cf631ff6_027a_41f5_b642_6aa465930060
+:OWLClass_cf631ff6_027a_41f5_b642_6aa465930060 rdf:type owl:Class ;
+                                               rdfs:subClassOf :OWLClass_d80ab36a_f934_465d_8f33_5501c8f52446 ;
+                                               rdfs:label "Inchoate Criminal Act"@en .
+
+
+###  http://www.semanticweb.org/alecsculley/ontologies/untitled-ontology-345#OWLClass_d3809569_5a76_4783_a2d0_e68caa1459ba
+:OWLClass_d3809569_5a76_4783_a2d0_e68caa1459ba rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/PlanSpecification> ;
+                                               rdfs:label "Law"@en ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "A law is a plan that is created by some government (that is not a geopolitical organization) or geopolitical organization (that is not a government) with the objective to prescribe acts in its delimiting domain." .
+
+
+###  http://www.semanticweb.org/alecsculley/ontologies/untitled-ontology-345#OWLClass_d80ab36a_f934_465d_8f33_5501c8f52446
+:OWLClass_d80ab36a_f934_465d_8f33_5501c8f52446 rdf:type owl:Class ;
+                                               rdfs:subClassOf :OWLClass_85ddd535_c252_44d7_bf1d_dbdda39efb70 ;
+                                               rdfs:label "Domestic Criminal Act"@en .
+
+
+###  http://www.semanticweb.org/alecsculley/ontologies/untitled-ontology-345#OWLClass_fad60a0c_5b18_4ed0_bea0_20c3b4c833f7
+:OWLClass_fad60a0c_5b18_4ed0_bea0_20c3b4c833f7 rdf:type owl:Class ;
+                                               rdfs:subClassOf :OWLClass_82c58761_b3e3_4113_857e_9bd43e54ca3d ;
+                                               rdfs:isDefinedBy "https://www.un.org/en/genocideprevention/documents/about-us/Doc.3_Framework%20of%20Analysis%20for%20Atrocity%20Crimes_EN.pdf" ;
+                                               rdfs:label "Atrocity Crime"@en .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :OWLClass_3faafb12_5a06_4588_afa4_ba04635c1180
+                :OWLClass_48123a87_0bbd_40de_adf6_3e5d11b149e0
+                :OWLClass_79222ca9_b9ab_4972_93be_d76c9f59f66b
+                :OWLClass_9232c321_26e0_4a6c_8625_31269bdff980
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
