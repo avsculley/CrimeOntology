@@ -1,4 +1,4 @@
-# Crime Ontology
+# Crime Ontology (CrO)
 
 An ontology of criminal acts and related entities using CCO and BFO.
 
