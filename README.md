@@ -1,10 +1,8 @@
-# Crime Ontology (CrO)
+# Foundations for an Ontology of Crime and Punishment (FOCP)
 
-An ontology of criminal acts and related entities using CCO and BFO.
+Foundations for a BFO and CCO conformant ontology of crime and punishment.
 
-The ontology is intended to be used to model crime in any jurisdiction. It models international crime and domestic crime. It aims to be as jurisdictionally neutral as possible. That is, it aims to model and define entities without reference to particular definitions found in particular laws, or otherwise according to any particular authority.
-
-The ontology was developed using NIBRS crime classification.
+The plan is to create an ontology to be used with NIBRS and the criminal laws of different jurisdictions, but for theoretical reasons the foundational ontology must come first.
 
 Contact info: 
 Alec Sculley
