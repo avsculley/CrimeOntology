@@ -1,0 +1,201 @@
+@prefix : <http://www.semanticweb.org/alecsculley/ontologies/untitled-ontology-419#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/alecsculley/ontologies/untitled-ontology-419> .
+
+<http://www.semanticweb.org/alecsculley/ontologies/untitled-ontology-419> rdf:type owl:Ontology ;
+                                                                           owl:imports <http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/alternative_label
+cco:alternative_label rdf:type owl:AnnotationProperty .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/definition
+cco:definition rdf:type owl:AnnotationProperty .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/definition_source
+cco:definition_source rdf:type owl:AnnotationProperty .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/elucidation
+cco:elucidation rdf:type owl:AnnotationProperty .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/example_of_usage
+cco:example_of_usage rdf:type owl:AnnotationProperty .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology
+cco:is_curated_in_ontology rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000056
+obo:BFO_0000056 rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000057
+obo:BFO_0000057 rdf:type owl:ObjectProperty .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/agent_in
+cco:agent_in rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf obo:BFO_0000056 ;
+             owl:inverseOf cco:has_agent ;
+             cco:definition "x agent_in y iff y is an instance of Process and x is an instance of Agent, such that x is causally active in y."@en ;
+             cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/AgentOntology"^^xsd:anyURI ;
+             rdfs:label "agent in"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/has_agent
+cco:has_agent rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf obo:BFO_0000057 ;
+              cco:definition "x has_agent y iff x is an instance of Process and y is an instance of Agent, such that y is causally active in x."@en ;
+              cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/AgentOntology"^^xsd:anyURI ;
+              rdfs:label "has agent"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/is_about
+cco:is_about rdf:type owl:ObjectProperty ;
+             owl:inverseOf cco:is_subject_of ;
+             rdfs:domain cco:InformationContentEntity ;
+             rdfs:range obo:BFO_0000001 ;
+             cco:definition "A primitive relationship between an Information Content Entity and some Entity."@en ;
+             cco:definition_source "http://purl.obolibrary.org/obo/IAO_0000136" ;
+             cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
+             rdfs:label "is about"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/is_subject_of
+cco:is_subject_of rdf:type owl:ObjectProperty ;
+                  rdfs:range cco:InformationContentEntity ;
+                  cco:definition "A primitive relationship between an instance of an Entity and an instance of an Information Content Entity."@en ;
+                  cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
+                  rdfs:label "is subject of"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/prescribed_by
+cco:prescribed_by rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf cco:is_subject_of ;
+                  owl:inverseOf cco:prescribes ;
+                  rdfs:range cco:DirectiveInformationContentEntity ;
+                  cco:definition "x prescribed_by y iff y is an instance of Information Content Entity and x is an instance of Entity, such that y serves as a rule or guide for x if x is an Occurrent, or y serves as a model for x if x is a Continuant."@en ;
+                  cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
+                  rdfs:label "prescribed by"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/prescribes
+cco:prescribes rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf cco:is_about ;
+               rdfs:domain cco:DirectiveInformationContentEntity ;
+               cco:definition "x prescribes y iff x is an instance of Information Content Entity and y is an instance of Entity, such that x serves as a rule or guide for y if y an Occurrent, or x serves as a model for y if y is a Continuant."@en ;
+               cco:example_of_usage "a blueprint serves as a model of some Artifact or Facility" ,
+                                    "a professional code of conduct serves as a set of rules to be followed while acting in a role within that profession" ,
+                                    "an Operations Plan serves as a guide for the tasks that need to be performed to achieve the Objectives of the Operation" ;
+               cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
+               rdfs:label "prescribes"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000001
+obo:BFO_0000001 rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000015
+obo:BFO_0000015 rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000031
+obo:BFO_0000031 rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000040
+obo:BFO_0000040 rdf:type owl:Class .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/Act
+cco:Act rdf:type owl:Class ;
+        rdfs:subClassOf obo:BFO_0000015 ;
+        cco:definition "A Process in which at least one Agent plays a causative role."@en ;
+        cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"^^xsd:anyURI ;
+        rdfs:label "Act"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/Agent
+cco:Agent rdf:type owl:Class ;
+          owl:equivalentClass [ owl:intersectionOf ( obo:BFO_0000040
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty cco:agent_in ;
+                                                       owl:someValuesFrom obo:BFO_0000015
+                                                     ]
+                                                   ) ;
+                                rdf:type owl:Class
+                              ] ;
+          rdfs:subClassOf obo:BFO_0000040 ;
+          cco:definition "A Material Entity that is capable of performing Planned Acts"@en ;
+          cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/AgentOntology"^^xsd:anyURI ;
+          rdfs:label "Agent"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/DirectiveInformationContentEntity
+cco:DirectiveInformationContentEntity rdf:type owl:Class ;
+                                      owl:equivalentClass [ owl:intersectionOf ( cco:InformationContentEntity
+                                                                                 [ rdf:type owl:Restriction ;
+                                                                                   owl:onProperty cco:prescribes ;
+                                                                                   owl:someValuesFrom obo:BFO_0000001
+                                                                                 ]
+                                                                               ) ;
+                                                            rdf:type owl:Class
+                                                          ] ;
+                                      rdfs:subClassOf cco:InformationContentEntity ;
+                                      cco:alternative_label "Directive ICE"@en ;
+                                      cco:definition "An Information Content Entity that consists of a set of propositions or images (as in the case of a blueprint) that prescribe some Entity."@en ;
+                                      cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
+                                      rdfs:label "Directive Information Content Entity"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity
+cco:InformationContentEntity rdf:type owl:Class ;
+                             owl:equivalentClass [ owl:intersectionOf ( obo:BFO_0000031
+                                                                        [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty cco:is_about ;
+                                                                          owl:someValuesFrom obo:BFO_0000001
+                                                                        ]
+                                                                      ) ;
+                                                   rdf:type owl:Class
+                                                 ] ;
+                             rdfs:subClassOf obo:BFO_0000031 ;
+                             cco:alternative_label "ICE"@en ;
+                             cco:definition "A Generically Dependent Continuant that generically depends on some Information Bearing Entity and stands in relation of aboutness to some Entity."@en ;
+                             cco:definition_source "http://purl.obolibrary.org/obo/IAO_0000030" ;
+                             cco:elucidation "Information Content Entity is here intended to be a class of Entities whose instances are the informational content of Information Bearing Entities. For example, three instances of information bearers -- such as a bar chart, color-coded map, and a written report -- each of which lists the GDP of Countries for the year 2010 are each different carriers of the same information content. It is this content that is generically dependent upon its carrier. This treatment of Informational Content Entity (cf. the Information Artifact Ontology) leads to a principle of subtyping based upon the relationship that ICE's have with the Entity they are about rather than characteristics such as format, language, measurement scale, or media. The latter are treated here as being Qualities of bearers."@en ;
+                             cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
+                             rdfs:label "Information Content Entity"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/IntentionalAct
+cco:IntentionalAct rdf:type owl:Class ;
+                   rdfs:subClassOf cco:Act ;
+                   cco:alternative_label "Intentional Act"@en ;
+                   cco:definition "An Act in which at least one Agent plays a causative role and which is prescribed by some Directive Information Content Entity held by at least one of the Agents."@en ;
+                   cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"^^xsd:anyURI ;
+                   rdfs:label "Planned Act"@en .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
