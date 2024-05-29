@@ -1,0 +1,166 @@
+@prefix : <http://www.semanticweb.org/alecsculley/ontologies/untitled-ontology-418#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/alecsculley/ontologies/CrimeOntology> .
+
+<http://www.semanticweb.org/alecsculley/ontologies/CrimeOntology> rdf:type owl:Ontology ;
+                                                                   owl:imports <http://www.semanticweb.org/alecsculley/ontologies/untitled-ontology-419> ;
+                                                                   <http://purl.org/dc/elements/1.1/contributor> "Alec Sculley" ;
+                                                                   rdfs:comment "CRO is designed to represent crime and related entities, like rules, sanctions, and criminals."@en ;
+                                                                   rdfs:label "Crime Ontology (CRO)"@en .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/alecsculley/ontologies/CrimeOntology/CRO_0000011
+<http://www.semanticweb.org/alecsculley/ontologies/CrimeOntology/CRO_0000011> rdf:type owl:ObjectProperty ;
+                                                                              rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                              rdfs:label "acts on behalf of"@en .
+
+
+###  http://www.semanticweb.org/alecsculley/ontologies/CrimeOntology/CRO_0000012
+<http://www.semanticweb.org/alecsculley/ontologies/CrimeOntology/CRO_0000012> rdf:type owl:ObjectProperty ;
+                                                                              rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                              owl:inverseOf <http://www.semanticweb.org/alecsculley/ontologies/CrimeOntology/CRO_0000014> ;
+                                                                              rdfs:label "enforces"@en .
+
+
+###  http://www.semanticweb.org/alecsculley/ontologies/CrimeOntology/CRO_0000013
+<http://www.semanticweb.org/alecsculley/ontologies/CrimeOntology/CRO_0000013> rdf:type owl:ObjectProperty ;
+                                                                              rdfs:subPropertyOf <http://www.ontologyrepository.com/CommonCoreOntologies/prescribes> ;
+                                                                              owl:inverseOf <http://www.semanticweb.org/alecsculley/ontologies/CrimeOntology/CRO_0000016> ;
+                                                                              rdfs:label "prohibits"@en .
+
+
+###  http://www.semanticweb.org/alecsculley/ontologies/CrimeOntology/CRO_0000014
+<http://www.semanticweb.org/alecsculley/ontologies/CrimeOntology/CRO_0000014> rdf:type owl:ObjectProperty ;
+                                                                              rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                              rdfs:label "is enforced by"@en .
+
+
+###  http://www.semanticweb.org/alecsculley/ontologies/CrimeOntology/CRO_0000015
+<http://www.semanticweb.org/alecsculley/ontologies/CrimeOntology/CRO_0000015> rdf:type owl:ObjectProperty ;
+                                                                              rdfs:label "is on behalf of"@en .
+
+
+###  http://www.semanticweb.org/alecsculley/ontologies/CrimeOntology/CRO_0000016
+<http://www.semanticweb.org/alecsculley/ontologies/CrimeOntology/CRO_0000016> rdf:type owl:ObjectProperty ;
+                                                                              rdfs:subPropertyOf <http://www.ontologyrepository.com/CommonCoreOntologies/prescribed_by> ;
+                                                                              rdfs:label "is prohibited by"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/alecsculley/ontologies/CrimeOntology/CRO_0000001
+<http://www.semanticweb.org/alecsculley/ontologies/CrimeOntology/CRO_0000001> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/DirectiveInformationContentEntity> ;
+                                                                              <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "A Directive Information Content Entity that prescribes some Process."@en ;
+                                                                              rdfs:label "Rule"@en .
+
+
+###  http://www.semanticweb.org/alecsculley/ontologies/CrimeOntology/CRO_0000002
+<http://www.semanticweb.org/alecsculley/ontologies/CrimeOntology/CRO_0000002> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/alecsculley/ontologies/CrimeOntology/CRO_0000001> ;
+                                                                              <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "A Rule that cro:prohibits some Process."@en ;
+                                                                              rdfs:label "Prohibition"@en .
+
+
+###  http://www.semanticweb.org/alecsculley/ontologies/CrimeOntology/CRO_0000003
+<http://www.semanticweb.org/alecsculley/ontologies/CrimeOntology/CRO_0000003> rdf:type owl:Class ;
+                                                                              owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                                    owl:onProperty <http://www.semanticweb.org/alecsculley/ontologies/CrimeOntology/CRO_0000014> ;
+                                                                                                    owl:someValuesFrom <http://www.semanticweb.org/alecsculley/ontologies/CrimeOntology/CRO_0000010>
+                                                                                                  ] ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/alecsculley/ontologies/CrimeOntology/CRO_0000002> ;
+                                                                              <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "A Prohibition that is enforced by some Act of Societal Sanctioning."@en ;
+                                                                              rdfs:label "Criminal Prohibition"@en .
+
+
+###  http://www.semanticweb.org/alecsculley/ontologies/CrimeOntology/CRO_0000004
+<http://www.semanticweb.org/alecsculley/ontologies/CrimeOntology/CRO_0000004> rdf:type owl:Class ;
+                                                                              owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                                    owl:onProperty <http://www.semanticweb.org/alecsculley/ontologies/CrimeOntology/CRO_0000011> ;
+                                                                                                    owl:someValuesFrom <http://www.semanticweb.org/alecsculley/ontologies/CrimeOntology/CRO_0000005>
+                                                                                                  ] ;
+                                                                              rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/Agent> ;
+                                                                              <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "An Agent that acts on behalf of some Society."@en ;
+                                                                              rdfs:label "Societal Agent"@en .
+
+
+###  http://www.semanticweb.org/alecsculley/ontologies/CrimeOntology/CRO_0000005
+<http://www.semanticweb.org/alecsculley/ontologies/CrimeOntology/CRO_0000005> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000027> ;
+                                                                              rdfs:label "Society"@en .
+
+
+###  http://www.semanticweb.org/alecsculley/ontologies/CrimeOntology/CRO_0000006
+<http://www.semanticweb.org/alecsculley/ontologies/CrimeOntology/CRO_0000006> rdf:type owl:Class ;
+                                                                              owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                                    owl:onProperty <http://www.semanticweb.org/alecsculley/ontologies/CrimeOntology/CRO_0000016> ;
+                                                                                                    owl:someValuesFrom <http://www.semanticweb.org/alecsculley/ontologies/CrimeOntology/CRO_0000003>
+                                                                                                  ] ;
+                                                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ;
+                                                                              <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "A Process that cro:is_prohibited_by some Criminal Prohibition."@en ;
+                                                                              rdfs:label "Criminal Process"@en .
+
+
+###  http://www.semanticweb.org/alecsculley/ontologies/CrimeOntology/CRO_0000007
+<http://www.semanticweb.org/alecsculley/ontologies/CrimeOntology/CRO_0000007> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/alecsculley/ontologies/CrimeOntology/CRO_0000006> ;
+                                                                              owl:disjointWith <http://www.semanticweb.org/alecsculley/ontologies/CrimeOntology/CRO_0000008> ;
+                                                                              <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "An Act that is cro:prohibited_by some Criminal Prohibition."@en ;
+                                                                              rdfs:label "Criminal Act"@en .
+
+
+###  http://www.semanticweb.org/alecsculley/ontologies/CrimeOntology/CRO_0000008
+<http://www.semanticweb.org/alecsculley/ontologies/CrimeOntology/CRO_0000008> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/alecsculley/ontologies/CrimeOntology/CRO_0000006> ;
+                                                                              <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "An Omission that is cro:prohibited_by some Criminal Prohibition."@en ;
+                                                                              rdfs:label "Criminal Omission"@en .
+
+
+###  http://www.semanticweb.org/alecsculley/ontologies/CrimeOntology/CRO_0000009
+<http://www.semanticweb.org/alecsculley/ontologies/CrimeOntology/CRO_0000009> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/IntentionalAct> ;
+                                                                              rdfs:label "Act of Sanctioning"@en .
+
+
+###  http://www.semanticweb.org/alecsculley/ontologies/CrimeOntology/CRO_0000010
+<http://www.semanticweb.org/alecsculley/ontologies/CrimeOntology/CRO_0000010> rdf:type owl:Class ;
+                                                                              owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                                    owl:onProperty <http://www.semanticweb.org/alecsculley/ontologies/CrimeOntology/CRO_0000015> ;
+                                                                                                    owl:someValuesFrom <http://www.semanticweb.org/alecsculley/ontologies/CrimeOntology/CRO_0000005>
+                                                                                                  ] ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/alecsculley/ontologies/CrimeOntology/CRO_0000009> ;
+                                                                              <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "An Act of Sanctioning that is on behalf of some Society."@en ;
+                                                                              rdfs:label "Act of Societal Sanctioning"@en .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://www.semanticweb.org/alecsculley/ontologies/CrimeOntology/CRO_0000002>
+                <http://www.semanticweb.org/alecsculley/ontologies/CrimeOntology/CRO_0000004>
+                <http://www.semanticweb.org/alecsculley/ontologies/CrimeOntology/CRO_0000005>
+                <http://www.semanticweb.org/alecsculley/ontologies/CrimeOntology/CRO_0000009>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://www.semanticweb.org/alecsculley/ontologies/CrimeOntology/CRO_0000002>
+                <http://www.semanticweb.org/alecsculley/ontologies/CrimeOntology/CRO_0000005>
+                <http://www.semanticweb.org/alecsculley/ontologies/CrimeOntology/CRO_0000006>
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
