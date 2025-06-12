@@ -1,8 +1,9 @@
-# Ontology of Crime
-*This ontology is not **currently** under development.*
+# Crime Ontology
 
 BFO and CCO conformant ontology of crime.
 
-Contact info: 
-Alec Sculley
-alecscul@buffalo.edu
+*This ontology is **currently** under development.*
+
+June 12, 2025: I am aware that several classes are missing definitions.
+
+
